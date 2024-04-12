@@ -25,7 +25,7 @@ namespace Day4
             for (int i = 0; i < n; i++)
             {
                 int num = int.Parse(reverseArray[i].ToString());//converting character to string and then parsing to integer
-                if (i % 2 == 0)
+                if (i % 2 != 0)
                 {
                     int evenPositionNumber = num * 2;
                     int evenSum = 0;
