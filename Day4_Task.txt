@@ -6,7 +6,7 @@ namespace Day4
     {
         static void Main(string[] args)
         {  //Card Number Validation algorithm
-
+  
             
             Console.WriteLine("Enter a number:");
             string input = Console.ReadLine();//getting input from user
