@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\VC\\Desktop\\Presidio_Daily_Tasks\\Day4\\CARD_VALIDATION\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE8A5FD-E090-4457-854E-94C35E52F281}|CARD_VALIDATION\\CARD_VALIDATION.csproj|c:\\users\\vc\\desktop\\presidio_daily_tasks\\day4\\card_validation\\card_validation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE8A5FD-E090-4457-854E-94C35E52F281}|CARD_VALIDATION\\CARD_VALIDATION.csproj|solutionrelative:card_validation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Presidio_Daily_Tasks\\Day4\\CARD_VALIDATION\\CARD_VALIDATION\\Program.cs",
+              "RelativeDocumentMoniker": "CARD_VALIDATION\\Program.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\Presidio_Daily_Tasks\\Day4\\CARD_VALIDATION\\CARD_VALIDATION\\Program.cs",
+              "RelativeToolTip": "CARD_VALIDATION\\Program.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAmwEIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T17:25:23.218Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
