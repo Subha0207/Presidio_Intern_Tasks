@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day6\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6FDC69E2-D03C-46CE-8AB0-127CA2DC7A63}|RequestTrackerApp\\RequestTrackerAppModelLib.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day6\\requesttrackerapp\\iinternalcompanyworking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FDC69E2-D03C-46CE-8AB0-127CA2DC7A63}|RequestTrackerApp\\RequestTrackerAppModelLib.csproj|solutionrelative:requesttrackerapp\\iinternalcompanyworking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FDC69E2-D03C-46CE-8AB0-127CA2DC7A63}|RequestTrackerApp\\RequestTrackerAppModelLib.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day6\\requesttrackerapp\\permanentemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FDC69E2-D03C-46CE-8AB0-127CA2DC7A63}|RequestTrackerApp\\RequestTrackerAppModelLib.csproj|solutionrelative:requesttrackerapp\\permanentemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FDC69E2-D03C-46CE-8AB0-127CA2DC7A63}|RequestTrackerApp\\RequestTrackerAppModelLib.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day6\\requesttrackerapp\\iclientinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FDC69E2-D03C-46CE-8AB0-127CA2DC7A63}|RequestTrackerApp\\RequestTrackerAppModelLib.csproj|solutionrelative:requesttrackerapp\\iclientinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FDC69E2-D03C-46CE-8AB0-127CA2DC7A63}|RequestTrackerApp\\RequestTrackerAppModelLib.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day6\\requesttrackerapp\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FDC69E2-D03C-46CE-8AB0-127CA2DC7A63}|RequestTrackerApp\\RequestTrackerAppModelLib.csproj|solutionrelative:requesttrackerapp\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FDC69E2-D03C-46CE-8AB0-127CA2DC7A63}|RequestTrackerApp\\RequestTrackerAppModelLib.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day6\\requesttrackerapp\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FDC69E2-D03C-46CE-8AB0-127CA2DC7A63}|RequestTrackerApp\\RequestTrackerAppModelLib.csproj|solutionrelative:requesttrackerapp\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FDC69E2-D03C-46CE-8AB0-127CA2DC7A63}|RequestTrackerApp\\RequestTrackerAppModelLib.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day6\\requesttrackerapp\\contractemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FDC69E2-D03C-46CE-8AB0-127CA2DC7A63}|RequestTrackerApp\\RequestTrackerAppModelLib.csproj|solutionrelative:requesttrackerapp\\contractemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FDC69E2-D03C-46CE-8AB0-127CA2DC7A63}|RequestTrackerApp\\RequestTrackerAppModelLib.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day6\\requesttrackerapp\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FDC69E2-D03C-46CE-8AB0-127CA2DC7A63}|RequestTrackerApp\\RequestTrackerAppModelLib.csproj|solutionrelative:requesttrackerapp\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BB1F91A-41C3-4320-895D-E5521573D1A4}|RequestTrackerAppModel\\RequestTrackerApp.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day6\\requesttrackerappmodel\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BB1F91A-41C3-4320-895D-E5521573D1A4}|RequestTrackerAppModel\\RequestTrackerApp.csproj|solutionrelative:requesttrackerappmodel\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PermanentEmployee.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day6\\RequestTrackerApp\\PermanentEmployee.cs",
+              "RelativeDocumentMoniker": "RequestTrackerApp\\PermanentEmployee.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day6\\RequestTrackerApp\\PermanentEmployee.cs",
+              "RelativeToolTip": "RequestTrackerApp\\PermanentEmployee.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAiwCQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T09:13:55.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ContractEmployee.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day6\\RequestTrackerApp\\ContractEmployee.cs",
+              "RelativeDocumentMoniker": "RequestTrackerApp\\ContractEmployee.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day6\\RequestTrackerApp\\ContractEmployee.cs",
+              "RelativeToolTip": "RequestTrackerApp\\ContractEmployee.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAcwCwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T08:57:53.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Department.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day6\\RequestTrackerApp\\Department.cs",
+              "RelativeDocumentMoniker": "RequestTrackerApp\\Department.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day6\\RequestTrackerApp\\Department.cs",
+              "RelativeToolTip": "RequestTrackerApp\\Department.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAIwA4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T08:50:20.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day6\\RequestTrackerApp\\Employee.cs",
+              "RelativeDocumentMoniker": "RequestTrackerApp\\Employee.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day6\\RequestTrackerApp\\Employee.cs",
+              "RelativeToolTip": "RequestTrackerApp\\Employee.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAUwF0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T08:46:14.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IInternalCompanyWorking.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day6\\RequestTrackerApp\\IInternalCompanyWorking.cs",
+              "RelativeDocumentMoniker": "RequestTrackerApp\\IInternalCompanyWorking.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day6\\RequestTrackerApp\\IInternalCompanyWorking.cs",
+              "RelativeToolTip": "RequestTrackerApp\\IInternalCompanyWorking.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T08:45:20.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Company.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day6\\RequestTrackerApp\\Company.cs",
+              "RelativeDocumentMoniker": "RequestTrackerApp\\Company.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day6\\RequestTrackerApp\\Company.cs",
+              "RelativeToolTip": "RequestTrackerApp\\Company.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T08:43:04.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day6\\RequestTrackerAppModel\\Program.cs",
+              "RelativeDocumentMoniker": "RequestTrackerAppModel\\Program.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day6\\RequestTrackerAppModel\\Program.cs",
+              "RelativeToolTip": "RequestTrackerAppModel\\Program.cs",
+              "ViewState": "AQIAAIYAAAAAAAAAAAAiwJcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T08:55:18.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IClientInteraction.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day6\\RequestTrackerApp\\IClientInteraction.cs",
+              "RelativeDocumentMoniker": "RequestTrackerApp\\IClientInteraction.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day6\\RequestTrackerApp\\IClientInteraction.cs",
+              "RelativeToolTip": "RequestTrackerApp\\IClientInteraction.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T08:44:20.772Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

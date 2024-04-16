@@ -1,9 +1,9 @@
 ﻿
-using RequestTrackerModelLibrary;
+using RequestTrackerAppModelLib;
 
 namespace RequestTrackerModelLib
 {
-    public class Employee
+    public class Employee : IClientInteraction, IInternalCompanyWorking
     {
         public Department EmployeeDepartment { get; set; }
         int age;
@@ -56,11 +56,39 @@ namespace RequestTrackerModelLib
 
         public virtual void PrintEmployeeDetails()
         {
+            Console.WriteLine("Employee Type : " + Type);
             Console.WriteLine("Employee Id : " + Id);
             Console.WriteLine("Employee Name " + Name);
             Console.WriteLine("Date of birth : " + DateOfBirth);
             Console.WriteLine("Employee Age : " + Age);
         }
-    }
+        public override string ToString()
+        {
+            return "Employee Type : " + Type
+                + "\nEmployee Id : " + Id
+                + "\nEmployee Name " + Name
+                + "\nDate of birth : " + DateOfBirth
+                + "\nEmployee Age : " + Age;
+        }
 
+        public void GetOrder()
+        {
+            Console.WriteLine("Order fetched by " + Name);
+        }
+
+        public void GetPayment()
+        {
+            Console.WriteLine("Get the payment as per terms");
+        }
+
+        public void RaiseRequest()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void CloseRequest()
+        {
+            throw new NotImplementedException();
+        }
+    }
 }

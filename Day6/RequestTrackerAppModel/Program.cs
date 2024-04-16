@@ -6,11 +6,10 @@ namespace RequestTrackerApp
 {
     internal class Program
     {
-
         Employee[] employees;
         public Program()
         {
-            employees = new Employee[2];
+            employees = new Employee[3];
         }
         void PrintMenu()
         {
@@ -73,7 +72,12 @@ namespace RequestTrackerApp
             for (int i = 0; i < employees.Length; i++)
             {
                 if (employees[i] != null)
+                {
+                    Company company = new Company();
+                    company.EmployeeClientVisit(employees[i]);
                     PrintEmployee(employees[i]);
+                }
+
             }
         }
         Employee CreateEmployee(int id)
@@ -93,7 +97,7 @@ namespace RequestTrackerApp
         void PrintEmployee(Employee employee)
         {
             Console.WriteLine("---------------------------");
-            employee.PrintEmployeeDetails();
+            Console.WriteLine(employee);
             Console.WriteLine("---------------------------");
         }
         int GetIdFromConsole()
@@ -139,11 +143,9 @@ namespace RequestTrackerApp
             program.EmployeeInteraction();
             ContractEmployee employee = new ContractEmployee();
             employee.BuildEmployeeFromConsole();
-            employee.PrintEmployeeDetails();
-
-          
-
+            Console.WriteLine(employee);
         }
+
     }
 }
 
