@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day3\\Day3\\CODING_QUESTIONS_C#\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8EFE669D-5B6B-4F6F-B51A-D14E6C56A455}|CODING_QUESTIONS_C#\\CODING_QUESTIONS_C#.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day3\\day3\\coding_questions_c#\\coding_questions_c#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EFE669D-5B6B-4F6F-B51A-D14E6C56A455}|CODING_QUESTIONS_C#\\CODING_QUESTIONS_C#.csproj|solutionrelative:coding_questions_c#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day3\\Day3\\CODING_QUESTIONS_C#\\CODING_QUESTIONS_C#\\Program.cs",
+              "RelativeDocumentMoniker": "CODING_QUESTIONS_C#\\Program.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day3\\Day3\\CODING_QUESTIONS_C#\\CODING_QUESTIONS_C#\\Program.cs",
+              "RelativeToolTip": "CODING_QUESTIONS_C#\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T15:04:24.749Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
