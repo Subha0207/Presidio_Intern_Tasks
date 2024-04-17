@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RequestTrackerAppModelLib
 {
-    internal class Company
+    internal class Department
     {
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RequestTrackerAppModelLib
 {
-    public interface IClientInteraction
+    internal class Request
     {
     }
 }
