@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RequestTrackerApp", "RequestTrackerApp\RequestTrackerApp.csproj", "{F471B5D4-7482-4764-A77A-C9A9A9FA2A9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RequestTrackerApp", "RequestTrackerApp\RequestTrackerApp.csproj", "{F471B5D4-7482-4764-A77A-C9A9A9FA2A9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RequestTrackerAppModelLib", "RequestTrackerAppModelLib\RequestTrackerAppModelLib.csproj", "{3AC28F14-6819-4FD2-A970-C67884617453}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RequestTrackerAppModelLib", "RequestTrackerAppModelLib\RequestTrackerAppModelLib.csproj", "{3AC28F14-6819-4FD2-A970-C67884617453}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RequestTrackerDALLibrary", "RequestTrackerDALLibrary\RequestTrackerDALLibrary.csproj", "{C04061E9-52EA-4904-9805-6C9AFB2781BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RequestTrackerAppBLLibrary", "RequestTrackerAppBLLibrary\RequestTrackerAppBLLibrary.csproj", "{D53829EC-CED6-45A1-A030-61EFFD2864EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{3AC28F14-6819-4FD2-A970-C67884617453}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AC28F14-6819-4FD2-A970-C67884617453}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AC28F14-6819-4FD2-A970-C67884617453}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C04061E9-52EA-4904-9805-6C9AFB2781BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C04061E9-52EA-4904-9805-6C9AFB2781BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C04061E9-52EA-4904-9805-6C9AFB2781BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C04061E9-52EA-4904-9805-6C9AFB2781BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D53829EC-CED6-45A1-A030-61EFFD2864EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D53829EC-CED6-45A1-A030-61EFFD2864EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D53829EC-CED6-45A1-A030-61EFFD2864EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D53829EC-CED6-45A1-A030-61EFFD2864EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
