@@ -15,8 +15,5 @@ namespace RequestTrackerDALLibrary
         T Update(T item);
         T Delete(K key);
 
-        T GetDepartmentByName(string name);
-        T GetDepartmentById(int id);
-        bool DepartmentExistsByName(string name);
     }
 }

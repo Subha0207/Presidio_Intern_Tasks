@@ -1,4 +1,6 @@
-﻿using RequestTrackerAppModelLib;
+﻿
+using RequestTrackerAppBLLibrary.DepartmentExceptions;
+using RequestTrackerAppModelLib;
 using RequestTrackerDALLibrary;
 
 namespace RequestTrackerAppBLLibrary
@@ -10,96 +12,106 @@ namespace RequestTrackerAppBLLibrary
         {
             _departmentRepository = new DepartmentRepository();
         }
-
         public int AddDepartment(Department department)
         {
-            // Check if department with the same name already exists
-            if (_departmentRepository.DepartmentExistsByName(department.Name))
-            {
-                throw new DuplicateDepartmentNameException();
-            }
-
             var result = _departmentRepository.Add(department);
 
             if (result != null)
             {
                 return result.Id;
             }
-            else
-            {
-                throw new Exception("An error occurred while adding the department.");
-            }
+            throw new DuplicateDepartmentNameException();
         }
-
-
+        
         public Department ChangeDepartmentName(string departmentOldName, string departmentNewName)
         {
-            var department = _departmentRepository.GetDepartmentByName(departmentOldName);
-            if (department != null)
+            var departments = _departmentRepository.GetAll();
+            if (departments != null)
             {
-                department.Name = departmentNewName;
-                _departmentRepository.Update(department);
-                return department;
+                foreach (var department in departments)
+                {
+                    if (department.Name == departmentOldName)
+                    {
+                        department.Name = departmentNewName;
+                        _departmentRepository.Update(department);
+                    }
+                }
             }
             throw new DepartmentNotFoundException();
+        }
+
+        
+
+        public bool DepartmentExists(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool DepartmentExistsByName(string name)
+        {
+            throw new NotImplementedException();
         }
 
         public Department GetDepartmentById(int id)
         {
-            var department = _departmentRepository.GetDepartmentById(id);
+            var department = _departmentRepository.Get(id);
             if (department != null)
             {
                 return department;
             }
             throw new DepartmentNotFoundException();
         }
+
+
 
         public Department GetDepartmentByName(string departmentName)
         {
-            var department = _departmentRepository.GetDepartmentByName(departmentName);
-            if (department != null)
+            var departments = _departmentRepository.GetAll();
+            if (departments != null)
             {
-                return department;
+                foreach (var department in departments)
+                {
+                    if (department.Name == departmentName) { return department; }
+                }
             }
             throw new DepartmentNotFoundException();
         }
 
         
-        public Department DeleteDepartmentByName(string departmentName)
+
+        
+
+        public List<Department> GetDepartmentList()
         {
-            // Get the department by name
-            var department = _departmentRepository.GetDepartmentByName(departmentName);
-            if (department != null)
+            var departments = _departmentRepository.GetAll();
+            if (departments != null)
             {
-                // Delete the department
-                return _departmentRepository.Delete(department.Id);
+                return new List<Department>(departments);
             }
-            else
-            {
-                throw new DepartmentNotFoundException();
-            }
+            throw new NoDataAvailableException();
         }
 
         
-        public List<Department> GetDepartmentList()
+        public Department DeleteDepartmentByName(string name)
         {
-            return _departmentRepository.GetAll();
-        }
-        public bool DepartmentExists(int id)
-        {
-            var department = _departmentRepository.GetDepartmentById(id);
-            return department != null;
-        }
-        public bool DepartmentExistsByName(string name)
-        {
-            var department = _departmentRepository.GetDepartmentByName(name);
-            return department != null;
+
+            var departments = _departmentRepository.GetAll();
+            if (departments != null)
+            {
+                foreach (var department in departments)
+                {
+                    if (department.Name == name)
+                    {
+                        return _departmentRepository.Delete(department.Id);
+                    }
+                }
+            }
+            throw new DepartmentNotFoundException();
         }
 
-        public int GetDepartmentHeadId(int departmentId)
-        {
-            throw new NotImplementedException();
-        }
     }
 
+
+
 }
+

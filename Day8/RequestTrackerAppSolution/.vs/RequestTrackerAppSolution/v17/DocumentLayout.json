@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day8\\RequestTrackerAppSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D53829EC-CED6-45A1-A030-61EFFD2864EF}|RequestTrackerAppBLLibrary\\RequestTrackerAppBLLibrary.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day8\\requesttrackerappsolution\\requesttrackerappbllibrary\\departmentbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D53829EC-CED6-45A1-A030-61EFFD2864EF}|RequestTrackerAppBLLibrary\\RequestTrackerAppBLLibrary.csproj|solutionrelative:requesttrackerappbllibrary\\departmentbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C04061E9-52EA-4904-9805-6C9AFB2781BF}|RequestTrackerDALLibrary\\RequestTrackerDALLibrary.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day8\\requesttrackerappsolution\\requesttrackerdallibrary\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C04061E9-52EA-4904-9805-6C9AFB2781BF}|RequestTrackerDALLibrary\\RequestTrackerDALLibrary.csproj|solutionrelative:requesttrackerdallibrary\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D53829EC-CED6-45A1-A030-61EFFD2864EF}|RequestTrackerAppBLLibrary\\RequestTrackerAppBLLibrary.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day8\\requesttrackerappsolution\\requesttrackerappbllibrary\\departmentbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D53829EC-CED6-45A1-A030-61EFFD2864EF}|RequestTrackerAppBLLibrary\\RequestTrackerAppBLLibrary.csproj|solutionrelative:requesttrackerappbllibrary\\departmentbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F471B5D4-7482-4764-A77A-C9A9A9FA2A9D}|RequestTrackerApp\\RequestTrackerApp.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day8\\requesttrackerappsolution\\requesttrackerapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C04061E9-52EA-4904-9805-6C9AFB2781BF}|RequestTrackerDALLibrary\\RequestTrackerDALLibrary.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day8\\requesttrackerappsolution\\requesttrackerdallibrary\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C04061E9-52EA-4904-9805-6C9AFB2781BF}|RequestTrackerDALLibrary\\RequestTrackerDALLibrary.csproj|solutionrelative:requesttrackerdallibrary\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D53829EC-CED6-45A1-A030-61EFFD2864EF}|RequestTrackerAppBLLibrary\\RequestTrackerAppBLLibrary.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day8\\requesttrackerappsolution\\requesttrackerappbllibrary\\departmentnotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D53829EC-CED6-45A1-A030-61EFFD2864EF}|RequestTrackerAppBLLibrary\\RequestTrackerAppBLLibrary.csproj|solutionrelative:requesttrackerappbllibrary\\departmentnotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D53829EC-CED6-45A1-A030-61EFFD2864EF}|RequestTrackerAppBLLibrary\\RequestTrackerAppBLLibrary.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day8\\requesttrackerappsolution\\requesttrackerappbllibrary\\idepartmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
@@ -63,13 +59,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "DepartmentBL.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day8\\RequestTrackerAppSolution\\RequestTrackerAppBLLibrary\\DepartmentBL.cs",
               "RelativeDocumentMoniker": "RequestTrackerAppBLLibrary\\DepartmentBL.cs",
               "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day8\\RequestTrackerAppSolution\\RequestTrackerAppBLLibrary\\DepartmentBL.cs",
               "RelativeToolTip": "RequestTrackerAppBLLibrary\\DepartmentBL.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAYwC8AAAAIAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAYwEIAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-17T07:27:26.63Z",
               "EditorCaption": ""
@@ -88,31 +84,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day8\\RequestTrackerAppSolution\\RequestTrackerDALLibrary\\IRepository.cs",
               "RelativeDocumentMoniker": "RequestTrackerDALLibrary\\IRepository.cs",
               "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day8\\RequestTrackerAppSolution\\RequestTrackerDALLibrary\\IRepository.cs",
               "RelativeToolTip": "RequestTrackerDALLibrary\\IRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T13:05:52.861Z"
+              "WhenOpened": "2024-04-19T13:05:52.861Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "DepartmentNotFoundException.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day8\\RequestTrackerAppSolution\\RequestTrackerAppBLLibrary\\DepartmentNotFoundException.cs",
-              "RelativeDocumentMoniker": "RequestTrackerAppBLLibrary\\DepartmentNotFoundException.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day8\\RequestTrackerAppSolution\\RequestTrackerAppBLLibrary\\DepartmentNotFoundException.cs",
-              "RelativeToolTip": "RequestTrackerAppBLLibrary\\DepartmentNotFoundException.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAxwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T15:08:19.028Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "IDepartmentService.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day8\\RequestTrackerAppSolution\\RequestTrackerAppBLLibrary\\IDepartmentService.cs",
               "RelativeDocumentMoniker": "RequestTrackerAppBLLibrary\\IDepartmentService.cs",
@@ -124,7 +109,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Department.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day8\\RequestTrackerAppSolution\\RequestTrackerAppModelLib\\Department.cs",
               "RelativeDocumentMoniker": "RequestTrackerAppModelLib\\Department.cs",
@@ -136,7 +121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "Employee.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day8\\RequestTrackerAppSolution\\RequestTrackerAppModelLib\\Employee.cs",
               "RelativeDocumentMoniker": "RequestTrackerAppModelLib\\Employee.cs",
@@ -148,7 +133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "Request.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day8\\RequestTrackerAppSolution\\RequestTrackerAppModelLib\\Request.cs",
               "RelativeDocumentMoniker": "RequestTrackerAppModelLib\\Request.cs",

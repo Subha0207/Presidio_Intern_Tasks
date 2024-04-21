@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RequestTrackerAppBLLibrary
+namespace RequestTrackerAppBLLibrary.EmployeeExceptions
 {
-    public class DuplicateDepartmentNameException : Exception
+    public class EmployeeNotFoundException : Exception
     {
         string msg;
-        public DuplicateDepartmentNameException()
+        public EmployeeNotFoundException()
         {
-            msg = "Department name already exists";
+            msg = "Employee Not Found";
         }
         public override string Message => msg;
     }

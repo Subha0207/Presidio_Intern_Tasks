@@ -63,8 +63,7 @@
               "ViewState": "AQIAAK0AAAAAAAAAAAAowLoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-17T04:13:33.967Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -76,8 +75,7 @@
               "RelativeToolTip": "RequestTrackerAppModelLib\\Department.cs",
               "ViewState": "AQIAAAoAAAAAAAAAAAAQwBMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T11:38:52.835Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-18T11:38:52.835Z"
             },
             {
               "$type": "Document",
@@ -89,8 +87,7 @@
               "RelativeToolTip": "RequestTrackerAppModelLib\\Employee.cs",
               "ViewState": "AQIAAEgAAAAAAAAAAAAkwFQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T16:39:18.008Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-17T16:39:18.008Z"
             },
             {
               "$type": "Document",
@@ -102,8 +99,7 @@
               "RelativeToolTip": "RequestTrackerAppModelLib\\Request.cs",
               "ViewState": "AQIAAA8AAAAAAAAAAAAYwBkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T04:16:51.394Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-17T04:16:51.394Z"
             },
             {
               "$type": "Document",
@@ -115,8 +111,7 @@
               "RelativeToolTip": "RequestTrackerDALLibrary\\DepartmentRepository.cs",
               "ViewState": "AQIAAFAAAAAAAAAAAAAkwFwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T06:54:24.53Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-17T06:54:24.53Z"
             },
             {
               "$type": "Document",
@@ -126,7 +121,7 @@
               "RelativeDocumentMoniker": "RequestTrackerDALLibrary\\IRepository.cs",
               "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day7\\RequestTrackerAppSolution\\RequestTrackerDALLibrary\\IRepository.cs",
               "RelativeToolTip": "RequestTrackerDALLibrary\\IRepository.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAwBYAAAAAAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAxwBYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-19T13:05:52.861Z",
               "EditorCaption": ""
@@ -141,8 +136,7 @@
               "RelativeToolTip": "RequestTrackerAppBLLibrary\\IDepartmentService.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAA1wBcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T07:29:31.94Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-17T07:29:31.94Z"
             },
             {
               "$type": "Document",
@@ -154,8 +148,7 @@
               "RelativeToolTip": "RequestTrackerAppBLLibrary\\DuplicateDepartmentNameException.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAYwBIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T07:05:23.237Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-20T07:05:23.237Z"
             },
             {
               "$type": "Document",
@@ -167,8 +160,7 @@
               "RelativeToolTip": "RequestTrackerAppBLLibrary\\DepartmentBL.cs",
               "ViewState": "AQIAAF0AAAAAAAAAAAAkwGkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T07:27:26.63Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-17T07:27:26.63Z"
             },
             {
               "$type": "Document",
@@ -180,8 +172,7 @@
               "RelativeToolTip": "RequestTrackerAppBLLibrary\\DepartmentNotFoundException.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAYwA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T15:08:19.028Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-19T15:08:19.028Z"
             }
           ]
         }

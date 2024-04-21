@@ -1,7 +1,7 @@
 ﻿
 using System;
 
-namespace RequestTrackerAppBLLibrary
+namespace RequestTrackerAppBLLibrary.DepartmentExceptions
 {
     public class DepartmentNotFoundException : Exception
     {

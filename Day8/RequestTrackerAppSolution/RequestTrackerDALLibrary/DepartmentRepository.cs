@@ -71,21 +71,6 @@ namespace RequestTrackerDALLibrary
         }
 
         
-        public Department GetDepartmentByName(string name)
-        {
-            return _departments.Values.FirstOrDefault(department => department.Name == name);
-        }
-
-
-        public Department GetDepartmentById(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool DepartmentExistsByName(string name)
-        {
-            return _departments.Values.Any(department => department.Name == name);
-        }
 
     }
 
