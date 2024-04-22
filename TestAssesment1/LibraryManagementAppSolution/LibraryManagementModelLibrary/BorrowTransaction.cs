@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace LibraryManagementModelLibrary
 {
-    public class Patron
+    public class BorrowTransaction
     {
         public string PatronID { get; set; }
-        public string PatronName { get; set; }
-        public string ContactInfo { get; set; }
+        public string BookID { get; set; }
+        public DateTime BorrowDate { get; set; }
+        public DateTime DueDate { get; set; }
     }
+
 }
