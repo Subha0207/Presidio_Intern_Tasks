@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace LibraryManagementBLLibrary
 {
-    public interface IBookService
+    public interface IReturnTransactionService
     {
-        string AddBook(Book book);
-        List<Book> GetAllAvailableBooks();
+        ReturnTransaction ReturnBook(string patronId, string bookId);
+        
     }
 }

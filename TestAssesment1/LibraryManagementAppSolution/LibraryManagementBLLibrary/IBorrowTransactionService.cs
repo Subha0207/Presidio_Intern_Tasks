@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace LibraryManagementBLLibrary
 {
-    public interface IBookService
+    public interface IBorrowTransactionService
     {
-        string AddBook(Book book);
-        List<Book> GetAllAvailableBooks();
+        string CheckAndBorrowBook(string bookId);
     }
+
 }

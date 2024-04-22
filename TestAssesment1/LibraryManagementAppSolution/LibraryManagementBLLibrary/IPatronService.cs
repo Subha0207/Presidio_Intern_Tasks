@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LibraryManagementModelLibrary;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,10 @@ namespace LibraryManagementBLLibrary
 {
     public interface IPatronService
     {
+
+        string AddPatron(Patron patron);
+        List<Patron> GetPatronsByName(string name);
+        Patron GetPatronById(string patronId);
+        List<Patron> GetAllPatrons();
     }
 }
