@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RequestTrackerApp", "Reques
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RequestTrackerAppModelLib", "RequestTrackerAppModelLib\RequestTrackerAppModelLib.csproj", "{3AC28F14-6819-4FD2-A970-C67884617453}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RequestTrackerDALLibrary", "RequestTrackerDALLibrary\RequestTrackerDALLibrary.csproj", "{C04061E9-52EA-4904-9805-6C9AFB2781BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RequestTrackerDALLibrary", "RequestTrackerDALLibrary\RequestTrackerDALLibrary.csproj", "{C04061E9-52EA-4904-9805-6C9AFB2781BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RequestTrackerAppBLLibrary", "RequestTrackerAppBLLibrary\RequestTrackerAppBLLibrary.csproj", "{D53829EC-CED6-45A1-A030-61EFFD2864EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RequestTrackerAppBLLibrary", "RequestTrackerAppBLLibrary\RequestTrackerAppBLLibrary.csproj", "{D53829EC-CED6-45A1-A030-61EFFD2864EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

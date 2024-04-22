@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\TestAssesment1\\LibraryManagementAppSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5769D145-329D-4AFB-B369-C67C395AAEB4}|LibraryManagementModelLibrary\\LibraryManagementModelLibrary.csproj|c:\\users\\vc\\desktop\\intern_tasks\\testassesment1\\librarymanagementappsolution\\librarymanagementmodellibrary\\patron.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5769D145-329D-4AFB-B369-C67C395AAEB4}|LibraryManagementModelLibrary\\LibraryManagementModelLibrary.csproj|solutionrelative:librarymanagementmodellibrary\\patron.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5769D145-329D-4AFB-B369-C67C395AAEB4}|LibraryManagementModelLibrary\\LibraryManagementModelLibrary.csproj|c:\\users\\vc\\desktop\\intern_tasks\\testassesment1\\librarymanagementappsolution\\librarymanagementmodellibrary\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5769D145-329D-4AFB-B369-C67C395AAEB4}|LibraryManagementModelLibrary\\LibraryManagementModelLibrary.csproj|solutionrelative:librarymanagementmodellibrary\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E148F3B5-3BC3-4150-94F2-487E950E0E5A}|LibraryManagementApp\\LibraryManagementApp.csproj|c:\\users\\vc\\desktop\\intern_tasks\\testassesment1\\librarymanagementappsolution\\librarymanagementapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E148F3B5-3BC3-4150-94F2-487E950E0E5A}|LibraryManagementApp\\LibraryManagementApp.csproj|solutionrelative:librarymanagementapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{532F3D6A-890E-4510-919B-D33730937A86}|LibraryManagementBLLibrary\\LibraryManagementBLLibrary.csproj|c:\\users\\vc\\desktop\\intern_tasks\\testassesment1\\librarymanagementappsolution\\librarymanagementbllibrary\\patronbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{532F3D6A-890E-4510-919B-D33730937A86}|LibraryManagementBLLibrary\\LibraryManagementBLLibrary.csproj|solutionrelative:librarymanagementbllibrary\\patronbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{532F3D6A-890E-4510-919B-D33730937A86}|LibraryManagementBLLibrary\\LibraryManagementBLLibrary.csproj|c:\\users\\vc\\desktop\\intern_tasks\\testassesment1\\librarymanagementappsolution\\librarymanagementbllibrary\\bookbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{532F3D6A-890E-4510-919B-D33730937A86}|LibraryManagementBLLibrary\\LibraryManagementBLLibrary.csproj|solutionrelative:librarymanagementbllibrary\\bookbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{532F3D6A-890E-4510-919B-D33730937A86}|LibraryManagementBLLibrary\\LibraryManagementBLLibrary.csproj|c:\\users\\vc\\desktop\\intern_tasks\\testassesment1\\librarymanagementappsolution\\librarymanagementbllibrary\\ipatronservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{532F3D6A-890E-4510-919B-D33730937A86}|LibraryManagementBLLibrary\\LibraryManagementBLLibrary.csproj|solutionrelative:librarymanagementbllibrary\\ipatronservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{532F3D6A-890E-4510-919B-D33730937A86}|LibraryManagementBLLibrary\\LibraryManagementBLLibrary.csproj|c:\\users\\vc\\desktop\\intern_tasks\\testassesment1\\librarymanagementappsolution\\librarymanagementbllibrary\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{532F3D6A-890E-4510-919B-D33730937A86}|LibraryManagementBLLibrary\\LibraryManagementBLLibrary.csproj|solutionrelative:librarymanagementbllibrary\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{532F3D6A-890E-4510-919B-D33730937A86}|LibraryManagementBLLibrary\\LibraryManagementBLLibrary.csproj|c:\\users\\vc\\desktop\\intern_tasks\\testassesment1\\librarymanagementappsolution\\librarymanagementbllibrary\\bookexceptions\\bookdetailsmissingexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{532F3D6A-890E-4510-919B-D33730937A86}|LibraryManagementBLLibrary\\LibraryManagementBLLibrary.csproj|solutionrelative:librarymanagementbllibrary\\bookexceptions\\bookdetailsmissingexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{532F3D6A-890E-4510-919B-D33730937A86}|LibraryManagementBLLibrary\\LibraryManagementBLLibrary.csproj|c:\\users\\vc\\desktop\\intern_tasks\\testassesment1\\librarymanagementappsolution\\librarymanagementbllibrary\\bookborrowexceptions\\booknotavailableexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{532F3D6A-890E-4510-919B-D33730937A86}|LibraryManagementBLLibrary\\LibraryManagementBLLibrary.csproj|solutionrelative:librarymanagementbllibrary\\bookborrowexceptions\\booknotavailableexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Patron.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\TestAssesment1\\LibraryManagementAppSolution\\LibraryManagementModelLibrary\\Patron.cs",
+              "RelativeDocumentMoniker": "LibraryManagementModelLibrary\\Patron.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\TestAssesment1\\LibraryManagementAppSolution\\LibraryManagementModelLibrary\\Patron.cs",
+              "RelativeToolTip": "LibraryManagementModelLibrary\\Patron.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T06:25:55.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\TestAssesment1\\LibraryManagementAppSolution\\LibraryManagementModelLibrary\\Book.cs",
+              "RelativeDocumentMoniker": "LibraryManagementModelLibrary\\Book.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\TestAssesment1\\LibraryManagementAppSolution\\LibraryManagementModelLibrary\\Book.cs",
+              "RelativeToolTip": "LibraryManagementModelLibrary\\Book.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T06:25:38.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PatronBL.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\TestAssesment1\\LibraryManagementAppSolution\\LibraryManagementBLLibrary\\PatronBL.cs",
+              "RelativeDocumentMoniker": "LibraryManagementBLLibrary\\PatronBL.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\TestAssesment1\\LibraryManagementAppSolution\\LibraryManagementBLLibrary\\PatronBL.cs",
+              "RelativeToolTip": "LibraryManagementBLLibrary\\PatronBL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T06:24:00.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BookBL.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\TestAssesment1\\LibraryManagementAppSolution\\LibraryManagementBLLibrary\\BookBL.cs",
+              "RelativeDocumentMoniker": "LibraryManagementBLLibrary\\BookBL.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\TestAssesment1\\LibraryManagementAppSolution\\LibraryManagementBLLibrary\\BookBL.cs",
+              "RelativeToolTip": "LibraryManagementBLLibrary\\BookBL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T06:23:23.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IPatronService.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\TestAssesment1\\LibraryManagementAppSolution\\LibraryManagementBLLibrary\\IPatronService.cs",
+              "RelativeDocumentMoniker": "LibraryManagementBLLibrary\\IPatronService.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\TestAssesment1\\LibraryManagementAppSolution\\LibraryManagementBLLibrary\\IPatronService.cs",
+              "RelativeToolTip": "LibraryManagementBLLibrary\\IPatronService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T06:23:29.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IBookService.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\TestAssesment1\\LibraryManagementAppSolution\\LibraryManagementBLLibrary\\IBookService.cs",
+              "RelativeDocumentMoniker": "LibraryManagementBLLibrary\\IBookService.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\TestAssesment1\\LibraryManagementAppSolution\\LibraryManagementBLLibrary\\IBookService.cs",
+              "RelativeToolTip": "LibraryManagementBLLibrary\\IBookService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T06:23:27.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BookDetailsMissingException.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\TestAssesment1\\LibraryManagementAppSolution\\LibraryManagementBLLibrary\\BookExceptions\\BookDetailsMissingException.cs",
+              "RelativeDocumentMoniker": "LibraryManagementBLLibrary\\BookExceptions\\BookDetailsMissingException.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\TestAssesment1\\LibraryManagementAppSolution\\LibraryManagementBLLibrary\\BookExceptions\\BookDetailsMissingException.cs",
+              "RelativeToolTip": "LibraryManagementBLLibrary\\BookExceptions\\BookDetailsMissingException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T06:22:18.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\TestAssesment1\\LibraryManagementAppSolution\\LibraryManagementApp\\Program.cs",
+              "RelativeDocumentMoniker": "LibraryManagementApp\\Program.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\TestAssesment1\\LibraryManagementAppSolution\\LibraryManagementApp\\Program.cs",
+              "RelativeToolTip": "LibraryManagementApp\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T06:16:07.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BookNotAvailableException.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\TestAssesment1\\LibraryManagementAppSolution\\LibraryManagementBLLibrary\\BookBorrowExceptions\\BookNotAvailableException.cs",
+              "RelativeDocumentMoniker": "LibraryManagementBLLibrary\\BookBorrowExceptions\\BookNotAvailableException.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\TestAssesment1\\LibraryManagementAppSolution\\LibraryManagementBLLibrary\\BookBorrowExceptions\\BookNotAvailableException.cs",
+              "RelativeToolTip": "LibraryManagementBLLibrary\\BookBorrowExceptions\\BookNotAvailableException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T06:22:11.381Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
