@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using LibraryManagementBLLibrary.BookExceptions;
+using LibraryManagementBLLibrary.BookBorrowExceptions;
 
 namespace LibraryManagementBLLibrary
 {
@@ -39,6 +40,15 @@ namespace LibraryManagementBLLibrary
                 return books.Where(book => book.IsAvailable == true).ToList();
             }
             throw new NoBookDataAvailableException();
+        }
+        public Book GetAvailableBookById(string id)
+        {
+            var book = _bookRepository.Get(id);
+            if (book != null && book.IsAvailable)
+            {
+                return book;
+            }
+            throw new BookNotAvailableException();
         }
 
     }

@@ -11,5 +11,9 @@ namespace LibraryManagementBLLibrary
     {
         string AddBook(Book book);
         List<Book> GetAllAvailableBooks();
+
+         Book GetAvailableBookById(string id);
+
+
     }
 }

@@ -1,4 +1,5 @@
 ﻿using LibraryManagementBLLibrary;
+using LibraryManagementBLLibrary.BookBorrowExceptions;
 using LibraryManagementBLLibrary.ReturnExceptions;
 using LibraryManagementDALLibrary;
 using LibraryManagementModelLibrary;
@@ -8,14 +9,12 @@ namespace LibraryManagementApp
 {
     internal class Program
     {
-        private static readonly BorrowTransactionRepository _borrowTransactionRepository = new BorrowTransactionRepository();
-        private static readonly BookRepository _bookRepository = new BookRepository(); // Assuming you have a BookRepository class
-        private static readonly BorrowTransactionBL _borrowTransactionBL = new BorrowTransactionBL(_borrowTransactionRepository, _bookRepository);
-
-        private static readonly ReturnTransactionBL _returnTransactionBL = new ReturnTransactionBL();
+        private static readonly BookRepository _bookRepository = new BookRepository();
+        
 
         private static readonly BookBL _bookBL = new BookBL();
         private static readonly PatronBL _patronBL = new PatronBL();
+        
         private static int _lastBookId = 0;
         private static int _lastPatronId = 0;
 
@@ -107,8 +106,9 @@ namespace LibraryManagementApp
                 Console.WriteLine("\nPlease select a search option:");
                 Console.WriteLine("1. Search patron by ID");
                 Console.WriteLine("2. Search patron by name");
-                Console.WriteLine("3. Get all available books");
-                Console.WriteLine("4. Back to main menu");
+                Console.WriteLine("3. Search book by ID");
+                Console.WriteLine("4. Get all available books");
+                Console.WriteLine("5. Back to main menu");
 
                 var option = Console.ReadLine();
 
@@ -128,15 +128,24 @@ namespace LibraryManagementApp
                         SearchPatronByName();
                         break;
                     case "3":
-                        GetAllAvailableBooks();
+                        GetAndDisplayBookDetails();
+
                         break;
                     case "4":
+                        GetAllAvailableBooks();
+                        break;
+                    case "5":
                         return; // Go back to the main menu
                     default:
                         Console.WriteLine("Invalid option. Please try again.");
                         break;
                 }
             }
+        }
+
+        private static void SearchBookById()
+        {
+            throw new NotImplementedException();
         }
 
         private static void GetAllAvailableBooks()
@@ -155,7 +164,24 @@ namespace LibraryManagementApp
                 Console.WriteLine("No books are currently available.");
             }
         }
+        public static void GetAndDisplayBookDetails()
+        {
+            Console.Write("Enter the book ID: ");
+            string bookId = Console.ReadLine();
 
+            try
+            {
+                Book book = _bookBL.GetAvailableBookById(bookId);
+                Console.WriteLine($"Book ID: {book.BookID}");
+                Console.WriteLine($"Book Title: {book.Title}");
+                Console.WriteLine($"Book Author: {book.Author}");
+                // Add more properties as needed
+            }
+            catch (BookNotAvailableException)
+            {
+                Console.WriteLine("The requested book is not available.");
+            }
+        }
         private static void SearchPatronById()
         {
             Console.WriteLine("Enter the patron ID:");
@@ -195,19 +221,10 @@ namespace LibraryManagementApp
             Console.WriteLine("Enter the book ID:");
             var bookId = Console.ReadLine();
 
-            var result = _borrowTransactionBL.CheckAndBorrowBook(bookId);
+            
 
-            if (result == "Book borrowed successfully")
-            {
-                var borrowTransaction = _borrowTransactionRepository.Get(bookId);
-                Console.WriteLine($"You have successfully borrowed the book. The due date is {borrowTransaction.DueDate}.");
-            }
-            else
-            {
-                Console.WriteLine(result);
-            }
+            
         }
-
         private static void ReturnBook()
         {
             Console.WriteLine("Enter your patron ID:");
@@ -218,15 +235,15 @@ namespace LibraryManagementApp
 
             try
             {
-                var returnTransaction = _returnTransactionBL.ReturnBook(patronId, bookId);
-                if (returnTransaction.LateFees > 0)
-                {
-                    Console.WriteLine($"Book returned late. Late fees: {returnTransaction.LateFees:C}");
-                }
-                else
-                {
-                    Console.WriteLine("Book returned on time. No late fees.");
-                }
+               // var returnTransaction = _returnTransactionBL.ReturnBook(patronId, bookId);
+              //  if (returnTransaction.LateFees > 0)
+                //{
+               //     Console.WriteLine($"Book returned late. Late fees: {returnTransaction.LateFees:C}");
+               // }
+                //else
+               // {
+                   // Console.WriteLine("Book returned on time. No late fees.");
+                //}
             }
             catch (InvalidReturnException)
             {
