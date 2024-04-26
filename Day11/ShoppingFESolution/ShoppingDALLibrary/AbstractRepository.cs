@@ -8,7 +8,7 @@ namespace ShoppingDALLibrary
 {
     public abstract class AbstractRepository<K, T> : IRepository<K, T>
     {
-        protected List<T> items = new List<T>();
+        protected  List<T> items = new List<T>();
         public virtual T Add(T item)
         {
             items.Add(item);

@@ -29,7 +29,15 @@ namespace LibraryManagementDALLibrary
 
         public Book Get(string key)
         {
-            return _books.ContainsKey(key) ? _books[key] : null;
+
+            if (_books.ContainsKey(key))
+            {
+                Console.WriteLine(_books[key].BookID);
+                return _books[key];
+            }
+
+
+            return  null;
         }
 
         public List<Book> GetAll()

@@ -17,7 +17,7 @@ namespace ShoppingBLTest
         public void Setup()
         {
             _cartRepository = new CartRepository();
-            _cartService = new CartBL(_cartRepository);
+            _cartService = new CartBL(_cartRepository,productRepository);
         }
 
         [Test]

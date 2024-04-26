@@ -10,7 +10,7 @@ namespace LibraryManagementApp
     internal class Program
     {
         private static readonly BookRepository _bookRepository = new BookRepository();
-        
+        private static readonly BorrowBL _borrowBL = new BorrowBL();
 
         private static readonly BookBL _bookBL = new BookBL();
         private static readonly PatronBL _patronBL = new PatronBL();
@@ -218,13 +218,24 @@ namespace LibraryManagementApp
 
         public static void BorrowBook()
         {
-            Console.WriteLine("Enter the book ID:");
-            var bookId = Console.ReadLine();
+            Console.Write("Enter the Book ID: ");
+            string bookId = Console.ReadLine();
 
-            
+            Console.Write("Enter the Patron ID: ");
+            string patronId = Console.ReadLine();
 
-            
+            try
+            {
+                BorrowTransaction borrow = new BorrowTransaction(bookId, patronId, DateTime.Now, DateTime.Now.AddDays(10));
+                var transaction = _borrowBL.BorrowBook(borrow);
+                Console.WriteLine($"Book borrowed successfully. The due date is {transaction.ToShortDateString()}");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
+
         private static void ReturnBook()
         {
             Console.WriteLine("Enter your patron ID:");

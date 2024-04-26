@@ -1,6 +1,6 @@
-﻿namespace ShoppingDLLTest
+namespace ShoppingDALLTest
 {
-    public class Tests1
+    public class Tests
     {
         [SetUp]
         public void Setup()
