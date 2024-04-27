@@ -9,9 +9,10 @@ namespace ShoppingBL
     public class CartBL : ICartService
     {
         readonly AbstractRepository<int, Cart> _abstractRepository;
-        private readonly ProductRepository _productRepository;
+         readonly AbstractRepository<int, Product> _productRepository;
 
-        public CartBL(AbstractRepository<int, Cart> abstractRepository, ProductRepository productRepository)
+
+        public CartBL(AbstractRepository<int, Cart> abstractRepository, AbstractRepository<int, Product> productRepository)
         {
             _abstractRepository = abstractRepository;
             _productRepository = productRepository;
@@ -42,7 +43,7 @@ namespace ShoppingBL
                 {
                     foreach (var item in result.CartItems)
                     {
-                        if (_productRepository.GetByKey(item.ProductId).QuantityInHand < item.Quantity)
+                        if (item.Quantity>5)
                         {
                             return true;
                         }
@@ -84,10 +85,12 @@ namespace ShoppingBL
                     throw new StockNotAvailableException();
                 }
                 
-                if (!CheckMaximumQuantity(cartId))
+                if (CheckMaximumQuantity(cartId))
                 {
                     throw new QuantityExceededException();
                 }
+
+                
                 cart.CartItems.Add(item);
 
                 cart = CheckForDiscount(cartId);
