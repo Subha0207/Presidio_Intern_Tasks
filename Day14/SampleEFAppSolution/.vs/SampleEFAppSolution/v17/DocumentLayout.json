@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day14\\SampleEFAppSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{193EFB86-A409-4A1D-94D8-7D72073E025E}|SampleEFApp\\SampleEFApp.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day14\\sampleefappsolution\\sampleefapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{193EFB86-A409-4A1D-94D8-7D72073E025E}|SampleEFApp\\SampleEFApp.csproj|solutionrelative:sampleefapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day14\\SampleEFAppSolution\\SampleEFApp\\Program.cs",
+              "RelativeDocumentMoniker": "SampleEFApp\\Program.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day14\\SampleEFAppSolution\\SampleEFApp\\Program.cs",
+              "RelativeToolTip": "SampleEFApp\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T06:10:54.667Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

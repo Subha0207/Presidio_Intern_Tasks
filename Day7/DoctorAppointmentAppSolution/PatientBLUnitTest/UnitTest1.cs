@@ -1,8 +1,8 @@
 using NUnit.Framework;
-using DoctorAppointmentAppModelLibrary;
 using DoctorAppointmentAppBLLibrary;
 using DoctorAppointmentAppDLLibrary;
 using System.Collections.Generic;
+using DoctorAppointmentAppModelLib;
 
 namespace DoctorAppointmentAppTests
 {

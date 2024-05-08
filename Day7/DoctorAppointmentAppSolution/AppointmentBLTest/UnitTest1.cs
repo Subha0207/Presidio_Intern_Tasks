@@ -1,6 +1,6 @@
 using DoctorAppointmentAppBLLibrary;
 using DoctorAppointmentAppDLLibrary;
-using DoctorAppointmentAppModelLibrary;
+using DoctorAppointmentAppModelLib;
 
 namespace DoctorAppointmentAppTests
 {
