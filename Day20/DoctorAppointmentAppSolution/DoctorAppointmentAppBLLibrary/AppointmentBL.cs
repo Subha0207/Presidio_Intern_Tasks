@@ -1,5 +1,5 @@
 ﻿using DoctorAppointmentAppDLLibrary;
-using DoctorAppointmentAppModelLib;
+using DoctorAppointmentAppDLLibrary.Model;
 
 using System;
 using System.Collections.Generic;
@@ -15,70 +15,42 @@ namespace DoctorAppointmentAppBLLibrary
             _appointmentRepository = appointmentRepository;
         }
 
+       
 
-        public int ScheduleAppointment(Appointment appointment)
+       
+
+        public async Task<Appointment> GetAppointmentById(int AppointmentId)
         {
-            if (appointment == null)
+
+            Appointment appointment = await _appointmentRepository.Get(AppointmentId);
+            if (appointment != null)
             {
-                throw new ArgumentNullException(nameof(appointment));
+                return appointment;
             }
-            var result = _appointmentRepository.Add(appointment);
-            return result != null ? result.AppointmentId : 0;
+            throw new NotImplementedException();
         }
 
-        public Appointment CancelAppointment(int AppointmentId)
+        public async Task<List<Appointment>> GetAppointmentsForPatient(int PatientId)
         {
-            if (AppointmentId <= 0)
+            IList<Appointment> appointments = await _appointmentRepository.GetAll();
+            IList<Appointment> result = new List<Appointment>();
+            if (appointments != null)
             {
-                throw new ArgumentException("Invalid appointment ID.", nameof(AppointmentId));
+                foreach (var appointment in appointments)
+                {
+                    if (appointment.Patient.PatientId == PatientId)
+                    {
+                        result.Add(appointment);
+                    }
+                }
+                if (result.Count > 0)
+                {
+                    return (List<Appointment>)result;
+                }
+                
             }
-
-            var appointment = _appointmentRepository.Delete(AppointmentId);
-            if (appointment == null)
-            {
-                throw new InvalidOperationException("Appointment not found.");
-            }
-
-            return appointment;
-        }
-
-        public Appointment RescheduleAppointment(int AppointmentId)
-        {
-            if (AppointmentId <= 0)
-            {
-                throw new ArgumentException("Invalid appointment ID.", nameof(AppointmentId));
-            }
-
-            var appointment = _appointmentRepository.Get(AppointmentId);
-            if (appointment == null)
-            {
-                throw new InvalidOperationException("Appointment not found.");
-            }
-
-            appointment.Availability = false;
-            var updatedAppointment = _appointmentRepository.Update(appointment);
-            if (updatedAppointment == null)
-            {
-                throw new InvalidOperationException("Failed to update appointment.");
-            }
-
-            return updatedAppointment;
-        }
-        public Appointment GetAppointmentById(int AppointmentId)
-        {
-            return _appointmentRepository.Get(AppointmentId);
-        }
-
-        public List<Appointment> GetAppointmentsForPatient(int PatientId)
-        {
-            var allAppointments = _appointmentRepository.GetAll();
-            return allAppointments?.FindAll(a => a.Patient?.PatientId == PatientId);
-        }
-
-        public List<Appointment> GetAppointmentsForDoctor(int DoctorId)
-        {
-            var allAppointments = _appointmentRepository.GetAll();
-            return allAppointments?.FindAll(a => a.Doctor?.DoctorId == DoctorId);
+            
+            throw new NotImplementedException();
         }
     }
 }

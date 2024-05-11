@@ -30,13 +30,13 @@ namespace RequestTrackerDALLibrary
             return employee;
         }
 
-        public async Task<Employee> Get(int key)
+        public virtual async Task<Employee> Get(int key)
         {
             var employee = _context.Employees.SingleOrDefault(e => e.Id == key);
             return employee;
         }
 
-        public async Task<IList<Employee>> GetAll()
+        public virtual async Task<IList<Employee>> GetAll()
         {
             return await _context.Employees.ToListAsync();
         }
@@ -46,10 +46,10 @@ namespace RequestTrackerDALLibrary
             var employee = await Get(entity.Id);
             if (employee != null)
             {
-                _context.Entry<Employee>(employee).State = EntityState.Modified;
+                _context.Entry<Employee>(entity).State = EntityState.Modified;
                 await _context.SaveChangesAsync();
             }
-            return employee;
+            return entity;
         }
     }
 }

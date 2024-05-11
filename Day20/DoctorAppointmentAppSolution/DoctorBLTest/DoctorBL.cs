@@ -2,7 +2,8 @@ using NUnit.Framework;
 using DoctorAppointmentAppBLLibrary;
 using System.Collections.Generic;
 using DoctorAppointmentAppDLLibrary;
-using DoctorAppointmentAppModelLib;
+using DoctorAppointmentAppDLLibrary.Model;
+
 
 [TestFixture]
 public class DoctorBLTests

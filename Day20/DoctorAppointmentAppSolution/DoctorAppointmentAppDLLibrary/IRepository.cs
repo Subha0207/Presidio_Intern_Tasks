@@ -8,11 +8,11 @@ namespace DoctorAppointmentAppDLLibrary
 {
     public interface IRepository<K, T> where T : class
     {
-        List<T> GetAll();
-        T Get(K key);
-        T Add(T item);
-        T Update(T item);
-        T Delete(K key);
+       Task< IList<T>> GetAll();
+        Task<T> Get(K key);
+        Task<T> Add(T item);
+        Task<T> Update(T item);
+        Task<T> Delete(K key);
 
     }
 }

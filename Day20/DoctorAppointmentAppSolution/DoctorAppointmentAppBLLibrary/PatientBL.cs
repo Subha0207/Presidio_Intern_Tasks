@@ -1,4 +1,5 @@
 ﻿using DoctorAppointmentAppDLLibrary;
+using DoctorAppointmentAppDLLibrary.Model;
 using DoctorAppointmentAppModelLib;
 
 using System;
@@ -16,24 +17,37 @@ namespace DoctorAppointmentAppBLLibrary
             _patientRepo = patientRepo;
         }
 
-        public int AddPatient(Patient patient)
+
+
+        public async Task<int> AddPatient(Patient patient)
         {
-            var addedPatient = _patientRepo.Add(patient);
-            return addedPatient != null ? addedPatient.PatientId : 0;
+            var result = await _patientRepo.Add(patient);
+            if (result != null)
+            {
+                return result.PatientId;
+            }
+            throw new NotImplementedException();
         }
 
-        public Patient GetPatientById(int PatientId)
+      
+        public async Task<Patient> UpdatePatient(Patient patient)
         {
-            return _patientRepo.Get(PatientId);
+            Patient patient1 = await _patientRepo.Get(patient.PatientId);
+            if (patient1 != null)
+            {
+                return await _patientRepo.Update(patient1);
+            }
+            throw new NotImplementedException();
         }
 
-        
-
-        public Patient UpdatePatient(Patient patient)
+        public async Task<Patient> GetPatientById(int PatientId)
         {
-            return _patientRepo.Update(patient);
+            Patient patient = await _patientRepo.Get(PatientId);
+            if (patient != null)
+            {
+                return patient;
+            }
+            throw new NotImplementedException();
         }
-
-        
     }
 }

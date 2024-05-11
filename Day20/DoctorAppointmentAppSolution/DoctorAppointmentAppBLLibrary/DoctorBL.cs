@@ -1,9 +1,10 @@
 ﻿using DoctorAppointmentAppDLLibrary;
-using DoctorAppointmentAppModelLib;
+using DoctorAppointmentAppDLLibrary.Model;
+
 
 namespace DoctorAppointmentAppBLLibrary
 {
-    public class DoctorBL
+    public class DoctorBL:IDoctorService
     {
         private readonly DoctorRepository _doctorRepository;
 
@@ -14,13 +15,13 @@ namespace DoctorAppointmentAppBLLibrary
 
 
 
-        public int AddDoctor(Doctor doctor)
+        public async  Task<int> AddDoctor(Doctor doctor)
         {
             if (doctor == null)
             {
                 throw new ArgumentNullException(nameof(doctor), "Doctor cannot be null.");
             }
-            var addedDoctor = _doctorRepository.Add(doctor);
+            var addedDoctor = await _doctorRepository.Add(doctor);
             if (addedDoctor == null)
             {
                 throw new InvalidOperationException("Failed to add doctor.");
@@ -29,28 +30,27 @@ namespace DoctorAppointmentAppBLLibrary
         }
 
 
-        public Doctor GetDoctorById(int doctorId)
+
+        public async Task<Doctor> GetDoctorById(int DoctorId)
         {
-            return _doctorRepository.Get(doctorId);
+            Doctor doctor = await _doctorRepository.Get(DoctorId);
+            if (doctor != null)
+            {
+                return doctor;
+            }
+            throw new NotImplementedException();
+        }
+
+        public async Task<Doctor> UpdateDoctorDetails(Doctor doctor)
+        {
+            Doctor doctor1 = await _doctorRepository.Get(doctor.DoctorId);
+            if (doctor1 != null)
+            {
+                return await _doctorRepository.Update(doctor1);
+            }
+            throw new NotImplementedException();
         }
 
         
-
-        public Doctor UpdateDoctorDetails(Doctor doctor)
-        {
-            var existingDoctor = _doctorRepository.Get(doctor.DoctorId);
-            if (existingDoctor == null)
-            {
-                throw new InvalidOperationException("Doctor does not exist.");
-            }
-            return _doctorRepository.Update(doctor);
-        }
-
-
-        public bool CheckAvailability(int doctorId, DateTime date)
-        {
-            var doctor = _doctorRepository.Get(doctorId);
-            return doctor != null && doctor.Availability.ContainsKey(date) && doctor.Availability[date];
-        }
     }
 }
