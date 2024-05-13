@@ -1,4 +1,5 @@
-﻿using RequestTrackerDALLibrary;
+﻿using Microsoft.EntityFrameworkCore;
+using RequestTrackerDALLibrary;
 using RequestTrackerModelLibrary;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -30,5 +31,20 @@ namespace RequestTrackerBLLibrary
             var request = await _repository.Get(id);
             return request;
         }
+
+
+        public async Task<Request> UpdateRequestClosed(int requestId, int closedById)
+        {
+            var request = await _repository.Get(requestId);
+            if (request != null)
+            {
+                request.ClosedDate = DateTime.Now;
+                request.RequestClosedBy = closedById;
+                await _repository.Update(request);
+            }
+            return request;
+        }
+
+
     }
 }

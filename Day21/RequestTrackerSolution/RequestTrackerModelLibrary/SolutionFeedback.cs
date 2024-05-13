@@ -18,6 +18,6 @@ namespace RequestTrackerModelLibrary
         public RequestSolution Solution { get; set; }
         public int FeedbackBy { get; set; }
         public Employee FeedbackByEmployee { get; set; }
-        public DateTime FeedbackDate { get; set; }
+        public DateTime FeedbackDate { get; set; } = System.DateTime.Now;
     }
 }

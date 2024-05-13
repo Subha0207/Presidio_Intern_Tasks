@@ -1,12 +1,16 @@
 ﻿using RequestTrackerBLLibrary;
 using RequestTrackerModelLibrary;
+using RequestTrackerModelLibrary.Migrations;
 using System.Threading.Channels;
+
 
 namespace RequestTrackerFEAPP
 {
-    internal class Program
+    public class Program
     {
-        
+        RequestFrontEnd requestFrontEnd = new RequestFrontEnd();
+        SolutionFrontEnd solutionFrontEnd = new SolutionFrontEnd();
+        FeedbackFrontEnd feedBackFrontEnd = new FeedbackFrontEnd();
         async Task EmployeeLoginAsync(int username, string password)
         {
             Employee employee = new Employee()
@@ -27,50 +31,7 @@ namespace RequestTrackerFEAPP
                 Console.Out.WriteLine("Invalid username or password");
             }
         }
-        
 
-        public static class RequestNumberGenerator
-        {
-            private static int _lastRequestNumber = 0;
-
-            public static int GetNextRequestNumber()
-            {
-                _lastRequestNumber++;
-                return _lastRequestNumber;
-            }
-        }
-
-        async Task RaiseRequest(int requestRaisedBy, string requestMessage)
-        {
-            // Generate a unique request number
-            int requestNumber = RequestNumberGenerator.GetNextRequestNumber();
-
-            // Get the current date
-            DateTime currentDate = DateTime.Now;
-
-            // Set the initial request status
-            string requestStatus = "Not Done";
-
-            Request request = new Request()
-            {
-                RequestRaisedBy = requestRaisedBy,
-                RequestMessage = requestMessage,
-                RequestNumber = requestNumber,
-                RequestDate = currentDate,
-                RequestStatus = requestStatus
-            };
-
-            IRequestBL requestBL = new RequestBL();
-            var result = await requestBL.RaiseRequest(request);
-            if (result != null)
-            {
-                await Console.Out.WriteLineAsync($"Request added successfully");
-            }
-            else
-            {
-                Console.Out.WriteLine("Invalid request");
-            }
-        }
 
         async Task DisplayMenu(string role)
         {
@@ -88,19 +49,21 @@ namespace RequestTrackerFEAPP
                     switch (choice)
                     {
                         case 1:
-                            await new Program().RaiseRequestDetails();
+                            await requestFrontEnd.RaiseRequestDetails();
                             break;
                         case 2:
-                            // Call the method for "View Request Status"
+                            await requestFrontEnd.ViewRequestStatus();
                             break;
                         case 3:
-                            // Call the method for "View Solutions"
+                            await solutionFrontEnd.ViewSolutionByIdDetails();
                             break;
                         case 4:
-                            // Call the method for "Give Feedback"
+                            await feedBackFrontEnd.GiveFeedbackDetails();
+                            
                             break;
                         case 5:
-                            // Call the method for "Respond to Solution"
+                            await solutionFrontEnd.RespondToSolution();
+                           
                             break;
                         default:
                             await Console.Out.WriteLineAsync("Invalid choice. Please choose a valid option.");
@@ -121,28 +84,31 @@ namespace RequestTrackerFEAPP
                     switch (choice)
                     {
                         case 1:
-                            // Call the method for "Raise Request"
+                            await requestFrontEnd.RaiseRequestDetails();
                             break;
                         case 2:
-                            // Call the method for "View Request Status (All Requests)"
+
+                            await requestFrontEnd.ViewAllRequests();
                             break;
                         case 3:
-                            // Call the method for "View Solutions (All Solutions)"
+                            await solutionFrontEnd.ViewAllSolutions();
                             break;
                         case 4:
-                            // Call the method for "Give Feedback (Only for request raised by them)"
+                            
                             break;
                         case 5:
-                            // Call the method for "Respond to Solution (Only for request raised by them)"
+                            await solutionFrontEnd.GetUserInputAndUpdateSolution();
+                           
                             break;
                         case 6:
-                            // Call the method for "Provide Solution"
+
+                            await solutionFrontEnd.ProvideSolutionDetails();
                             break;
                         case 7:
-                            // Call the method for "Mark Request as Closed"
+                            await requestFrontEnd.MarkRequestClosed();
                             break;
                         case 8:
-                            // Call the method for "View Feedbacks (Only feedbacks given to them)"
+                            await feedBackFrontEnd.GetFeedbackByEmpId();
                             break;
                         default:
                             await Console.Out.WriteLineAsync("Invalid choice. Please choose a valid option.");
@@ -151,14 +117,10 @@ namespace RequestTrackerFEAPP
                     break;
             }
         }
-        async Task RaiseRequestDetails() {
+        
+        
+        
 
-            await Console.Out.WriteLineAsync("Please enter Employee Id");
-            int requestRaisedBy = Convert.ToInt32(Console.ReadLine());
-            await Console.Out.WriteLineAsync("Please enter your Request message");
-            string requestMessage = Console.ReadLine() ?? "";
-            await RaiseRequest(requestRaisedBy,requestMessage);
-        }
         async Task GetLoginDeatils()
         {
             await Console.Out.WriteLineAsync("Please enter Employee Id");

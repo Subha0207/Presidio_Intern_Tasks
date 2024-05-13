@@ -12,6 +12,7 @@ namespace RequestTrackerBLLibrary
         Task<Request> RaiseRequest(Request request);
         Task<IList<Request>> ViewAllRequests();
         Task<Request> ViewRequestById(int id);
+        Task<Request> UpdateRequestClosed(int requestId, int closedById);
 
 
     }
