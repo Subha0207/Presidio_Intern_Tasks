@@ -1,0 +1,6 @@
+@DoctoeClinicAPI_HostAddress = http://localhost:5186
+
+GET {{DoctoeClinicAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
