@@ -22,6 +22,10 @@ namespace EmployeeRequestTrackerAPI.Controllers
             _employeeService = employeeService;
         }
         [HttpGet]
+
+        [ProducesResponseType(typeof(IList<Employee>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status404NotFound)]
+        [ProducesErrorResponseType(typeof(ErrorModel))]
         public async Task<ActionResult<IList<Employee>>> Get()
         {
             try
@@ -53,15 +57,10 @@ namespace EmployeeRequestTrackerAPI.Controllers
         [Route("GetEmployeeByPhone")]
 
         [HttpPost]
-
         public async Task<ActionResult<Employee>> Get([FromBody] string phone)
-
         {
-
             try
-
             {
-
                 var employee = await _employeeService.GetEmployeeByPhone(phone);
 
                 return Ok(employee);

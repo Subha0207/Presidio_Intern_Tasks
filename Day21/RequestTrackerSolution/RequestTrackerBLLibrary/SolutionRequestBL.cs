@@ -16,7 +16,7 @@ namespace RequestTrackerBLLibrary
             _requestRepository = new RequestRepository(new RequestTrackerContext());
         }
 
-        public async Task<RequestSolution> UpdateRespondToSolution(int solutionId, int empId, string comment)
+        public async Task<RequestSolution> UpdateRespondToSolution(int solutionId, int loggedInEmployeeId, string comment)
         {
             // Get the solution with the given id
             var solution = await _solutionRepository.Get(solutionId);
@@ -25,7 +25,7 @@ namespace RequestTrackerBLLibrary
             var request = await _requestRepository.Get(solution.RequestId);
 
             // Check if the request was raised by the given employee
-            if (request.RequestRaisedBy == empId)
+            if (request.RequestRaisedBy == loggedInEmployeeId)
             {
                 // Update the RequestRaiserComment
                 solution.RequestRaiserComment = comment;
@@ -40,5 +40,9 @@ namespace RequestTrackerBLLibrary
                 throw new Exception("The request associated with the solution was not raised by the employee with the given id.");
             }
         }
+
+        
+        
+
     }
 }

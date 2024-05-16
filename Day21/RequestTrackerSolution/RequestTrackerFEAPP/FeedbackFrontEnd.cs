@@ -9,12 +9,10 @@ namespace RequestTrackerFEAPP
 {
     public class FeedbackFrontEnd
     {
-        public async Task GiveFeedbackDetails()
+        public async Task GiveFeedbackDetails(int loggedInEmployeeId)
         {
             IFeedbackBL feedbackBL = new FeedbackBL();
 
-            Console.WriteLine("Enter the Employee ID");
-            int empId = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter the Solution ID");
             int solutionId = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter the Rating out of 5");
@@ -25,7 +23,7 @@ namespace RequestTrackerFEAPP
             // Create a SolutionFeedback instance
             RequestTrackerModelLibrary.SolutionFeedback solutionFeedback = new RequestTrackerModelLibrary.SolutionFeedback
             {
-                FeedbackBy = empId,
+                FeedbackBy = loggedInEmployeeId,
                 SolutionId = solutionId,
                 Rating = rating,
                 Remarks = feedback,
@@ -43,19 +41,37 @@ namespace RequestTrackerFEAPP
                 Console.WriteLine("Unable to add feedback");
             }
         }
-        public async Task GetFeedbackByEmpId()
+
+        public async Task GiveFeedbackAdmin(int loggedInEmployeeId)
         {
-            Console.Write("Enter Employee ID: ");
-            int empId = Convert.ToInt32(Console.ReadLine());
-            FeedbackSolutionAdminBL feedbackSolutionAdminBL = new FeedbackSolutionAdminBL();
-
-            IList<RequestTrackerModelLibrary.SolutionFeedback> feedbacks = await feedbackSolutionAdminBL.ViewFeedbacksForEmployee(empId);
-
-            Console.WriteLine($"Feedbacks for Employee ID {empId}:");
-            foreach (var feedback in feedbacks)
+            ISolutionBL solutionBL = new SolutionBL();
+            var solution = await solutionBL.ViewSolutionById(loggedInEmployeeId);
+            if (solution != null)
             {
-                Console.WriteLine($"Feedback ID: {feedback.FeedbackId}, Solution ID: {feedback.SolutionId}, Feedback: {feedback.Remarks}");
+                var solutionId = solution.SolutionId;
+                IFeedbackBL feedbackBL = new FeedbackBL();
+                var feedbacks = await feedbackBL.ViewAllFeedbacks();
+                if (feedbacks != null)
+                {
+                    foreach (var feedback in feedbacks)
+                    {
+                        if (feedback.SolutionId == solutionId)
+                        {
+                            try
+                            {
+                                await GiveFeedbackDetails(loggedInEmployeeId);
+                            }
+                            catch (Exception ex)
+                            {
+                                Console.WriteLine($"An error occurred: {ex.Message}");
+                            }
+                        }
+                    }
+                }
             }
         }
+
+
+
     }
 }

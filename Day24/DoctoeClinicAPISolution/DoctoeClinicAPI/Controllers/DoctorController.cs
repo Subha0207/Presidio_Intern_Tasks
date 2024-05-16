@@ -20,6 +20,8 @@ namespace DoctoeClinicAPI.Controllers
             _doctorService = doctorService;
         }
         [HttpGet]
+
+        [Route("GetAllDoctors")]
         public async Task<ActionResult<IList<Doctor>>> Get()
         {
             try
@@ -33,34 +35,23 @@ namespace DoctoeClinicAPI.Controllers
             }
         }
         [HttpGet]
-        public async Task<ActionResult<Doctor>> GetDoctorBySpeciality(string specilaity)
+        [Route("GetDoctorBySpeciality")]
+        public async Task<ActionResult<IList<Doctor>>> GetBySpeciality(string speciality)
         {
             try
             {
-                var doctors = await _doctorService.GetDoctors();
-                Doctor result = null;
-                foreach (var doctor in doctors)
-                {
-                    if (doctor.Speciality == specilaity)
-                    {
-                        result = doctor;
-                        break;
-                    }
-                }
-                if (result == null)
-                {
-                    throw new NoDoctorFoundException();
-                }
+                var result = await _doctorService.GetDoctorBySpeciality(speciality);
                 return Ok(result);
-
             }
-            catch (NoDoctorFoundException nefe)
+            catch (Exception NoSuchDoctorFound)
             {
-                return NotFound(nefe.Message);
+                return NotFound(NoSuchDoctorFound.Message);
             }
         }
 
         [HttpPut]
+
+        [Route("UpdateDoctorExperience")]
         public async Task<ActionResult<Doctor>> Put(int id, float experience)
         {
             try

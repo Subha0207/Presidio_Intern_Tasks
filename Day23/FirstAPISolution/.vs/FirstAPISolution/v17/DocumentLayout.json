@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day23\\FirstAPISolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D35330F0-72E3-4FE7-92F5-34CB0241BE48}|FirstAPI\\FirstAPI.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day23\\firstapisolution\\firstapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D35330F0-72E3-4FE7-92F5-34CB0241BE48}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D35330F0-72E3-4FE7-92F5-34CB0241BE48}|FirstAPI\\FirstAPI.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day23\\firstapisolution\\firstapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D35330F0-72E3-4FE7-92F5-34CB0241BE48}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D35330F0-72E3-4FE7-92F5-34CB0241BE48}|FirstAPI\\FirstAPI.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day23\\firstapisolution\\firstapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D35330F0-72E3-4FE7-92F5-34CB0241BE48}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D35330F0-72E3-4FE7-92F5-34CB0241BE48}|FirstAPI\\FirstAPI.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day23\\firstapisolution\\firstapi\\firstapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{D35330F0-72E3-4FE7-92F5-34CB0241BE48}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\firstapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day23\\FirstAPISolution\\FirstAPI\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "FirstAPI\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day23\\FirstAPISolution\\FirstAPI\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "FirstAPI\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T06:54:56.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day23\\FirstAPISolution\\FirstAPI\\Program.cs",
+              "RelativeDocumentMoniker": "FirstAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day23\\FirstAPISolution\\FirstAPI\\Program.cs",
+              "RelativeToolTip": "FirstAPI\\Program.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAQwAsAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T06:54:28.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day23\\FirstAPISolution\\FirstAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "FirstAPI\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day23\\FirstAPISolution\\FirstAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "FirstAPI\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-13T06:45:29.221Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FirstAPI.http",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day23\\FirstAPISolution\\FirstAPI\\FirstAPI.http",
+              "RelativeDocumentMoniker": "FirstAPI\\FirstAPI.http",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day23\\FirstAPISolution\\FirstAPI\\FirstAPI.http",
+              "RelativeToolTip": "FirstAPI\\FirstAPI.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-05-13T06:45:18.829Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

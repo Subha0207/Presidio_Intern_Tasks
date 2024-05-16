@@ -33,16 +33,27 @@ namespace RequestTrackerBLLibrary
         }
 
 
-        public async Task<Request> UpdateRequestClosed(int requestId, int closedById)
+        public async Task<Request> UpdateRequestClosed(int requestId, int loggedInEmployeeId)
+        {
+            var request = await _repository.Get(requestId);
+            if (request != null)
+            {   
+                request.ClosedDate = DateTime.Now;
+                request.RequestClosedBy = loggedInEmployeeId;
+                await _repository.Update(request);
+            }
+            return request;
+        }
+        public async Task<Request> UpdateRequestStatus(int requestId)
         {
             var request = await _repository.Get(requestId);
             if (request != null)
             {
-                request.ClosedDate = DateTime.Now;
-                request.RequestClosedBy = closedById;
-                await _repository.Update(request);
+                request.RequestStatus = "Done";
+               await _repository.Update(request);
             }
             return request;
+
         }
 
 

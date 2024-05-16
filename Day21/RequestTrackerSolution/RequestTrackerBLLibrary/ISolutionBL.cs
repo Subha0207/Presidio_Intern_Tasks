@@ -13,6 +13,8 @@ namespace RequestTrackerBLLibrary
         Task<IList<RequestSolution>> ViewAllSolutions();
         Task<RequestSolution> ViewSolutionById(int id);
         Task<RequestSolution> UpdateRespondToSolution(string comment, int solutionId);
+         Task<IEnumerable<RequestSolution>> GetAllSolutionsForRequest(int requestId);
+         Task<RequestSolution> UpdateSolutionStatusToDone(int requestId);
 
     }
 }

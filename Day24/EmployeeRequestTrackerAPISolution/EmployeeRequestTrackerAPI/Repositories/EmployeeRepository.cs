@@ -36,9 +36,9 @@ namespace EmployeeRequestTrackerAPI.Repositories
 
         
 
-        public Task<Employee> Get(int key)
+        public async Task<Employee> Get(int key)
         {
-           var employee = _context.Employees.FirstOrDefaultAsync(e=>e.Id== key);
+           var employee =await  _context.Employees.FirstOrDefaultAsync(e=>e.Id== key);
             return employee;
         }
 

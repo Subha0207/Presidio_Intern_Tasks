@@ -36,17 +36,16 @@ namespace RequestTrackerFEAPP
             await ViewSolutionById(solutionId);
         }
 
-        public async Task ProvideSolutionDetails()
+        public async Task ProvideSolutionDetails(int loggedInEmployeeId)
         {
-            await Console.Out.WriteLineAsync("Please enter Employee Id");
-            int empId = Convert.ToInt32(Console.ReadLine());
             await Console.Out.WriteLineAsync("Please enter Request Id");
             int requestId = Convert.ToInt32(Console.ReadLine());
             await Console.Out.WriteLineAsync("Please enter Solution message");
             string solutionDescription = Console.ReadLine() ?? "";
-            await ProvideSolution(solutionDescription, requestId, empId);
+            await ProvideSolution(solutionDescription, requestId, loggedInEmployeeId);
 
         }
+
         public async Task ViewSolutionById(int solutionId)
         {
             ISolutionBL solutionBL = new SolutionBL();
@@ -69,7 +68,7 @@ namespace RequestTrackerFEAPP
         }
 
 
-        public async Task ProvideSolution(string solutionDescription, int requestId, int empId)
+        public async Task ProvideSolution(string solutionDescription, int requestId, int loggedInEmployeeId)
         {
             // Get the current date
             DateTime currentDate = DateTime.Now;
@@ -82,15 +81,17 @@ namespace RequestTrackerFEAPP
             {
                 RequestId = requestId,
                 SolutionDescription = solutionDescription,
-                SolvedBy = empId,
+                SolvedBy = loggedInEmployeeId,
                 SolvedDate = currentDate,
                 IsSolved = isSolved,
-                RequestRaiserComment = null
+                RequestRaiserComment = null,
+                
             };
 
             // Create a new instance of the business logic class
             ISolutionBL requestSolutionBL = new SolutionBL();
-
+            IRequestBL requestBL = new RequestBL();
+            await requestBL.UpdateRequestStatus(requestId);
             // Call the ProvideSolution method of the business logic class
             var result = await requestSolutionBL.ProvideSolution(requestSolution);
 
@@ -104,11 +105,9 @@ namespace RequestTrackerFEAPP
                 Console.Out.WriteLine("Invalid solution");
             }
         }
-        public async Task GetUserInputAndUpdateSolution()
+        public async Task GetUserInputAndUpdateSolution(int loggedInEmployeeId)
         {
 
-            Console.WriteLine("Please enter the employee id:");
-            int empId = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Please enter the solution id:");
             int solutionId = Convert.ToInt32(Console.ReadLine());
 
@@ -122,7 +121,7 @@ namespace RequestTrackerFEAPP
 
             try
             {
-                var updatedSolution = await solutionRequestBL.UpdateRespondToSolution(solutionId, empId, comment);
+                var updatedSolution = await solutionRequestBL.UpdateRespondToSolution(solutionId, loggedInEmployeeId, comment);
                 Console.WriteLine("Solution updated successfully.");
             }
             catch (Exception ex)

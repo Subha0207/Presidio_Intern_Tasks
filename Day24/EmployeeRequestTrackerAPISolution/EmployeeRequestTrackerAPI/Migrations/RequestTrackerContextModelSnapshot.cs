@@ -67,6 +67,39 @@ namespace EmployeeRequestTrackerAPI.Migrations
                             Phone = "9988776655"
                         });
                 });
+
+            modelBuilder.Entity("EmployeeRequestTrackerAPI.Models.User", b =>
+                {
+                    b.Property<int>("EmployeeId")
+                        .HasColumnType("int");
+
+                    b.Property<byte[]>("Password")
+                        .IsRequired()
+                        .HasColumnType("varbinary(max)");
+
+                    b.Property<byte[]>("PasswordHashKey")
+                        .IsRequired()
+                        .HasColumnType("varbinary(max)");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("EmployeeId");
+
+                    b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("EmployeeRequestTrackerAPI.Models.User", b =>
+                {
+                    b.HasOne("EmployeeRequestTrackerAPI.Models.Employee", "Employee")
+                        .WithMany()
+                        .HasForeignKey("EmployeeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Employee");
+                });
 #pragma warning restore 612, 618
         }
     }

@@ -10,30 +10,49 @@ namespace RequestTrackerFEAPP
 {
     public class RequestFrontEnd
     {
-       public  async Task ViewRequestStatusById(int requestId)
+       //public  async Task ViewRequestStatusById(int requestId)
+       // {
+       //     IRequestBL requestBL = new RequestBL();
+       //     var result = await requestBL.ViewRequestById(requestId);
+       //     if (result != null)
+       //     {
+       //         await Console.Out.WriteLineAsync($"Request status: {result.RequestStatus}");
+       //     }
+       //     else
+       //     {
+       //         Console.Out.WriteLine("Invalid requestID");
+       //     }
+       // }
+
+        public async Task ViewRequestStatusById(int requestId)
         {
-            IRequestBL requestBL = new RequestBL();
-            var result = await requestBL.ViewRequestById(requestId);
-            if (result != null)
+            try
             {
-                await Console.Out.WriteLineAsync($"Request status: {result.RequestStatus}");
+                IRequestBL requestBL = new RequestBL();
+                var result = await requestBL.ViewRequestById(requestId);
+                if (result != null)
+                {
+                    await Console.Out.WriteLineAsync($"Request status: {result.RequestStatus}");
+                }
+                else
+                {
+                    Console.Out.WriteLine("Invalid requestID");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                Console.Out.WriteLine("Invalid requestID");
+                throw ;
             }
         }
-       public async Task ViewRequestStatus()
+        public async Task ViewRequestStatus()
         {
 
-            await Console.Out.WriteLineAsync("Please enter Employee Id");
-            int requestRaisedBy = Convert.ToInt32(Console.ReadLine());
 
             await Console.Out.WriteLineAsync("Please enter Request Id");
             int requestId = Convert.ToInt32(Console.ReadLine());
             await ViewRequestStatusById(requestId);
         }
-      public  async Task RaiseRequest(int requestRaisedBy, string requestMessage)
+      public  async Task RaiseRequest(int  loggedInEmployeeId, string requestMessage)
         {
             // Get the current date
             DateTime currentDate = DateTime.Now;
@@ -43,7 +62,7 @@ namespace RequestTrackerFEAPP
 
             Request request = new Request()
             {
-                RequestRaisedBy = requestRaisedBy,
+                RequestRaisedBy = loggedInEmployeeId,
                 RequestMessage = requestMessage,
                 RequestDate = currentDate,
                 RequestStatus = requestStatus,
@@ -80,27 +99,27 @@ namespace RequestTrackerFEAPP
                 Console.WriteLine("-----------------------------------");
             }
         }
-        public async Task RaiseRequestDetails()
+        public async Task RaiseRequestDetails(int loggedInEmployeeId)
         {
 
-            await Console.Out.WriteLineAsync("Please enter Employee Id");
-            int requestRaisedBy = Convert.ToInt32(Console.ReadLine());
             await Console.Out.WriteLineAsync("Please enter your Request message");
             string requestMessage = Console.ReadLine() ?? "";
-            await RaiseRequest(requestRaisedBy, requestMessage);
+            await RaiseRequest(loggedInEmployeeId, requestMessage);
         }
-        public async Task MarkRequestClosed()
+        public async Task MarkRequestClosed(int loggedInEmployeeId)
         {
             IRequestBL requestBL = new RequestBL();
+            ISolutionBL solutionBL = new SolutionBL();
             Console.WriteLine("Enter the Request ID to be closed:");
             int requestId = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter the Employee ID who is closing the request:");
-            int closedById = Convert.ToInt32(Console.ReadLine());
-            var request = await requestBL.UpdateRequestClosed(requestId, closedById);
+            var solution = await solutionBL.UpdateSolutionStatusToDone(requestId);
+            var request = await requestBL.UpdateRequestClosed(requestId, loggedInEmployeeId);
             if (request != null)
             {
+                Console.WriteLine( $"SolutionStatus  { solution.IsSolved}");
+                request.RequestStatus = "Done";
                 Console.WriteLine($"Request ID: {request.RequestNumber} has been closed.");
-                Console.WriteLine($"Employee ID: {request.RequestClosedBy} closed the request.");
+                Console.WriteLine($"Employee ID: {loggedInEmployeeId} closed the request.");
             }
             else
             {

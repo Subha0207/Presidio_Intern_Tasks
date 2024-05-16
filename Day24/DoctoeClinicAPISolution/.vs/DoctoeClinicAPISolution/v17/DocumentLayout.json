@@ -7,12 +7,16 @@
       "RelativeMoniker": "D:0:0:{D2CC641F-3F01-4671-AE78-52FB791D88EF}|DoctoeClinicAPI\\DoctoeClinicAPI.csproj|solutionrelative:doctoeclinicapi\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D2CC641F-3F01-4671-AE78-52FB791D88EF}|DoctoeClinicAPI\\DoctoeClinicAPI.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day24\\doctoeclinicapisolution\\doctoeclinicapi\\exceptions\\nodoctorfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2CC641F-3F01-4671-AE78-52FB791D88EF}|DoctoeClinicAPI\\DoctoeClinicAPI.csproj|solutionrelative:doctoeclinicapi\\exceptions\\nodoctorfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D2CC641F-3F01-4671-AE78-52FB791D88EF}|DoctoeClinicAPI\\DoctoeClinicAPI.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day24\\doctoeclinicapisolution\\doctoeclinicapi\\services\\doctorbasicservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D2CC641F-3F01-4671-AE78-52FB791D88EF}|DoctoeClinicAPI\\DoctoeClinicAPI.csproj|solutionrelative:doctoeclinicapi\\services\\doctorbasicservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D2CC641F-3F01-4671-AE78-52FB791D88EF}|DoctoeClinicAPI\\DoctoeClinicAPI.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day24\\doctoeclinicapisolution\\doctoeclinicapi\\repositories\\doctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2CC641F-3F01-4671-AE78-52FB791D88EF}|DoctoeClinicAPI\\DoctoeClinicAPI.csproj|solutionrelative:doctoeclinicapi\\repositories\\doctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D2CC641F-3F01-4671-AE78-52FB791D88EF}|DoctoeClinicAPI\\DoctoeClinicAPI.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day24\\doctoeclinicapisolution\\doctoeclinicapi\\model\\errormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2CC641F-3F01-4671-AE78-52FB791D88EF}|DoctoeClinicAPI\\DoctoeClinicAPI.csproj|solutionrelative:doctoeclinicapi\\model\\errormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D2CC641F-3F01-4671-AE78-52FB791D88EF}|DoctoeClinicAPI\\DoctoeClinicAPI.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day24\\doctoeclinicapisolution\\doctoeclinicapi\\contexts\\doctorcliniccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -53,8 +57,33 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NoDoctorFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day24\\DoctoeClinicAPISolution\\DoctoeClinicAPI\\Exceptions\\NoDoctorFoundException.cs",
+              "RelativeDocumentMoniker": "DoctoeClinicAPI\\Exceptions\\NoDoctorFoundException.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day24\\DoctoeClinicAPISolution\\DoctoeClinicAPI\\Exceptions\\NoDoctorFoundException.cs",
+              "RelativeToolTip": "DoctoeClinicAPI\\Exceptions\\NoDoctorFoundException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T12:30:36.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ErrorModel.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day24\\DoctoeClinicAPISolution\\DoctoeClinicAPI\\Model\\ErrorModel.cs",
+              "RelativeDocumentMoniker": "DoctoeClinicAPI\\Model\\ErrorModel.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day24\\DoctoeClinicAPISolution\\DoctoeClinicAPI\\Model\\ErrorModel.cs",
+              "RelativeToolTip": "DoctoeClinicAPI\\Model\\ErrorModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T04:28:00.123Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -63,7 +92,7 @@
               "RelativeDocumentMoniker": "DoctoeClinicAPI\\Controllers\\DoctorController.cs",
               "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day24\\DoctoeClinicAPISolution\\DoctoeClinicAPI\\Controllers\\DoctorController.cs",
               "RelativeToolTip": "DoctoeClinicAPI\\Controllers\\DoctorController.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAYwE0AAAAAAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAYwB8AAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-14T10:23:09.417Z",
               "EditorCaption": ""
@@ -71,30 +100,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "DoctorRepository.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day24\\DoctoeClinicAPISolution\\DoctoeClinicAPI\\Repositories\\DoctorRepository.cs",
-              "RelativeDocumentMoniker": "DoctoeClinicAPI\\Repositories\\DoctorRepository.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day24\\DoctoeClinicAPISolution\\DoctoeClinicAPI\\Repositories\\DoctorRepository.cs",
-              "RelativeToolTip": "DoctoeClinicAPI\\Repositories\\DoctorRepository.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAQwBwAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T08:36:00.868Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "DoctorBasicService.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day24\\DoctoeClinicAPISolution\\DoctoeClinicAPI\\Services\\DoctorBasicService.cs",
               "RelativeDocumentMoniker": "DoctoeClinicAPI\\Services\\DoctorBasicService.cs",
               "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day24\\DoctoeClinicAPISolution\\DoctoeClinicAPI\\Services\\DoctorBasicService.cs",
               "RelativeToolTip": "DoctoeClinicAPI\\Services\\DoctorBasicService.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAACcAAAAaAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwCcAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-14T08:37:31.195Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day24\\DoctoeClinicAPISolution\\DoctoeClinicAPI\\Program.cs",
               "RelativeDocumentMoniker": "DoctoeClinicAPI\\Program.cs",
@@ -106,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "DoctorClinicContext.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day24\\DoctoeClinicAPISolution\\DoctoeClinicAPI\\Contexts\\DoctorClinicContext.cs",
               "RelativeDocumentMoniker": "DoctoeClinicAPI\\Contexts\\DoctorClinicContext.cs",
@@ -118,7 +135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "20240514103102_get_request.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day24\\DoctoeClinicAPISolution\\DoctoeClinicAPI\\Migrations\\20240514103102_get_request.cs",
               "RelativeDocumentMoniker": "DoctoeClinicAPI\\Migrations\\20240514103102_get_request.cs",
@@ -130,7 +147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "IDoctorService.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day24\\DoctoeClinicAPISolution\\DoctoeClinicAPI\\Interfaces\\IDoctorService.cs",
               "RelativeDocumentMoniker": "DoctoeClinicAPI\\Interfaces\\IDoctorService.cs",
@@ -142,7 +159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day24\\DoctoeClinicAPISolution\\DoctoeClinicAPI\\Repositories\\IRepository.cs",
               "RelativeDocumentMoniker": "DoctoeClinicAPI\\Repositories\\IRepository.cs",
@@ -154,7 +171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Doctor.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day24\\DoctoeClinicAPISolution\\DoctoeClinicAPI\\Model\\Doctor.cs",
               "RelativeDocumentMoniker": "DoctoeClinicAPI\\Model\\Doctor.cs",
@@ -166,7 +183,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "EmployeeBasicService.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day24\\EmployeeRequestTrackerAPISolution\\EmployeeRequestTrackerAPI\\Services\\EmployeeBasicService.cs",
               "RelativeDocumentMoniker": "..\\EmployeeRequestTrackerAPISolution\\EmployeeRequestTrackerAPI\\Services\\EmployeeBasicService.cs",
@@ -178,7 +195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "DoctoeClinicAPI.csproj",
               "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day24\\DoctoeClinicAPISolution\\DoctoeClinicAPI\\DoctoeClinicAPI.csproj",
               "RelativeDocumentMoniker": "DoctoeClinicAPI\\DoctoeClinicAPI.csproj",

@@ -11,6 +11,10 @@ namespace RequestTrackerFEAPP
         RequestFrontEnd requestFrontEnd = new RequestFrontEnd();
         SolutionFrontEnd solutionFrontEnd = new SolutionFrontEnd();
         FeedbackFrontEnd feedBackFrontEnd = new FeedbackFrontEnd();
+        SolutionFeedbackAdminBL solutionFeedbackAdminBL = new SolutionFeedbackAdminBL();
+
+        public int loggedInEmployeeId;
+
         async Task EmployeeLoginAsync(int username, string password)
         {
             Employee employee = new Employee()
@@ -19,6 +23,7 @@ namespace RequestTrackerFEAPP
                 Id = username
             };
             IEmployeeLoginBL employeeLoginBL = new EmployeeLoginBL();
+            loggedInEmployeeId = employee.Id;
             var result = await employeeLoginBL.Login(employee);
             if (result != null)
             {
@@ -35,87 +40,109 @@ namespace RequestTrackerFEAPP
 
         async Task DisplayMenu(string role)
         {
-            int choice;
-            switch (role)
+            int choice=0;
+            do
             {
-                case "User":
-                    await Console.Out.WriteLineAsync("Please choose an option:");
-                    await Console.Out.WriteLineAsync("1. Raise Request");
-                    await Console.Out.WriteLineAsync("2. View Request Status");
-                    await Console.Out.WriteLineAsync("3. View Solutions");
-                    await Console.Out.WriteLineAsync("4. Give Feedback");
-                    await Console.Out.WriteLineAsync("5. Respond to Solution");
-                    choice = Convert.ToInt32(Console.ReadLine());
-                    switch (choice)
-                    {
-                        case 1:
-                            await requestFrontEnd.RaiseRequestDetails();
-                            break;
-                        case 2:
-                            await requestFrontEnd.ViewRequestStatus();
-                            break;
-                        case 3:
-                            await solutionFrontEnd.ViewSolutionByIdDetails();
-                            break;
-                        case 4:
-                            await feedBackFrontEnd.GiveFeedbackDetails();
-                            
-                            break;
-                        case 5:
-                            await solutionFrontEnd.RespondToSolution();
-                           
-                            break;
-                        default:
-                            await Console.Out.WriteLineAsync("Invalid choice. Please choose a valid option.");
-                            break;
-                    }
-                    break;
-                case "Admin":
-                    await Console.Out.WriteLineAsync("Please choose an option:");
-                    await Console.Out.WriteLineAsync("1. Raise Request");
-                    await Console.Out.WriteLineAsync("2. View Request Status (All Requests)");
-                    await Console.Out.WriteLineAsync("3. View Solutions (All Solutions)");
-                    await Console.Out.WriteLineAsync("4. Give Feedback (Only for request raised by them)");
-                    await Console.Out.WriteLineAsync("5. Respond to Solution (Only for request raised by them)");
-                    await Console.Out.WriteLineAsync("6. Provide Solution");
-                    await Console.Out.WriteLineAsync("7. Mark Request as Closed");
-                    await Console.Out.WriteLineAsync("8. View Feedbacks (Only feedbacks given to them)");
-                    choice = Convert.ToInt32(Console.ReadLine());
-                    switch (choice)
-                    {
-                        case 1:
-                            await requestFrontEnd.RaiseRequestDetails();
-                            break;
-                        case 2:
+                switch (role)
+                {
+                    case "User":
+                        await Console.Out.WriteLineAsync("Please choose an option:");
+                        await Console.Out.WriteLineAsync("1. Raise Request");
+                        await Console.Out.WriteLineAsync("2. View Request Status");
+                        await Console.Out.WriteLineAsync("3. View Solutions");
+                        await Console.Out.WriteLineAsync("4. Give Feedback");
+                        await Console.Out.WriteLineAsync("5. Respond to Solution");
+                        await Console.Out.WriteLineAsync("Enter -1 to EXIT");
+                        choice = Convert.ToInt32(Console.ReadLine());
+                        switch (choice)
+                        {
+                            case -1:
+                                await Console.Out.WriteLineAsync("Logged out successfully");
+                                Console.Out.WriteLine("-------------------------");
+                                await new Program().GetLoginDeatils();
+                                break;
+                            case 1:
+                                await requestFrontEnd.RaiseRequestDetails(loggedInEmployeeId);
+                                break;
+                            case 2:
+                                await requestFrontEnd.ViewRequestStatus();
+                                break;
+                            case 3:
+                                await solutionFrontEnd.ViewSolutionByIdDetails();
+                                break;
+                            case 4:
+                                await feedBackFrontEnd.GiveFeedbackDetails(loggedInEmployeeId);
 
-                            await requestFrontEnd.ViewAllRequests();
-                            break;
-                        case 3:
-                            await solutionFrontEnd.ViewAllSolutions();
-                            break;
-                        case 4:
-                            
-                            break;
-                        case 5:
-                            await solutionFrontEnd.GetUserInputAndUpdateSolution();
-                           
-                            break;
-                        case 6:
+                                break;
+                            case 5:
+                                await solutionFrontEnd.RespondToSolution();
 
-                            await solutionFrontEnd.ProvideSolutionDetails();
-                            break;
-                        case 7:
-                            await requestFrontEnd.MarkRequestClosed();
-                            break;
-                        case 8:
-                            await feedBackFrontEnd.GetFeedbackByEmpId();
-                            break;
-                        default:
-                            await Console.Out.WriteLineAsync("Invalid choice. Please choose a valid option.");
-                            break;
-                    }
-                    break;
-            }
+                                break;
+                            default:
+                                await Console.Out.WriteLineAsync("Invalid choice. Please choose a valid option.");
+                                break;
+                        }
+                        break;
+                    case "Admin":
+                        await Console.Out.WriteLineAsync("Please choose an option:");
+                        await Console.Out.WriteLineAsync("1. Raise Request");
+                        await Console.Out.WriteLineAsync("2. View Request Status (All Requests)");
+                        await Console.Out.WriteLineAsync("3. View Solutions (All Solutions)");
+                        await Console.Out.WriteLineAsync("4. Give Feedback (Only for request raised by them)");
+                        await Console.Out.WriteLineAsync("5. Respond to Solution (Only for request raised by them)");
+                        await Console.Out.WriteLineAsync("6. Provide Solution");
+                        await Console.Out.WriteLineAsync("7. Mark Request as Closed");
+                        await Console.Out.WriteLineAsync("8. View Feedbacks (Only feedbacks given to them)");
+                        await Console.Out.WriteLineAsync("Enter -1 to EXIT");
+                        choice = Convert.ToInt32(Console.ReadLine());
+                        switch (choice)
+                        {
+                            case -1:
+                                await Console.Out.WriteLineAsync("Logged out successfully");
+                                Console.Out.WriteLine("-------------------------");
+                                await new Program().GetLoginDeatils();
+                                break;
+                            case 1:
+                                await requestFrontEnd.RaiseRequestDetails(loggedInEmployeeId);
+                                break;
+                            case 2:
+
+                                await requestFrontEnd.ViewAllRequests();
+                                break;
+                            case 3:
+                                await solutionFrontEnd.ViewAllSolutions();
+                                break;
+                            case 4:
+                                await feedBackFrontEnd.GiveFeedbackAdmin(loggedInEmployeeId);
+
+                                break;
+                            case 5:
+                                await solutionFrontEnd.GetUserInputAndUpdateSolution(loggedInEmployeeId);
+
+                                break;
+                            case 6:
+
+                                await solutionFrontEnd.ProvideSolutionDetails(loggedInEmployeeId);
+                                break;
+                            case 7:
+                                await requestFrontEnd.MarkRequestClosed(loggedInEmployeeId);
+                                break;
+                            case 8:
+                                var feedbacks = await solutionFeedbackAdminBL.GetFeedbacksByEmployeeId(loggedInEmployeeId);
+                                foreach (var feedback in feedbacks)
+                                {
+                                    // Display the feedback details
+                                    Console.Out.WriteLine($"Feedback ID: {feedback.FeedbackId}, Solution ID: {feedback.SolutionId}, Feedback: {feedback.Remarks}");
+                                }
+                                break;
+                            default:
+                                await Console.Out.WriteLineAsync("Invalid choice. Please choose a valid option.");
+                                break;
+                        }
+                        break;
+                }
+            } while (choice != -1);
+         
         }
         
         
