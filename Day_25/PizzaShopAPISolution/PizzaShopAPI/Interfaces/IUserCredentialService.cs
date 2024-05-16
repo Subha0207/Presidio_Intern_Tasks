@@ -5,7 +5,7 @@ namespace PizzaShopAPI.Interfaces
 {
     public interface IUserCredentialService
     {
-        public Task<User> Login(UserLoginDTO loginDTO);
+        public Task<LoginReturnDTO> Login(UserLoginDTO loginDTO);
         public Task<User> Register(UserRegisterDTO registerDTO);
 
     }

@@ -1,4 +1,5 @@
 ﻿
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PizzaShopAPI.Exceptions;
@@ -17,6 +18,7 @@ namespace PizzaShopAPI.Controllers
         {
             _pizzaService = pizzaService;
         }
+        [Authorize]
         [HttpGet]
         [Route("GetAllPizzas")]
 
@@ -40,6 +42,7 @@ namespace PizzaShopAPI.Controllers
 
 
         }
+        [Authorize]
         [HttpGet]
         [Route("GetPizzasInStock")]
 
@@ -47,11 +50,11 @@ namespace PizzaShopAPI.Controllers
         [ProducesResponseType(typeof(IList<Pizza>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status404NotFound)]
         [ProducesErrorResponseType(typeof(ErrorModel))]
-        public async Task<ActionResult<IList<Pizza>>> GetPizzaOnlyInStock(bool instock)
+        public async Task<ActionResult<IList<Pizza>>> GetPizzaOnlyInStock()
         {
             try
             {
-                var pizzas = await _pizzaService.GetPizzaOnlyInStock(instock);
+                var pizzas = await _pizzaService.GetPizzaOnlyInStock();
                 return Ok(pizzas.ToList());
 
             }

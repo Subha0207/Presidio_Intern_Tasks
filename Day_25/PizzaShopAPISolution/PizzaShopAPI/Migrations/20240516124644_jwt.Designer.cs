@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PizzaShopAPI.Contexts;
 
@@ -11,9 +12,10 @@ using PizzaShopAPI.Contexts;
 namespace PizzaShopAPI.Migrations
 {
     [DbContext(typeof(PizzaShopContext))]
-    partial class PizzaShopContextModelSnapshot : ModelSnapshot
+    [Migration("20240516124644_jwt")]
+    partial class jwt
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -70,15 +72,6 @@ namespace PizzaShopAPI.Migrations
                             InStock = true,
                             Name = "Chicken Pizza",
                             Price = 200
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Description = "A spicy pizza with Vegetables, and paneer.",
-                            ImageUrl = "",
-                            InStock = true,
-                            Name = "Veg Paneer Pizza",
-                            Price = 150
                         });
                 });
 

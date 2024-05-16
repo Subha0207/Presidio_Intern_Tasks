@@ -25,7 +25,7 @@ namespace PizzaShopAPI.Services
             throw new NotImplementedException();
         }
 
-        public async Task<IEnumerable<Pizza>> GetPizzaOnlyInStock(bool instock)
+        public async Task<IEnumerable<Pizza>> GetPizzaOnlyInStock()
         {
             var pizzas = await _repository.GetAll();
             List<Pizza> pizzaInStock = [];

@@ -2,7 +2,7 @@
 {
     public class UserNotActiveException:Exception
     {
-        public UserNotActiveException()
+        public UserNotActiveException(string v)
             : base("Your account is not activated")
         {
         }

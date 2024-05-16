@@ -1,8 +1,10 @@
-﻿using EmployeeRequestTrackerAPI.Exceptions;
+﻿
+using EmployeeRequestTrackerAPI.Exceptions;
 using EmployeeRequestTrackerAPI.Interfaces;
 using EmployeeRequestTrackerAPI.Models;
 using EmployeeRequestTrackerAPI.Models.DTOs;
 using EmployeeRequestTrackerAPI.Repositories;
+using System.Diagnostics;
 using System.Security.Cryptography;
 using System.Text;
 
@@ -12,13 +14,15 @@ namespace EmployeeRequestTrackerAPI.Services
     {
         private readonly IRepository<int, User> _userRepo;
         private readonly IRepository<int, Employee> _employeeRepo;
+        private readonly ITokenService _tokenService;
 
-        public UserService(IRepository<int, User> userRepo, IRepository<int, Employee> employeeRepo)
+        public UserService(IRepository<int, User> userRepo, IRepository<int, Employee> employeeRepo, ITokenService tokenService)
         {
             _userRepo = userRepo;
             _employeeRepo = employeeRepo;
+            _tokenService = tokenService;
         }
-        public async Task<Employee> Login(UserLoginDTO loginDTO)
+        public async Task<LoginReturnDTO> Login(UserLoginDTO loginDTO)
         {
             var userDB = await _userRepo.Get(loginDTO.UserId);
             if (userDB == null)
@@ -31,9 +35,13 @@ namespace EmployeeRequestTrackerAPI.Services
             if (isPasswordSame)
             {
                 var employee = await _employeeRepo.Get(loginDTO.UserId);
-                if (userDB.Status == "Active")
-                    return employee;
-                throw new UserNotActiveException();
+                // if(userDB.Status =="Active")
+                //{
+                LoginReturnDTO loginReturnDTO = MapEmployeeToLoginReturn(employee);
+                return loginReturnDTO;
+                // }
+
+                throw new UserNotActiveException("Your account is not activated");
             }
             throw new UnauthorizedUserException("Invalid username or password");
         }
@@ -54,7 +62,6 @@ namespace EmployeeRequestTrackerAPI.Services
         {
             Employee employee = null;
             User user = null;
-
             try
             {
                 employee = employeeDTO;
@@ -63,6 +70,7 @@ namespace EmployeeRequestTrackerAPI.Services
                 user.EmployeeId = employee.Id;
                 user = await _userRepo.Add(user);
                 ((EmployeeUserDTO)employee).Password = string.Empty;
+
                 return employee;
             }
             catch (Exception) { }
@@ -73,6 +81,15 @@ namespace EmployeeRequestTrackerAPI.Services
             throw new UnableToRegisterException("Not able to register at this moment");
         }
 
+        private LoginReturnDTO MapEmployeeToLoginReturn(Employee employee)
+        {
+            LoginReturnDTO returnDTO = new LoginReturnDTO();
+            returnDTO.EmployeeID = employee.Id;
+            returnDTO.Role = employee.Role ?? "User";
+            returnDTO.Token = _tokenService.GenerateToken(employee);
+            return returnDTO;
+        }
+
         private async Task RevertUserInsert(User user)
         {
             await _userRepo.Delete(user.EmployeeId);
@@ -80,6 +97,7 @@ namespace EmployeeRequestTrackerAPI.Services
 
         private async Task RevertEmployeeInsert(Employee employee)
         {
+
             await _employeeRepo.Delete(employee.Id);
         }
 

@@ -33,16 +33,20 @@ namespace PizzaShopAPI.Contexts
                     ImageUrl = "",
                     Description = "A spicy pizza with fried chicken, and chillies.",
                     InStock = true,
+                },
+                new Pizza()
+                {
+                    Id = 3,
+                    Name = "Veg Paneer Pizza",
+                    Price = 150,
+                    ImageUrl = "",
+                    Description = "A spicy pizza with Vegetables, and paneer.",
+                    InStock = true,
                 }
                 );
-            modelBuilder.Entity<User>().HasData(
-                new User()
-                {UserId=1,Address="Coimbatore",PhoneNumber=123456789,  UserName="Subha"
-
-                    
-                }
+           
                
-                );
+                
         }
     }
 }

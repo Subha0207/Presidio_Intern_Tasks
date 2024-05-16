@@ -17,9 +17,9 @@ namespace PizzaShopAPI.Controllers
             _userCredentialService = userCredentialService;
         }
         [HttpPost("Login")]
-        [ProducesResponseType(typeof(User), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(LoginReturnDTO), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status401Unauthorized)]
-        public async Task<ActionResult<User>> Login(UserLoginDTO userLoginDTO)
+        public async Task<ActionResult<LoginReturnDTO>> Login(UserLoginDTO userLoginDTO)
         {
             try
             {
@@ -45,7 +45,7 @@ namespace PizzaShopAPI.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest(new ErrorModel(501, ex.Message));
+                return BadRequest(new ErrorModel(400, ex.Message));
             }
         }
     }

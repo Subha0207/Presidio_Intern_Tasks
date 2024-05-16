@@ -12,35 +12,48 @@ namespace PizzaShopAPI.Services
     {
         private readonly IRepository<int, User> _userRepo;
         private readonly IRepository<int, UserCredential> _userCredentialRepo;
-
-        public UserCredentialService(IRepository<int, UserCredential> userCredentialRepo, IRepository<int, User> userRepo)
+        private readonly ITokenService _tokenService;
+        public UserCredentialService(IRepository<int, User> userRepo, IRepository<int, UserCredential> userCredentialRepo, ITokenService tokenService)
         {
             _userRepo = userRepo;
             _userCredentialRepo = userCredentialRepo;
+            _tokenService = tokenService;
         }
 
-        public async Task<User> Login(UserLoginDTO loginDTO)
+        public async Task<LoginReturnDTO> Login(UserLoginDTO loginDTO)
         {
-            var userCredentialDB = await _userCredentialRepo.Get(loginDTO.UserId);
-            if (userCredentialDB == null)
+            var userDB = await _userCredentialRepo.Get(loginDTO.UserId);
+            
+            if (userDB == null)
             {
                 throw new UnauthorizedUserException("Invalid username or password");
             }
-            HMACSHA512 hMACSHA = new HMACSHA512(userCredentialDB.PasswordHashKey);
+            HMACSHA512 hMACSHA = new HMACSHA512(userDB.PasswordHashKey);
 
             var encrypterPass = hMACSHA.ComputeHash(Encoding.UTF8.GetBytes(loginDTO.Password));
-            bool isPasswordSame = ComparePassword(encrypterPass, userCredentialDB.Password);
+            bool isPasswordSame = ComparePassword(encrypterPass, userDB.Password);
 
             if (isPasswordSame)
             {
                 var user = await _userRepo.Get(loginDTO.UserId);
-                if (userCredentialDB.Status == "Active")
-                    return user;
-                throw new UserNotActiveException("User not activated");
+
+                LoginReturnDTO loginReturnDTO = MapEmployeeToLoginReturn(user);
+                return loginReturnDTO;
+
+                throw new UserNotActiveException("Your account is not activated");
             }
+
             throw new UnauthorizedUserException("Invalid username or password");
+        }
 
 
+        private LoginReturnDTO MapEmployeeToLoginReturn(User user)
+        {
+            LoginReturnDTO returnDTO = new LoginReturnDTO();
+            returnDTO.UserId = user.UserId;
+            returnDTO.Role = user.Role ?? "User";
+            returnDTO.Token = _tokenService.GenerateToken(user);
+            return returnDTO;
         }
         private bool ComparePassword(byte[] encrypterPass, byte[] password)
         {
@@ -91,11 +104,13 @@ namespace PizzaShopAPI.Services
 
             UserCredential userCredential = new UserCredential();
             userCredential.UserId = registerDTO.UserId;
-            userCredential.Status = "Disabled";
+          
             HMACSHA512 hMACSHA = new HMACSHA512();
             userCredential.PasswordHashKey = hMACSHA.Key;
             userCredential.Password = hMACSHA.ComputeHash(Encoding.UTF8.GetBytes(registerDTO.Password));
             return userCredential;
         }
+
+        
     }
     }
