@@ -1,0 +1,6 @@
+@EmployeeRequestTrackerAPI_HostAddress = http://localhost:5041
+
+GET {{EmployeeRequestTrackerAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
