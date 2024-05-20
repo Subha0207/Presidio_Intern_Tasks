@@ -14,28 +14,32 @@ namespace EmployeeRequestTrackerAPI.Contexts
         public DbSet<Employee> Employees { get; set; }
         public DbSet<User> Users { get; set; }
         
-        public DbSet<Solution> Solutions { get; set; }
     
    public DbSet<Request>Requests { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
-            
+
+
+
+            modelBuilder.Entity<Employee>().HasKey(e => e.Id);
+
+            modelBuilder.Entity<Request>().HasKey(r => r.RequestNumber);
+
 
             modelBuilder.Entity<Request>()
-               .HasOne(r => r.RaisedByEmployee)
-               .WithMany(e => e.RequestsRaised)
-               .HasForeignKey(r => r.RequestRaisedBy)
-               .OnDelete(DeleteBehavior.Restrict);
-               
+                .HasOne(r => r.RaisedByEmployee)
+                .WithMany(e => e.RequestsRaised)
+                .HasForeignKey(r => r.RequestRaisedBy)
+                .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<Request>()
-               .HasOne(r => r.RequestClosedByEmployee)
-               .WithMany(e => e.RequestsClosed)
-               .HasForeignKey(r => r.RequestClosedBy)
-               .OnDelete(DeleteBehavior.Restrict);
-               
+                .HasOne(r => r.RequestClosedByEmployee)
+                .WithMany(e => e.RequestsClosed)
+                .HasForeignKey(r => r.RequestClosedBy)
+                .OnDelete(DeleteBehavior.Restrict);
+
         }
 
 

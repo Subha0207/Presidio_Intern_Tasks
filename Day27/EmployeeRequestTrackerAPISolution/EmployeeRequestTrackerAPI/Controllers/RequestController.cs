@@ -37,7 +37,7 @@ namespace EmployeeRequestTrackerAPI.Controllers
             }
         }
 
-        [Authorize(Roles = "admin")]
+        [Authorize (Roles ="admin")]
         [HttpGet("GetAllRequestsByAdmin")]
         [ProducesResponseType(typeof(RequestReturnDTO), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status401Unauthorized)]
@@ -54,23 +54,25 @@ namespace EmployeeRequestTrackerAPI.Controllers
             }
         }
 
+
+
+
         [Authorize]
-        [HttpGet("GetRequestbyId")]
+        [HttpGet("getRequest/{id}")]
         [ProducesResponseType(typeof(RequestReturnDTO), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status401Unauthorized)]
-        public async Task<ActionResult<List<RequestReturnDTO>>>GetRequestByUser(int empId)
+        public async Task<ActionResult<List<RequestReturnDTO>>> GetRequestById(int id)
         {
             try
             {
-                var result = await _requestService.GetAllRequestByUser(empId);
+                var result = await _requestService.GetAllRequestByEmpId(id);
                 return Ok(result);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                return Unauthorized(new ErrorModel(401, ex.Message));
-
-
+                throw new Exception(ex.Message);
             }
         }
+
     }
 }

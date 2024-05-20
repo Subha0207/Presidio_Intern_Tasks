@@ -7,6 +7,8 @@ namespace EmployeeRequestTrackerAPI.Interfaces
     {
      public   Task<int> RaiseRequest(RequestDetailsDTO requestDetailsDTO);
       public  Task<List<RequestReturnDTO>> GetAllOpenRequest();
-        public Task<List<RequestReturnDTO>> GetAllRequestByUser(int empId);
+
+
+        public  Task<IList<Request>> GetAllRequestByEmpId(int empId);
     }
 }

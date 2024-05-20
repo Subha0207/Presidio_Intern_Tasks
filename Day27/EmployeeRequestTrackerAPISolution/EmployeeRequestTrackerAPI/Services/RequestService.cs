@@ -9,13 +9,13 @@ namespace EmployeeRequestTrackerAPI.Services
     public class RequestService : IRequestService
     {
         private readonly IRepository<int, Request> _requestRepository;
-        private readonly EmployeeRequestRaisedRepository _employeeRequestRaisedRepository;
+        
         
 
-        public RequestService(IRepository<int, Request> requestRepository,EmployeeRequestRaisedRepository employeeRequestRaisedRepository)
+        public RequestService(IRepository<int, Request> requestRepository)
         {
             _requestRepository = requestRepository;
-          _employeeRequestRaisedRepository = employeeRequestRaisedRepository;
+          
         }
 
         
@@ -82,42 +82,24 @@ namespace EmployeeRequestTrackerAPI.Services
             };
             return request;
         }
-
-      public async Task  <List<RequestReturnDTO>> GetAllRequestByUser(int empId)
+        
+        public async Task<IList<Request>> GetAllRequestByEmpId(int empId)
         {
-
-            try
+            var requests = await _requestRepository.Get();
+            List<Request> UserRequest = new List<Request>();
+            foreach (var request in requests)
             {
-                var employee = await _employeeRequestRaisedRepository.Get(empId);
-                if (employee != null)
+                if (request.RequestRaisedBy == empId)
                 {
-                    var result = new List<RequestReturnDTO>();
-
-                    // Add request raised items
-                    if (employee.RequestsRaised != null)
-                    {
-                        var requestRaisedList = await RequestToRequestReturnDTO(employee.RequestsRaised.ToList());
-                        result.AddRange(requestRaisedList);
-                    }
-
-                    // Add request closed items
-                    if (employee.RequestsClosed != null)
-                    {
-                        var requestClosedList = await RequestToRequestReturnDTO(employee.RequestsClosed.ToList());
-                        result.AddRange(requestClosedList);
-                    }
-
-                    return result;
+                    UserRequest.Add(request);
                 }
-                throw new Exception("Cannot get the employee details");
             }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-                throw new Exception("Error in getting request list");
-            }
+            if(UserRequest.Count>0)
+            return UserRequest;
+            throw new NoRequestExistsException();
+
+            
         }
 
-        
     }
 }
