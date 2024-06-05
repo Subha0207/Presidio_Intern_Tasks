@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px; /* Set overall font size */
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: relative;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+header nav h1 {
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff6347;
+}
+
+/* Drawer menu for small screens */
+header .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+header .menu-toggle span {
+    height: 2px;
+    width: 25px;
+    background: #fff;
+    margin: 4px 0;
+    transition: transform 0.3s;
+}
+
+header input[type="checkbox"] {
+    display: none;
+}
+
+header input[type="checkbox"]:checked ~ .drawer-menu {
+    display: flex;
+}
+
+header .drawer-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #333;
+    padding: 1rem;
+    z-index: 1;
+}
+
+header .drawer-menu ul {
+    flex-direction: column;
+    width: 100%;
+}
+
+header .drawer-menu ul li {
+    width: 100%;
+    text-align: left;
+}
+
+header .drawer-menu ul li a {
+    display: block;
+    padding: 1rem;
+    border-bottom: 1px solid #444;
+}
+
+section {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#about {
+    text-align: center;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto 20px;
+    overflow: hidden;
+}
+
+.centered-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.animated-image:hover {
+    transform: scale(1.1);
+}
+
+.animated-text {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: slideIn 1s forwards;
+}
+
+.padded-text {
+    padding: 0 70px;
+    text-align: left;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.padded-text p {
+    opacity: 0;
+    animation: slideIn 1s forwards;
+}
+
+/* Delay each paragraph */
+.padded-text p:nth-child(1) { animation-delay: 0.5s; }
+.padded-text p:nth-child(2) { animation-delay: 1.5s; }
+.padded-text p:nth-child(3) { animation-delay: 2.5s; }
+.padded-text p:nth-child(4) { animation-delay: 3.5s; }
+.padded-text p:nth-child(5) { animation-delay: 4.5s; }
+.padded-text p:nth-child(6) { animation-delay: 5.5s; }
+.padded-text p:nth-child(7) { animation-delay: 6.5s; }
+.padded-text p:nth-child(8) { animation-delay: 7.5s; }
+
+/* Add more appealing colors and styles for project UI */
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+    margin: auto;
+    align-items: stretch;
+}
+
+.portfolio-item {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    width: calc(50% - 40px);
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.project-description {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.project-links {
+    text-align: center;
+}
+
+.project-links a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #0074D9;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+
+.project-links a:hover {
+    background-color: #005fa3;
+}
+
+/* Improved layout for contact form */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1000px;
+    width: 100%;
+    gap: 50px;
+}
+
+.contact-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.contact-form h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button[type="submit"] {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0074D9;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #005fa3;
+}
+
+/* General styles for responsiveness */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header nav ul li {
+        margin: 0;
+        width: 100%;
+        text-align: left;
+    }
+
+    header nav ul li a {
+        display: block;
+        padding: 1rem;
+        border-bottom: 1px solid #444;
+    }
+
+    .portfolio-container {
+        flex-direction: column;
+    }
+
+    .portfolio-item {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-form {
+        padding-left: 0;
+        padding-top: 20px;
+    }
+
+    .image-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .centered-image {
+        width: 100%;
+    }
+
+    .animated-text {
+        font-size: 1.5rem;
+    }
+
+    .padded-text {
+        padding: 0 20px;
+    }
+
+    header .menu-toggle {
+        display: flex;
+    }
+
+    header .drawer-menu {
+        display: none;
+    }
+
+    header input[type="checkbox"]:checked ~ .drawer-menu {
+        display: flex;
+    }
+}

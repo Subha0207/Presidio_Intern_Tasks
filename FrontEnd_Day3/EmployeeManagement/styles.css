@@ -1,0 +1,224 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f4f4f4;
+}
+
+/*Home page*/
+.header {
+    background-color: #4b0082;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav-items a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-items a:hover {
+    color: #dda0dd;
+}
+
+main {
+    padding: 40px 20px;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+main h1 {
+    margin: 20px 0;
+    font-size: 36px;
+    color: #4b0082;
+}
+
+main p {
+    font-size: 18px;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.content-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.content-section div {
+        margin: 10px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.content-section div:hover {
+    transform: translateY(-10px);
+}
+
+.content-section h2 {
+    color: #4b0082;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.content-section p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #4b0082;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+/*Employee Details page*/
+.emp-header {
+    background-color: #4b0082;
+    color: white;
+    text-align: center;
+    justify-content: center; /* Center align the content horizontally */
+    align-items: center; /* Center align the content vertically */
+    padding: 20px 0;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+
+.employee-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.employee-card {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.employee-card img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.employee-card h2 {
+    color: #4b0082;
+    margin-bottom: 10px;
+}
+
+.employee-card p {
+    color: #555;
+    margin: 5px 0;
+}
+
+.employee-card strong {
+    color: #000;
+}
+
+.employee-card:hover {
+    transform: translateY(-5px);
+}
+
+
+
+/*Add Employee page*/
+
+.form-title {
+    text-align: center;
+    color: #4b0082;
+}
+
+.employee-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #4b0082;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group input[type="tel"],
+.form-group input[type="email"],
+.form-group input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group button[type="submit"] {
+    background-color: #4b0082;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.form-group button[type="submit"]:hover {
+ 
+    background-color: #5a2d91;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-section div {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .content-section div {
+        width: 100%;
+    }
+}
