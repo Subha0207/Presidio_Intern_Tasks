@@ -246,31 +246,48 @@ section h2 {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 20px;
 }
 
 .contact-content {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     margin: 0 auto;
-    padding: 20px;
-    max-width: 1000px;
+    max-width: 600px; /* Adjust max-width as needed */
     width: 100%;
-    gap: 50px;
+    gap: 20px;
+}
+
+.contact-image {
+    flex: 1; /* Adjust image to be smaller */
+    max-width: 30%; /* Set max-width for the image */
 }
 
 .contact-image img {
     max-width: 100%;
-    border-radius: 10px;
 }
 
 .contact-form {
+    flex: 2; /* Adjust form to be larger */
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex: 1;
+    width: 100%; /* Utilize full width */
+    max-width: 500px; /* Limit width for better readability */
+}
+
+@media (min-width: 768px) {
+    .contact-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contact-form {
+        width: 70%; /* Adjust width for larger screens */
+    }
 }
 
 .contact-form h2 {
