@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Table with Checkboxes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card">
+            <div class="card-body table-wrapper">
+                <div class="row mb-3 align-items-center">
+                    <div class="col-auto">
+                        <div class="d-flex justify-content-center align-items-center border p-2 ml-3 rounded form-control d-inline-flex"
+                            style="width: auto; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+                            <i class="fas fa-filter"></i>
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-md-5">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-search"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Search...">
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <button class="btn btn-primary mr-2">+Add Customer</button>
+                    </div>
+                </div>
+
+                <table class="table scrollable-table table-striped">
+                    <thead class="thead">
+                        <tr>
+                            <th scope="col" class="col-md-1"><input type="checkbox" id="selectAll"></th>
+                            <th scope="col" class="col-md-1">#</th>
+                            <th scope="col" class="col-md-2">NAME</th>
+                            <th scope="col" class="col-md-4">DESCRIPTION</th>
+                            <th scope="col" class="col-md-2">STATUS</th>
+                            <th scope="col" class="col-md-2" style="text-align: right;">RATE</th>
+                            <th scope="col" class="col-md-2" style="text-align: right;">BALANCE</th>
+                            <th scope="col" class="col-md-2" style="text-align: right;">DEPOSIT</th>
+                            <th scope="col" class="col-md-1"></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" class="selectSingle"></td>
+                            <td class="bold">1</td>
+                            <td>
+                                <div class="px-10 flex flex-col text-left" style="width: 100%;">
+                                    <span class="bold" style="display: block; width: 100%;">SUBHASHINI</span>
+                                    <span style="display: block; width: 100%;">9987654321</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="description-container">
+                                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td><span class="badge rounded-pill bg-light custom-open">Open</span></td>
+                            <td>
+                                <div class="px-10 flex flex-col text-right" style="width: 100%;">
+                                    <span style="display: block; width: 100%;">$100.00</span>
+                                    <span style="display: block; width: 100%;">CAD</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="px-10 flex flex-col text-right" style="width: 100%;">
+                                    <span style="display: block; width: 100%;">$100.00</span>
+                                    <span style="display: block; width: 100%;">CAD</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="px-10 flex flex-col text-right" style="width: 100%;">
+                                    <span style="display: block; width: 100%;">$100.00</span>
+                                    <span style="display: block; width: 100%;">CAD</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div tabindex="0">
+                                    <span class="popover-icon" data-toggle="popover"
+                                        data-content="View<br>Edit<br>Delete" data-html="true" style="cursor:pointer;">
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="selectSingle"></td>
+                            <td class="bold">2</td>
+                            <td>
+                                <div class="px-10 flex flex-col text-left" style="width: 100%;">
+                                    <span class="bold" style="display: block; width: 100%;">SUBHASHINI</span>
+                                    <span style="display: block; width: 100%;">9987654321</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="description-container">
+                                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td><span class="badge rounded-pill  custom-inactive">Inactive</span></td>
+                            <td>
+                                <div class="px-10 flex flex-col text-right" style="width: 100%;">
+                                    <span style="display: block; width: 100%;">$100.00</span>
+                                    <span style="display: block; width: 100%;">CAD</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="px-10 flex flex-col text-right" style="width: 100%;">
+                                    <span style="display: block; width: 100%; color: red;">-$250.00</span>
+                                    <span style="display: block; width: 100%;">CAD</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="px-10 flex flex-col text-right" style="width: 100%;">
+                                    <span style="display: block; width: 100%;">$100.00</span>
+                                    <span style="display: block; width: 100%;">CAD</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div tabindex="0">
+                                    <span class="popover-icon" data-toggle="popover"
+                                        data-content="View<br>Edit<br>Delete" data-html="true" style="cursor:pointer;">
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </span>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" class="selectSingle"></td>
+                            <td class="bold">3</td>
+                            <td>
+                                <div class="px-10 flex flex-col text-left" style="width: 100%;">
+                                    <span class="bold" style="display: block; width: 100%;">SUBHASHINI</span>
+                                    <span style="display: block; width: 100%;">9987654321</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="description-container">
+                                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td><span class="badge rounded-pill  custom-paid">Paid</span></td>
+                            <td>
+                                <div class="px-10 flex flex-col text-right" style="width: 100%;">
+                                    <span style="display: block; width: 100%;">$100.00</span>
+                                    <span style="display: block; width: 100%;">CAD</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="px-10 flex flex-col text-right" style="width: 100%;">
+                                    <span style="display: block; width: 100%;">$100.00</span>
+                                    <span style="display: block; width: 100%;">CAD</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="px-10 flex flex-col text-right" style="width: 100%;">
+                                    <span style="display: block; width: 100%;">$100.00</span>
+                                    <span style="display: block; width: 100%;">CAD</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div tabindex="0">
+                                    <span class="popover-icon" data-toggle="popover"
+                                        data-content="View<br>Edit<br>Delete" data-html="true" style="cursor:pointer;">
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="selectSingle"></td>
+                            <td class="bold">4</td>
+                            <td>
+                                <div class="px-10 flex flex-col text-left" style="width: 100%;">
+                                    <span class="bold" style="display: block; width: 100%;">SUBHASHINI</span>
+                                    <span style="display: block; width: 100%;">9987654321</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="description-container">
+                                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td><span class="badge rounded-pill  custom-due">Due</span></td>
+                            <td>
+                                <div class="px-10 flex flex-col text-right" style="width: 100%;">
+                                    <span style="display: block; width: 100%;">$100.00</span>
+                                    <span style="display: block; width: 100%;">CAD</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="px-10 flex flex-col text-right" style="width: 100%;">
+                                    <span style="display: block; width: 100%;">$100.00</span>
+                                    <span style="display: block; width: 100%;">CAD</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="px-10 flex flex-col text-right" style="width: 100%;">
+                                    <span style="display: block; width: 100%;">$100.00</span>
+                                    <span style="display: block; width: 100%;">CAD</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div tabindex="0">
+                                    <span class="popover-icon" data-toggle="popover"
+                                        data-content="View<br>Edit<br>Delete" data-html="true" style="cursor:pointer;">
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="selectSingle"></td>
+                            <td class="bold">5</td>
+                            <td>
+                                <div class="px-10 flex flex-col text-left" style="width: 100%;">
+                                    <span class="bold" style="display: block; width: 100%;">SUBHASHINI</span>
+                                    <span style="display: block; width: 100%;">9987654321</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="description-container">
+                                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td><span class="badge rounded-pill  custom-inactive">Inactive</span></td>
+                            <td>
+                                <div class="px-10 flex flex-col text-right" style="width: 100%;">
+                                    <span style="display: block; width: 100%;">$100.00</span>
+                                    <span style="display: block; width: 100%;">CAD</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="px-10 flex flex-col text-right" style="width: 100%;">
+                                    <span style="display: block; width: 100%; color: red;">-$250.00</span>
+                                    <span style="display: block; width: 100%;">CAD</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="px-10 flex flex-col text-right" style="width: 100%;">
+                                    <span style="display: block; width: 100%;">$100.00</span>
+                                    <span style="display: block; width: 100%;">CAD</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div tabindex="0">
+                                    <span class="popover-icon" data-toggle="popover"
+                                        data-content="View<br>Edit<br>Delete" data-html="true" style="cursor:pointer;">
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="selectSingle"></td>
+                            <td class="bold">6</td>
+                            <td>
+                                <div class="px-10 flex flex-col text-left" style="width: 100%;">
+                                    <span class="bold" style="display: block; width: 100%;">SUBHASHINI</span>
+                                    <span style="display: block; width: 100%;">9987654321</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="description-container">
+                                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td><span class="badge rounded-pill  custom-due">Due</span></td>
+                            <td>
+                                <div class="px-10 flex flex-col text-right" style="width: 100%;">
+                                    <span style="display: block; width: 100%;">$100.00</span>
+                                    <span style="display: block; width: 100%;">CAD</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="px-10 flex flex-col text-right" style="width: 100%;">
+                                    <span style="display: block; width: 100%;">$100.00</span>
+                                    <span style="display: block; width: 100%;">CAD</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="px-10 flex flex-col text-right" style="width: 100%;">
+                                    <span style="display: block; width: 100%;">$100.00</span>
+                                    <span style="display: block; width: 100%;">CAD</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div tabindex="0">
+                                    <span class="popover-icon" data-toggle="popover"
+                                        data-content="View<br>Edit<br>Delete" data-html="true" style="cursor:pointer;">
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="selectSingle"></td>
+                            <td class="bold">7</td>
+                            <td>
+                                <div class="px-10 flex flex-col text-left" style="width: 100%;">
+                                    <span class="bold" style="display: block; width: 100%;">SUBHASHINI</span>
+                                    <span style="display: block; width: 100%;">9987654321</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="description-container">
+                                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="badge rounded-pill bg-light custom-open">Open</span></td>
+                            <td>
+                                <div class="px-10 flex flex-col text-right" style="width: 100%;">
+                                    <span style="display: block; width: 100%;">$100.00</span>
+                                    <span style="display: block; width: 100%;">CAD</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="px-10 flex flex-col text-right" style="width: 100%;">
+                                    <span style="display: block; width: 100%;">$100.00</span>
+                                    <span style="display: block; width: 100%;">CAD</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="px-10 flex flex-col text-right" style="width: 100%;">
+                                    <span style="display: block; width: 100%;">$100.00</span>
+                                    <span style="display: block; width: 100%;">CAD</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div tabindex="0">
+                                    <span class="popover-icon" data-toggle="popover"
+                                        data-content="View<br>Edit<br>Delete" data-html="true" style="cursor:pointer;">
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="selectSingle"></td>
+                            <td class="bold">8</td>
+                            <td>
+                                <div class="px-10 flex flex-col text-left" style="width: 100%;">
+                                    <span class="bold" style="display: block; width: 100%;">SUBHASHINI</span>
+                                    <span style="display: block; width: 100%;">9987654321</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="description-container">
+                                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td><span class="badge rounded-pill  custom-due">Due</span></td>
+                            <td>
+                                <div class="px-10 flex flex-col text-right" style="width: 100%;">
+                                    <span style="display: block; width: 100%;">$100.00</span>
+                                    <span style="display: block; width: 100%;">CAD</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="px-10 flex flex-col text-right" style="width: 100%;">
+                                    <span style="display: block; width: 100%; color: red;">-$400.00</span>
+                                    <span style="display: block; width: 100%;">CAD</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="px-10 flex flex-col text-right" style="width: 100%;">
+                                    <span style="display: block; width: 100%;">$100.00</span>
+                                    <span style="display: block; width: 100%;">CAD</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div tabindex="0">
+                                    <span class="popover-icon" data-toggle="popover"
+                                        data-content="View<br>Edit<br>Delete" data-html="true" style="cursor:pointer;">
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="selectSingle"></td>
+                            <td class="bold">9</td>
+                            <td>
+                                <div class="px-10 flex flex-col text-left" style="width: 100%;">
+                                    <span class="bold" style="display: block; width: 100%;">SUBHASHINI</span>
+                                    <span style="display: block; width: 100%;">9987654321</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="description-container">
+                                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td><span class="badge rounded-pill  custom-inactive">Inactive</span></td>
+                            <td>
+                                <div class="px-10 flex flex-col text-right" style="width: 100%;">
+                                    <span style="display: block; width: 100%;">$100.00</span>
+                                    <span style="display: block; width: 100%;">CAD</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="px-10 flex flex-col text-right" style="width: 100%;">
+                                    <span style="display: block; width: 100%; color: red;">-$250.00</span>
+                                    <span style="display: block; width: 100%;">CAD</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="px-10 flex flex-col text-right" style="width: 100%;">
+                                    <span style="display: block; width: 100%;">$100.00</span>
+                                    <span style="display: block; width: 100%;">CAD</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div tabindex="0">
+                                    <span class="popover-icon" data-toggle="popover"
+                                        data-content="View<br>Edit<br>Delete" data-html="true" style="cursor:pointer;">
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </span>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <tfoot>
+                    <tr>
+                        <td colspan="12">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="text1">1 to 10 of 97</div>
+                                <div class="d-flex align-items-center">
+                                    <div>Rows Per Page:&nbsp;</div>
+                                    <div class="dropdown">
+                                        <button id="dropdownButton"><i class="fas fa-chevron-down"></i></button>
+                                        <div class="dropdown-content" id="dropdownMenu">
+                                            <a href="#">10</a>
+                                            <a href="#">20</a>
+                                            <a href="#">30</a>
+                                            <a href="#">50</a>
+                                            <a href="#">70</a>
+                                        </div>
+                                    </div>
+                                    <nav aria-label="Pagination" class="ms-4">
+                                        <ul class="pagination mb-0">
+                                            <li class="page-item disabled">
+                                                <button class="page-link" aria-label="Previous" style="color: black;">
+                                                    <i class="fas fa-chevron-left icon-align"></i>
+                                                </button>
+                                            </li>
+
+
+
+                                            <li class="page-item no-border d-flex justify-content-center align-items-center"
+                                                style="padding-left: 10px; padding-right: 10px; flex-grow: 1;">
+                                                <span class="page-text">1 / 10</span>
+                                            </li>
+
+                                            <li class="page-item">
+                                                <button class="page-link" aria-label="Next" style="color: black;">
+                                                    <i class="fas fa-chevron-right icon-align"></i>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </nav>
+
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tfoot>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+                return new bootstrap.Popover(popoverTriggerEl)
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            // Handle dropdown item click
+            $('.dropdown-item').click(function () {
+                var rowsPerPage = $(this).data('value');
+                // Update dropdown toggle text
+                $('#rowsPerPageDropdown').html(rowsPerPage + ' <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i>');
+                // Update the number of rows displayed
+                // Replace this line with your logic to update the table rows
+                console.log('Rows per page: ' + rowsPerPage);
+            });
+        });
+    </script>
+
+
+    <script>
+        document.getElementById('dropdownButton').addEventListener('click', function (event) {
+            event.stopPropagation(); // Prevents the click event from propagating to the window
+            var menu = document.getElementById('dropdownMenu');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        });
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            var menu = document.getElementById('dropdownMenu');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            }
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover();
+
+            $(document).on('click', function (e) {
+                $('[data-toggle="popover"]').each(function () {
+                    if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+                        $(this).popover('hide');
+                    }
+                });
+            });
+
+            $('.read-more').on('click', function () {
+                var $description = $(this).siblings('.description');
+                var isExpanded = $description.hasClass('expanded');
+                $description.toggleClass('expanded');
+                $(this).text(isExpanded ? '...' : '');
+            });
+
+            // Select all functionality
+            $('#selectAll').on('click', function () {
+                $('.selectSingle').prop('checked', $(this).prop('checked'));
+            });
+
+            // Deselect "select all" if one of the checkboxes is unchecked
+            $('.selectSingle').on('click', function () {
+                if (!$(this).prop('checked')) {
+                    $('#selectAll').prop('checked', false);
+                } else if ($('.selectSingle:checked').length === $('.selectSingle').length) {
+                    $('#selectAll').prop('checked', true);
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

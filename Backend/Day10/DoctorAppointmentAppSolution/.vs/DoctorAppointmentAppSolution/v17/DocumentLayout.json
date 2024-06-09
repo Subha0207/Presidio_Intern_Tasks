@@ -1,0 +1,292 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day10\\DoctorAppointmentAppSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{73F312DA-9117-4E83-B6F9-FC5DC35EF219}|AppointmentBLTest\\AppointmentBLTest.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day10\\doctorappointmentappsolution\\appointmentbltest\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73F312DA-9117-4E83-B6F9-FC5DC35EF219}|AppointmentBLTest\\AppointmentBLTest.csproj|solutionrelative:appointmentbltest\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABD3ABF0-16A1-478E-95C4-8870C0883A5D}|PatientBLUnitTest\\PatientBLUnitTest.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day10\\doctorappointmentappsolution\\patientblunittest\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABD3ABF0-16A1-478E-95C4-8870C0883A5D}|PatientBLUnitTest\\PatientBLUnitTest.csproj|solutionrelative:patientblunittest\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C02C477-5DE5-41A3-8E7F-0A0B7F3BA3CC}|DoctorAppointmentAppBLLibrary\\DoctorAppointmentAppBLLibrary.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day10\\doctorappointmentappsolution\\doctorappointmentappbllibrary\\patientbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C02C477-5DE5-41A3-8E7F-0A0B7F3BA3CC}|DoctorAppointmentAppBLLibrary\\DoctorAppointmentAppBLLibrary.csproj|solutionrelative:doctorappointmentappbllibrary\\patientbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{575270A3-E200-4D67-B255-3BEE01B7EB87}|DoctorAppointmentAppDLLibrary\\DoctorAppointmentAppDLLibrary.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day10\\doctorappointmentappsolution\\doctorappointmentappdllibrary\\patientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{575270A3-E200-4D67-B255-3BEE01B7EB87}|DoctorAppointmentAppDLLibrary\\DoctorAppointmentAppDLLibrary.csproj|solutionrelative:doctorappointmentappdllibrary\\patientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C02C477-5DE5-41A3-8E7F-0A0B7F3BA3CC}|DoctorAppointmentAppBLLibrary\\DoctorAppointmentAppBLLibrary.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day10\\doctorappointmentappsolution\\doctorappointmentappbllibrary\\idoctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C02C477-5DE5-41A3-8E7F-0A0B7F3BA3CC}|DoctorAppointmentAppBLLibrary\\DoctorAppointmentAppBLLibrary.csproj|solutionrelative:doctorappointmentappbllibrary\\idoctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C02C477-5DE5-41A3-8E7F-0A0B7F3BA3CC}|DoctorAppointmentAppBLLibrary\\DoctorAppointmentAppBLLibrary.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day10\\doctorappointmentappsolution\\doctorappointmentappbllibrary\\doctorbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C02C477-5DE5-41A3-8E7F-0A0B7F3BA3CC}|DoctorAppointmentAppBLLibrary\\DoctorAppointmentAppBLLibrary.csproj|solutionrelative:doctorappointmentappbllibrary\\doctorbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C02C477-5DE5-41A3-8E7F-0A0B7F3BA3CC}|DoctorAppointmentAppBLLibrary\\DoctorAppointmentAppBLLibrary.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day10\\doctorappointmentappsolution\\doctorappointmentappbllibrary\\ipatientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C02C477-5DE5-41A3-8E7F-0A0B7F3BA3CC}|DoctorAppointmentAppBLLibrary\\DoctorAppointmentAppBLLibrary.csproj|solutionrelative:doctorappointmentappbllibrary\\ipatientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C02C477-5DE5-41A3-8E7F-0A0B7F3BA3CC}|DoctorAppointmentAppBLLibrary\\DoctorAppointmentAppBLLibrary.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day10\\doctorappointmentappsolution\\doctorappointmentappbllibrary\\appointmentbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C02C477-5DE5-41A3-8E7F-0A0B7F3BA3CC}|DoctorAppointmentAppBLLibrary\\DoctorAppointmentAppBLLibrary.csproj|solutionrelative:doctorappointmentappbllibrary\\appointmentbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{575270A3-E200-4D67-B255-3BEE01B7EB87}|DoctorAppointmentAppDLLibrary\\DoctorAppointmentAppDLLibrary.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day10\\doctorappointmentappsolution\\doctorappointmentappdllibrary\\appointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{575270A3-E200-4D67-B255-3BEE01B7EB87}|DoctorAppointmentAppDLLibrary\\DoctorAppointmentAppDLLibrary.csproj|solutionrelative:doctorappointmentappdllibrary\\appointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A067EC-4AFD-4F75-B9CC-39A59E001F8D}|DoctorAppointmentAppModelLibrary\\DoctorAppointmentAppModelLibrary.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day10\\doctorappointmentappsolution\\doctorappointmentappmodellibrary\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A067EC-4AFD-4F75-B9CC-39A59E001F8D}|DoctorAppointmentAppModelLibrary\\DoctorAppointmentAppModelLibrary.csproj|solutionrelative:doctorappointmentappmodellibrary\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A067EC-4AFD-4F75-B9CC-39A59E001F8D}|DoctorAppointmentAppModelLibrary\\DoctorAppointmentAppModelLibrary.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day10\\doctorappointmentappsolution\\doctorappointmentappmodellibrary\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A067EC-4AFD-4F75-B9CC-39A59E001F8D}|DoctorAppointmentAppModelLibrary\\DoctorAppointmentAppModelLibrary.csproj|solutionrelative:doctorappointmentappmodellibrary\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A067EC-4AFD-4F75-B9CC-39A59E001F8D}|DoctorAppointmentAppModelLibrary\\DoctorAppointmentAppModelLibrary.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day10\\doctorappointmentappsolution\\doctorappointmentappmodellibrary\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A067EC-4AFD-4F75-B9CC-39A59E001F8D}|DoctorAppointmentAppModelLibrary\\DoctorAppointmentAppModelLibrary.csproj|solutionrelative:doctorappointmentappmodellibrary\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{575270A3-E200-4D67-B255-3BEE01B7EB87}|DoctorAppointmentAppDLLibrary\\DoctorAppointmentAppDLLibrary.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day10\\doctorappointmentappsolution\\doctorappointmentappdllibrary\\doctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{575270A3-E200-4D67-B255-3BEE01B7EB87}|DoctorAppointmentAppDLLibrary\\DoctorAppointmentAppDLLibrary.csproj|solutionrelative:doctorappointmentappdllibrary\\doctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C02C477-5DE5-41A3-8E7F-0A0B7F3BA3CC}|DoctorAppointmentAppBLLibrary\\DoctorAppointmentAppBLLibrary.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day10\\doctorappointmentappsolution\\doctorappointmentappbllibrary\\iappointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C02C477-5DE5-41A3-8E7F-0A0B7F3BA3CC}|DoctorAppointmentAppBLLibrary\\DoctorAppointmentAppBLLibrary.csproj|solutionrelative:doctorappointmentappbllibrary\\iappointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03E35295-C0AC-4476-8273-966E74F9ACEE}|DoctorAppointmentApp\\DoctorAppointmentApp.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day10\\doctorappointmentappsolution\\doctorappointmentapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03E35295-C0AC-4476-8273-966E74F9ACEE}|DoctorAppointmentApp\\DoctorAppointmentApp.csproj|solutionrelative:doctorappointmentapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6A464A8-FA8C-4983-94D6-76F4A5B09275}|DoctorBLTest\\DoctorUnitTest.csproj|c:\\users\\vc\\desktop\\intern_tasks\\day10\\doctorappointmentappsolution\\doctorbltest\\doctorbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6A464A8-FA8C-4983-94D6-76F4A5B09275}|DoctorBLTest\\DoctorUnitTest.csproj|solutionrelative:doctorbltest\\doctorbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PatientBL.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day10\\DoctorAppointmentAppSolution\\DoctorAppointmentAppBLLibrary\\PatientBL.cs",
+              "RelativeDocumentMoniker": "DoctorAppointmentAppBLLibrary\\PatientBL.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day10\\DoctorAppointmentAppSolution\\DoctorAppointmentAppBLLibrary\\PatientBL.cs",
+              "RelativeToolTip": "DoctorAppointmentAppBLLibrary\\PatientBL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T08:43:53.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PatientRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day10\\DoctorAppointmentAppSolution\\DoctorAppointmentAppDLLibrary\\PatientRepository.cs",
+              "RelativeDocumentMoniker": "DoctorAppointmentAppDLLibrary\\PatientRepository.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day10\\DoctorAppointmentAppSolution\\DoctorAppointmentAppDLLibrary\\PatientRepository.cs",
+              "RelativeToolTip": "DoctorAppointmentAppDLLibrary\\PatientRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T08:44:30.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DoctorBL.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day10\\DoctorAppointmentAppSolution\\DoctorBLTest\\DoctorBL.cs",
+              "RelativeDocumentMoniker": "DoctorBLTest\\DoctorBL.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day10\\DoctorAppointmentAppSolution\\DoctorBLTest\\DoctorBL.cs",
+              "RelativeToolTip": "DoctorBLTest\\DoctorBL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADgAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T09:12:44.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DoctorBL.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day10\\DoctorAppointmentAppSolution\\DoctorAppointmentAppBLLibrary\\DoctorBL.cs",
+              "RelativeDocumentMoniker": "DoctorAppointmentAppBLLibrary\\DoctorBL.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day10\\DoctorAppointmentAppSolution\\DoctorAppointmentAppBLLibrary\\DoctorBL.cs",
+              "RelativeToolTip": "DoctorAppointmentAppBLLibrary\\DoctorBL.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAwA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T08:43:32.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IDoctorService.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day10\\DoctorAppointmentAppSolution\\DoctorAppointmentAppBLLibrary\\IDoctorService.cs",
+              "RelativeDocumentMoniker": "DoctorAppointmentAppBLLibrary\\IDoctorService.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day10\\DoctorAppointmentAppSolution\\DoctorAppointmentAppBLLibrary\\IDoctorService.cs",
+              "RelativeToolTip": "DoctorAppointmentAppBLLibrary\\IDoctorService.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAA6wBsAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T15:37:13.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day10\\DoctorAppointmentAppSolution\\AppointmentBLTest\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "AppointmentBLTest\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day10\\DoctorAppointmentAppSolution\\AppointmentBLTest\\UnitTest1.cs",
+              "RelativeToolTip": "AppointmentBLTest\\UnitTest1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T12:49:55.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day10\\DoctorAppointmentAppSolution\\PatientBLUnitTest\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "PatientBLUnitTest\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day10\\DoctorAppointmentAppSolution\\PatientBLUnitTest\\UnitTest1.cs",
+              "RelativeToolTip": "PatientBLUnitTest\\UnitTest1.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAgwFMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T11:07:29.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IPatientService.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day10\\DoctorAppointmentAppSolution\\DoctorAppointmentAppBLLibrary\\IPatientService.cs",
+              "RelativeDocumentMoniker": "DoctorAppointmentAppBLLibrary\\IPatientService.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day10\\DoctorAppointmentAppSolution\\DoctorAppointmentAppBLLibrary\\IPatientService.cs",
+              "RelativeToolTip": "DoctorAppointmentAppBLLibrary\\IPatientService.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAIBJwBwAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T15:37:47.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppointmentBL.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day10\\DoctorAppointmentAppSolution\\DoctorAppointmentAppBLLibrary\\AppointmentBL.cs",
+              "RelativeDocumentMoniker": "DoctorAppointmentAppBLLibrary\\AppointmentBL.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day10\\DoctorAppointmentAppSolution\\DoctorAppointmentAppBLLibrary\\AppointmentBL.cs",
+              "RelativeToolTip": "DoctorAppointmentAppBLLibrary\\AppointmentBL.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAiwEEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T09:08:33.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AppointmentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day10\\DoctorAppointmentAppSolution\\DoctorAppointmentAppDLLibrary\\AppointmentRepository.cs",
+              "RelativeDocumentMoniker": "DoctorAppointmentAppDLLibrary\\AppointmentRepository.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day10\\DoctorAppointmentAppSolution\\DoctorAppointmentAppDLLibrary\\AppointmentRepository.cs",
+              "RelativeToolTip": "DoctorAppointmentAppDLLibrary\\AppointmentRepository.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAIBJwAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T12:46:02.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day10\\DoctorAppointmentAppSolution\\DoctorAppointmentAppModelLibrary\\Doctor.cs",
+              "RelativeDocumentMoniker": "DoctorAppointmentAppModelLibrary\\Doctor.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day10\\DoctorAppointmentAppSolution\\DoctorAppointmentAppModelLibrary\\Doctor.cs",
+              "RelativeToolTip": "DoctorAppointmentAppModelLibrary\\Doctor.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAuwBcAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T09:40:50.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day10\\DoctorAppointmentAppSolution\\DoctorAppointmentAppModelLibrary\\Patient.cs",
+              "RelativeDocumentMoniker": "DoctorAppointmentAppModelLibrary\\Patient.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day10\\DoctorAppointmentAppSolution\\DoctorAppointmentAppModelLibrary\\Patient.cs",
+              "RelativeToolTip": "DoctorAppointmentAppModelLibrary\\Patient.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAIBQwBgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T15:40:16.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Appointment.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day10\\DoctorAppointmentAppSolution\\DoctorAppointmentAppModelLibrary\\Appointment.cs",
+              "RelativeDocumentMoniker": "DoctorAppointmentAppModelLibrary\\Appointment.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day10\\DoctorAppointmentAppSolution\\DoctorAppointmentAppModelLibrary\\Appointment.cs",
+              "RelativeToolTip": "DoctorAppointmentAppModelLibrary\\Appointment.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAA7wCkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T10:43:19.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DoctorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day10\\DoctorAppointmentAppSolution\\DoctorAppointmentAppDLLibrary\\DoctorRepository.cs",
+              "RelativeDocumentMoniker": "DoctorAppointmentAppDLLibrary\\DoctorRepository.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day10\\DoctorAppointmentAppSolution\\DoctorAppointmentAppDLLibrary\\DoctorRepository.cs",
+              "RelativeToolTip": "DoctorAppointmentAppDLLibrary\\DoctorRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T08:53:32.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IAppointmentService.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day10\\DoctorAppointmentAppSolution\\DoctorAppointmentAppBLLibrary\\IAppointmentService.cs",
+              "RelativeDocumentMoniker": "DoctorAppointmentAppBLLibrary\\IAppointmentService.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day10\\DoctorAppointmentAppSolution\\DoctorAppointmentAppBLLibrary\\IAppointmentService.cs",
+              "RelativeToolTip": "DoctorAppointmentAppBLLibrary\\IAppointmentService.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAYwCwAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T15:32:40.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day10\\DoctorAppointmentAppSolution\\DoctorAppointmentApp\\Program.cs",
+              "RelativeDocumentMoniker": "DoctorAppointmentApp\\Program.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\INTERN_TASKS\\Day10\\DoctorAppointmentAppSolution\\DoctorAppointmentApp\\Program.cs",
+              "RelativeToolTip": "DoctorAppointmentApp\\Program.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAxwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T09:36:10.732Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

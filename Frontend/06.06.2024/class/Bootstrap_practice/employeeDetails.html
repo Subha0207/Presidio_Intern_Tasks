@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Complete Details</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .card {
+            margin: 0 auto; /* Center align the card */
+            max-width: 600px; /* Limit card width */
+            border: 1px solid #dee2e6;
+            border-radius: 0.25rem;
+            background-color: #e3f2fd; /* Light blue background */
+        }
+        .card-body {
+            background-color: #ffffff;
+        }
+        h2 {
+            color: #007bff;
+        }
+        .detail-label {
+            font-weight: bold;
+        }
+        .row {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px; /* Add margin between rows */
+        }
+        .row > div {
+            flex: 1; /* Equal width for both parts */
+        }
+        .row > div:first-child {
+            text-align: right;
+            margin-right: 10px;
+            flex: 0 0 auto; /* Keep label part fixed */
+            color: #6c757d;
+        }
+        .row > div:last-child {
+            color: #343a40;
+        }
+        .img-thumbnail {
+            border: 2px solid #007bff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Employee Complete Details</h2>
+        <div class="card shadow">
+            <div class="card-body">
+                <div class="text-center mb-4">
+                    <img src="employee.jpg" alt="Employee Picture" class="img-thumbnail" width="150">
+                </div>
+                <div class="row">
+                    <div><strong>Name:</strong></div>
+                    <div>John Doe</div>
+                </div>
+                <div class="row">
+                    <div><strong>Date of Birth:</strong></div>
+                    <div>January 1, 1990</div>
+                </div>
+                <div class="row">
+                    <div><strong>Phone:</strong></div>
+                    <div>123-456-7890</div>
+                </div>
+                <div class="row">
+                    <div><strong>Email:</strong></div>
+                    <div>john.doe@example.com</div>
+                </div>
+                <div class="row">
+                    <div><strong>Blood Group:</strong></div>
+                    <div>O+</div>
+                </div>
+                <div class="row">
+                    <div><strong>Address:</strong></div>
+                    <div>1234 Elm Street, Springfield, IL 62704</div>
+                </div>
+                <div class="row">
+                    <div><strong>Position:</strong></div>
+                    <div>Software Engineer</div>
+                </div>
+                <div class="row">
+                    <div><strong>Department:</strong></div>
+                    <div>IT</div>
+                </div>
+                <div class="row">
+                    <div><strong>Date of Joining:</strong></div>
+                    <div>June 15, 2015</div>
+                </div>
+                <div class="row">
+                    <div><strong>Emergency Contact:</strong></div>
+                    <div>Jane Doe (Spouse) - 987-654-3210</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
