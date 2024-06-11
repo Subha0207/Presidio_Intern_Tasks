@@ -1,12 +1,12 @@
-
 input[type="checkbox"] {
-    border: 1px solid #ced4da; /* Add border */
-    border-radius: 3px; /* Add border radius */
-    padding: 4px; /* Add padding */
-    margin-right: 5px; /* Add some space between the checkbox and the label */
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+    border: 1px solid #ced4da;
+    border-radius: 3px;
+    padding: 4px;
+    margin-right: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
-.text1{
+
+.text1 {
     margin-left: 20px;
 }
 
@@ -17,7 +17,6 @@ input[type="checkbox"] {
 
 .dropdown button {
     width: 50px;
-    /* Increased size for better interaction */
     height: 50px;
     background-color: white;
     color: black;
@@ -35,17 +34,17 @@ input[type="checkbox"] {
     position: absolute;
     background-color: #f9f9f9;
     min-width: auto;
-    /* Adjusts to content width */
+
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     white-space: nowrap;
-    /* Prevents text wrapping */
+
     bottom: 100%;
-    /* Position above the button */
+
     left: 0;
-    /* Align to the left of the button */
+
     margin-bottom: 10px;
-    /* Optional: Add some space between the button and the dropdown */
+
 }
 
 .dropdown-content a {
@@ -56,12 +55,12 @@ input[type="checkbox"] {
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1
+    background-color: #f1f1f1;
 }
 
 .container {
     padding: 0;
-    margin:0;
+    margin: 0;
 }
 
 .card {
@@ -85,20 +84,17 @@ tr:hover .popover-icon {
     visibility: visible;
 }
 
-
 .card-body {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     min-height: 1px;
-     padding: 0px; 
+    padding: 0px;
 }
-
 
 .table {
     width: 100%;
     padding: 0;
     margin: 0;
-
 }
 
 .badge {
@@ -143,9 +139,11 @@ tr:hover .popover-icon {
     position: relative;
     max-width: 250px;
 }
+
 .table-wrapper {
     margin-left: -20px;
-    margin-right: -20px;  }
+    margin-right: -20px;
+}
 
 .description {
     display: -webkit-box;
@@ -188,7 +186,6 @@ tr:hover .popover-icon {
 }
 
 .page-item {
-    
     margin: 0 5px;
 }
 
@@ -202,6 +199,82 @@ tr:hover .popover-icon {
     display: inline-block;
     justify-items: center;
 }
+
 .row {
     margin: 0;
+}
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    body {
+        font-size: 1vw;
+    }
+
+    .bold,
+    th {
+        font-size: 1.5vw;
+    }
+
+    .badge {
+        min-width: 5vw;
+        font-size: 1.1vw;
+        padding: 4px 8px;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    body {
+        font-size: 0.8vw;
+    }
+
+    .bold,
+    th {
+        font-size: 1.2vw;
+    }
+
+    .badge {
+        min-width: 4vw;
+        font-size: 1vw;
+        padding: 4px 8px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    body {
+        font-size: 0.8vw;
+    }
+
+    .bold,
+    th {
+        font-size: 1.3vw;
+    }
+
+    .badge {
+        min-width: 3.5vw;
+        font-size: 0.9vw;
+        padding: 3px 6px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    body {
+        font-size: 0.8vw;
+    }
+
+    .bold,
+    th {
+        font-size: 1.2vw;
+    }
+
+    .badge {
+        min-width: 3vw;
+        font-size: 0.8vw;
+        padding: 3px 6px;
+    }
 }

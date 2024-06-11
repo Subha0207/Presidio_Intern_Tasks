@@ -5,9 +5,8 @@
 }
 
 :root {
-    --primary-color:#2148C0;
+    --primary-color: #2148C0;
     overflow: hidden;
-
 }
 
 body {
@@ -16,7 +15,7 @@ body {
     height: 100vh;
     height: 100svh;
     overflow: hidden;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
 }
 
 img {
@@ -26,17 +25,17 @@ img {
 
 .vector-bg {
     position: absolute;
-   
-}   
+    z-index: -1; /* Ensure background vectors stay behind other elements */
+}
 
 .vector-bg-1 {
     right: 0;
     height: 100%;
 }
 
-
 .vector-bg-1 img {
     height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
 }
 
 .vector-bg-2 {
@@ -46,6 +45,7 @@ img {
 
 .vector-bg-2 img {
     width: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
 }
 
 .wrapper {
@@ -54,10 +54,12 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 1em;
+    z-index: 1; /* Ensure content stays above background vectors */
 }
 
 .login-container {
-    width: min(15em, 90%);
+    width: min(20em, 90%);
 }
 
 .login-icon-container {
@@ -65,8 +67,7 @@ img {
     justify-content: center;
 }
 
-
-.login-icon-container img{
+.login-icon-container img {
     width: 5em;
 }
 
@@ -90,29 +91,28 @@ img {
     display: flex;
 }
 
-.login-field .icon img{
+.login-field .icon img {
     width: 1em;
 }
 
-
-.login-field .inp-field input{
+.login-field .inp-field input {
     outline: none;
     border: none;
     background: transparent;
     color: white;
+    width: 100%;
 }
 
-.login-field .inp-field input::placeholder{
+.login-field .inp-field input::placeholder {
     color: rgb(204, 204, 204);
     letter-spacing: 1px;
     font-size: .875em;
 }
 
-.login-field .inp-field input:focus{
+.login-field .inp-field input:focus {
     outline: none;
     border: none;
 }
-
 
 .login-btn {
     width: 100%;
@@ -138,23 +138,132 @@ img {
     color: white;
 }
 
+/* Adjustments for different screen sizes */
+@media screen and (max-width: 1200px) {
+    .login-container {
+        width: min(25em, 90%);
+    }
 
+    .login-fields {
+        margin-top: 2em;
+    }
+}
 
-@media screen and (width < 800px) {
+@media screen and (max-width: 800px) {
     .vector-bg-1 {
         right: -20%;
+        height: 70%; 
     }
 
     .vector-bg-2 {
         left: -10%;
         bottom: -10%;
     }
+
+    .login-container {
+        width: min(20em, 90%);
+    }
+
+    .login-icon-container img {
+        width: 4em;
+    }
+
+    .login-fields {
+        margin-top: 2em;
+    }
 }
 
-@media screen and (width < 600px) {
+@media screen and (max-width: 600px) {
     .vector-bg-1 {
         right: -70%;
         top: -10%;
+       
     }
 
+    .login-container {
+        width: min(18em, 90%);
+    }
+
+    .login-icon-container img {
+        width: 3.5em;
+    }
+
+    .login-fields {
+        margin-top: 1.5em;
+        gap: 0.5em;
+    }
+
+    .login-field {
+        padding: .5em;
+        gap: 0.75em;
+    }
+
+    .login-field .icon img {
+        width: 0.875em;
+    }
+}
+
+@media screen and (max-width: 500px) and (min-width: 400px) {
+    .vector-bg-1 {
+        right: -80%;
+        top: -10%;
+       
+    }
+
+    .login-container {
+        width: min(17em, 90%);
+    }
+
+    .login-icon-container img {
+        width: 3.2em;
+    }
+
+    .login-fields {
+        margin-top: 1.5em;
+        gap: 0.5em;
+    }
+
+    .login-field {
+        padding: .45em;
+        gap: 0.75em;
+    }
+
+    .login-field .icon img {
+        width: 0.875em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .vector-bg-1 {
+        right: -90%;
+        top: -20%;
+      
+    }
+
+    .login-container {
+        width: min(16em, 90%);
+    }
+
+    .login-icon-container img {
+        width: 3em;
+    }
+
+    .login-fields {
+        margin-top: 1em;
+        gap: 0.5em;
+    }
+
+    .login-field {
+        padding: .4em;
+        gap: 0.5em;
+    }
+
+    .login-field .icon img {
+        width: 0.75em;
+    }
+
+    .login-btn {
+        padding: .6em;
+        margin-top: 1em;
+    }
 }
