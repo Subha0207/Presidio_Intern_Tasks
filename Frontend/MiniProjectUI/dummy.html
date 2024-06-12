@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Login and Register</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .left, .right {
+            flex: 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .left {
+            background-color: #f0f0f0;
+        }
+
+        .right {
+            flex: 2;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .input-field {
+            margin-bottom: 15px;
+        }
+
+        .input-field label {
+            display: block;
+            margin-bottom: 5px;
+            color: #666;
+        }
+
+        .input-field input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .left {
+                display: none;
+            }
+
+            .right {
+                flex: 1;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>Welcome to Our Site</h1>
+        </div>
+        <div class="right">
+            <div class="form-container">
+                <h2>Login</h2>
+                <form>
+                    <div class="input-field">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username">
+                    </div>
+                    <div class="input-field">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <button type="submit" class="button">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
