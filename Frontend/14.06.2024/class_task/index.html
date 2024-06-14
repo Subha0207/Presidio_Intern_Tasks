@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form id="registrationForm" novalidate>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" required>
+                <div class="invalid-feedback" id="name-feedback">Please enter your name.</div>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" class="form-control" id="phone" pattern="^\d{10}$" required>
+                <div class="invalid-feedback" id="phone-feedback">Please enter a valid 10-digit phone number.</div>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" class="form-control" id="dob" required>
+                <div class="invalid-feedback" id="dob-feedback">Please enter your date of birth.</div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" required>
+                <div class="invalid-feedback" id="email-feedback">Please enter a valid email address.</div>
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="text" class="form-control" id="age" readonly>
+            </div>
+            <div class="form-group">
+                <label>Gender</label>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="gender" value="Male" required>
+                    <label class="form-check-label">Male</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="gender" value="Female" required>
+                    <label class="form-check-label">Female</label>
+                </div>
+                <div class="invalid-feedback" id="gender-feedback">Please select your gender.</div>
+            </div>
+            <div class="form-group">
+                <label>Qualification</label>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="qualification" value="High School">
+                    <label class="form-check-label">High School</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="qualification" value="Bachelor's">
+                    <label class="form-check-label">Bachelor's</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="qualification" value="Master's">
+                    <label class="form-check-label">Master's</label>
+                </div>
+                <div class="invalid-feedback" id="qualification-feedback">Please select at least one qualification.</div>
+            </div>
+            <div class="form-group">
+                <label for="profession">Profession</label>
+                <input list="professions" class="form-control" id="profession" required>
+                <datalist id="professions">
+                    <!-- Predefined values -->
+                </datalist>
+                <div class="invalid-feedback" id="profession-feedback">Please enter or select your profession.</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+ 
+</body>
+</html>
+

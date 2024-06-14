@@ -1,0 +1,16 @@
+.form-control {
+    border-color: black; /* default border color */
+}
+.form-control.is-invalid {
+    border-color: red;
+}
+.form-control.is-valid {
+    border-color: green;
+}
+.invalid-feedback {
+    display: none;
+    color: red;
+}
+.was-validated .invalid-feedback {
+    display: block;
+}

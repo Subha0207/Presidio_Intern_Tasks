@@ -1,0 +1,196 @@
+function checkingEvenNumbers(num)
+{
+    return num%2==0//boolean
+}
+
+
+function filteringEvenNumbers(numbers,callbackFunc)
+{
+    let numberArray=[]
+    for(let value of numbers)
+    {
+        if(callbackFunc(value))
+            numberArray.push(value)
+    }
+    return numberArray
+}
+
+let arrayOfNumbers=[22,45,99,3,8,44]
+console.log(filteringEvenNumbers(arrayOfNumbers,checkingEvenNumbers));
+
+
+
+function checkingEvenNumbers(num)
+{
+    return num%2==0//boolean
+}
+
+
+function filteringEvenNumbers(numbers,callbackFunc)
+{
+    let numberArray=[]
+    for(let value of numbers)
+    {
+        if(callbackFunc(value))
+            numberArray.push(value)
+    }
+    return numberArray
+}
+
+let arrayOfNumbers=[22,45,99,3,8,44]
+console.log(filteringEvenNumbers(arrayOfNumbers,checkingEvenNumbers))
+
+---------------------------------------------------------------------------
+function checkingEvenNumbers(num)
+{
+    return num%2==0//boolean
+}
+
+
+function filteringEvenNumbers(numbers,callbackFunc)
+{
+    let numberArray=[]
+    for(let value of numbers)
+    {
+        if(callbackFunc(value))
+            numberArray.push(value)
+    }
+    return ()=>console.log(numberArray)
+}
+
+let arrayOfNumbers=[22,45,99,3,8,44]
+// console.log(filteringEvenNumbers(arrayOfNumbers,checkingEvenNumbers))
+let result=filteringEvenNumbers(arrayOfNumbers,checkingEvenNumbers)
+result()
+---------------------------------------------------------------------------
+
+//reduce
+// let arrayOfNumbers=[1,2,3,4,5]
+// let sumOfArrayElements=arrayOfNumbers.reduce((sum,value)=>{
+// return sum+value
+// })
+// console.log(sumOfArrayElements)
+
+//foreach
+// let arrayOfNumbers=[22,45,99,3,8,44]
+// arrayOfNumbers.forEach(num=>{console.log(num)})
+
+//sort
+let arrayOfNumbers=[22,45,99,3,8,44]
+arrayOfNumbers.sort((numOne,numTwo)=>numOne-numTwo)
+console.log(arrayOfNumbers)
+--------------------------------------------------------------------------
+js file
+const accessingParaElement=()=>{
+    let para=document.getElementById('para1')
+    console.log(para)
+}
+
+const nodeList=document.getElementsByName('gen')
+console.log(nodeList)
+
+const tagList=document.getElementsByTagName('P')
+console.log(tagList)
+
+const classList=document.getElementsByClassName('demo')
+console.log(classList)
+
+const paraId=document.querySelector('.para1')
+console.log(paraId)
+
+html file
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demo of HOC</title>
+        <script defer src="DOM.js"></script>
+    </head>
+    <body>
+        <p class="para1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur exercitationem, nihil quis non ut molestias ipsum mollitia animi dolore cupiditate ab laboriosam, sed molestiae eos placeat autem. Tenetur, voluptatem accusantium.</p>
+        <p>hello</p>
+        <h1 class="demo">Hello</h1>
+        <h2 class="demo">hi</h2>
+        <h3>Radio buttons</h3>
+        <input type="radio" name="gen">Male
+        <br>
+        <input type="radio" name="gen">female
+        <br>
+        <input type="radio" name="gen">other
+        <br>
+        <ol class="para1">
+            <li>hey</li>
+        </ol>
+
+
+
+        <button onclick="accessingParaElement()">Click Me!</button>
+    </body>
+</html>
+
+------------------------------------------------------------------
+  const dateDisplay=()=>{
+      document.getElementById('demo').innerHTML=Date()
+  }
+  
+  
+  -------------------------------------------------------------------
+  //changing the style of an element
+const changeStyle=()=>{
+    document.getElementById('demo').style.color='pink'
+}
+
+
+//creating and adding element
+// let element=document.createElement('div')
+// element.innerHTML='<h4>hey we are still learning</h4>'
+// document.body.appendChild(element)
+
+
+//adding element ot existing element
+// let existingDiv=document.getElementById('divId')
+// let element=document.createElement('div')
+// element.innerHTML='<h4>hey we are still learning</h4>'
+// existingDiv.appendChild(element)
+
+
+//removing the element
+
+const removeElement=()=>{
+    let existingDivWithId=document.getElementById('divId')
+    document.body.removeChild(existingDivWithId)
+}
+
+html file
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demo of HOC</title>
+        <script defer src="DOM.js"></script>
+    </head>
+    <body>
+        <p class="para1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur exercitationem, nihil quis non ut molestias ipsum mollitia animi dolore cupiditate ab laboriosam, sed molestiae eos placeat autem. Tenetur, voluptatem accusantium.</p>
+        <p>hello</p>
+        <h1 id="demo">Hello</h1>
+        <button onclick="changeStyle()">Change Color</button>
+        <h2 class="demo">hi</h2>
+        <h3>Radio buttons</h3>
+        <input type="radio" name="gen">Male
+        <br>
+        <input type="radio" name="gen">female
+        <br>
+        <input type="radio" name="gen">other
+        <br>
+        <ol class="para1">
+            <li>hey</li>
+        </ol>
+<div id="divId">
+hey
+</div>
+
+
+        <button onclick="accessingParaElement()">Click Me!</button>
+        <button onclick="removeElement()">remove the div with hey</button>
+    </body>
+</html>
+  
+
