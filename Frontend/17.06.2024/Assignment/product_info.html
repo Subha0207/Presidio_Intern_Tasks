@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Info Page</title>
+    <link rel="stylesheet" href="product_info_style.css">
+</head>
+
+<body>
+    <h2>Product-info page</h2>
+    <div class="container">
+        <div class="image-container">
+            <div class="info-images" id="info-images">
+
+            </div>
+            <div class="thumbnail_image">
+                <img src="" alt="Large Image" id="large-image">
+            </div>
+        </div>
+
+        <div class="info-container">
+            <div class="title-container">
+                <h1 id="title"></h1>
+            </div>
+            <div class="price">
+                <h3>Price: <span id="discounted-price"></span></h3>
+                <p>MRP: <span id="original-price"></span></p>
+                <div class="availability">
+                    <p id="availability-status"></p>
+                    <p id="stock"></p>
+                </div>
+            </div>
+            <div class="other-info">
+                <div class="square">
+                    <p id="square-info">Warranty</p>
+                    <p id="warranty"></p>
+                </div>
+                <div class="square">
+                    <p id="square-info">Return Policy</p>
+                    <p id="return-policy"></p>
+                </div>
+                <div class="square">
+                    <p id="square-info">Shipping Info</p>
+                    <p id="shipping-info"></p>
+                </div>
+            </div>
+            <h3>Product details</h3>
+            <div class="product-details">
+                <p class="key">Brand</p>
+                <p class="value" id="brand"></p>
+            </div>
+            <div class="product-details">
+                <p class="key">Title</p>
+                <p class="value" id="product-title"></p>
+            </div>
+            <div class="product-details">
+                <p class="key">Weight</p>
+                <p class="value" id="weight"></p>
+            </div>
+            <div class="product-details">
+                <p class="key">Dimensions</p>
+                <div class="dimensions">
+                    <p class="value" id="width"></p>
+                    <p class="value" id="height"></p>
+                    <p class="value" id="depth"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="order-container">
+        <button id="cartbutton">Add to Cart</button>
+        <button id="buybutton">Buy Now</button>
+    </div>
+    <center>
+        <h3>Customer reviews</h3>
+    </center>
+    <div class="reviews" id="reviews">
+
+    </div>
+
+    <script src="product_info_script.js"></script>
+</body>
+
+</html>
