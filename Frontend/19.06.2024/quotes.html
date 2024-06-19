@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quotes</title>
+  <link rel="stylesheet" href="quote_style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="quotes.html">Quotes</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Quotes</h1>
+    <!-- Container for search bar and sort dropdown -->
+    <div class="controls-container">
+      <div id="search-container">
+        <input type="text" id="search-input" placeholder="Search quotes...">
+        <button onclick="searchQuotes()">Search</button>
+      </div>
+      <div class="sort-dropdown">
+        <label for="sort-quotes">Sort by Author:</label>
+        <select id="sort-quotes" onchange="sortQuotes()">
+          <option value="ascending">Ascending</option>
+          <option value="descending">Descending</option>
+        </select>
+      </div>
+    </div>
+    
+    <div id="quote-container" class="grid-container"></div>
+    <div id="pagination">
+      <button onclick="previousPage()">Previous</button>
+      <span id="page-number">1</span>
+      <button onclick="nextPage()">Next</button>
+    </div>
+  </main>
+  <script src="quote_script.js"></script>
+</body>
+</html>

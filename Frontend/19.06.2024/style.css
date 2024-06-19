@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between; /* Align items in header */
+    align-items: center; /* Center vertically */
+  }
+  .logo {
+    display: flex;
+    align-items: center; /* Center vertically */
+  }
+  .logo .nav-heading {
+    color: #fff;
+    margin-left: 10px; /* Adjust margin for spacing */
+  }
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  nav ul li {
+    margin: 0 15px;
+  }
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  .nav-icon {
+    width: 24px;
+    vertical-align: middle;
+  }
+  main {
+    text-align: center;
+    padding: 2em 1em;
+  }
+  h1 {
+    color: #333;
+  }
+  p {
+    font-size: 1.2em;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto 2em;
+  }
+  .quote-section {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    max-width: 800px;
+    margin: 2em auto;
+  }
+  .quote-section h2 {
+    color: #444;
+    margin-bottom: 1em;
+  }
+  .quote {
+    font-style: italic;
+    color: #555;
+  }
+  .author {
+    margin-top: 1em;
+    font-weight: bold;
+    color: #888;
+  }
+  #animated-text {
+    text-align: left; /* Align text to the left */
+  }
+  .animate-text {
+    display: inline-block;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+    white-space: pre; /* Ensures spaces are preserved */
+  }
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
