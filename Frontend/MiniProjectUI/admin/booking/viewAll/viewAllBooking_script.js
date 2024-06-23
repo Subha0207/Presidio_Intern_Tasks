@@ -1,151 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paginated Data Table</title>
-    <style>
-        /* Reset default margin and padding */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .data-table-container {
-            display: block;
-        }
-
-        #dataTable {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-        }
-
-        #dataTable th,
-        #dataTable td {
-            padding: 12px;
-            border: 1px solid #ddd;
-            text-align: left;
-        }
-
-        #dataTable th {
-            background-color: #f2f2f2;
-        }
-
-        .cards-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .card {
-            width: calc(50% - 10px);
-            /* Two cards per row */
-            margin-bottom: 20px;
-            padding: 15px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .card:nth-child(even) {
-            margin-right: 0;
-        }
-
-        .card-details {
-            margin-bottom: 10px;
-        }
-
-        .pagination {
-            margin-top: 20px;
-            text-align: center;
-        }
-
-        .pagination button {
-            padding: 10px 20px;
-            margin: 0 5px;
-            border: none;
-            background-color: #007bff;
-            color: white;
-            cursor: pointer;
-        }
-
-        .pagination button:disabled {
-            background-color: #cccccc;
-            cursor: not-allowed;
-        }
-
-        @media (max-width: 768px) {
-            .data-table-container {
-                display: none;
-                /* Hide table on small screens */
-            }
-
-            .cards-container {
-                display: block;
-                /* Show cards container on small screens */
-            }
-        }
-
-        @media (min-width: 769px) {
-            .data-table-container {
-                display: block;
-                /* Show table on large screens */
-            }
-
-            .cards-container {
-                display: none;
-                /* Hide cards on large screens */
-            }
-        }
-    </style>
-</head>
-
-<body>
-    <div class="container">
-        <div id="dataTableContainer" class="data-table-container">
-            <!-- Table will be inserted here dynamically -->
-        </div>
-        <div id="cardsContainer" class="cards-container">
-            <!-- Cards will be inserted here dynamically -->
-        </div>
-        <div class="pagination">
-            <button id="prevBtn">Previous</button>
-            <span id="pageInfo"></span>
-            <button id="nextBtn">Next</button>
-        </div>
-    </div>
-
-    <script>
 document.addEventListener('DOMContentLoaded', function () {
     const apiUrl = 'https://localhost:7127/api/Booking/Admin/GetAllBookings';
     let token = localStorage.getItem('token'); // Retrieve token from local storage
 
     const rowsPerPage = 5;
     let currentPage = 1;
+    let currentSort = '';
 
     const dataTableContainer = document.getElementById('dataTableContainer');
     const cardsContainer = document.getElementById('cardsContainer');
     const pageInfo = document.getElementById('pageInfo');
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
+    const searchInput = document.getElementById('searchInput');
+    const sortSelect = document.getElementById('sortSelect');
 
     async function fetchData() {
         try {
@@ -168,14 +36,51 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    async function renderTable(page) {
+    function filterData(data, query) {
+        return data.filter(row => {
+            return (
+                row.bookingId.toString().toLowerCase().includes(query.toLowerCase()) ||
+                row.flightId.toString().toLowerCase().includes(query.toLowerCase()) ||
+                row.routeId.toString().toLowerCase().includes(query.toLowerCase()) ||
+                row.noOfPersons.toString().toLowerCase().includes(query.toLowerCase()) ||
+                row.totalAmount.toString().toLowerCase().includes(query.toLowerCase())
+            );
+        });
+    }
+
+    function sortData(data, sortBy) {
+        if (sortBy === 'flightId') {
+            return data.sort((a, b) => a.flightId - b.flightId);
+        } else if (sortBy === 'bookingId') {
+            return data.sort((a, b) => a.bookingId - b.bookingId);
+        } else if (sortBy === 'noOfPersons') {
+            return data.sort((a, b) => a.noOfPersons - b.noOfPersons);
+        } else if (sortBy === 'routeId') {
+            return data.sort((a, b) => a.routeId - b.routeId);
+        } else if (sortBy === 'totalAmount') {
+            return data.sort((a, b) => a.totalAmount - b.totalAmount);
+        } else {
+            return data; // No sorting
+        }
+    }
+
+    async function renderTable(page, query = '', sortBy = '') {
         const data = await fetchData();
+        let filteredData = filterData(data, query);
+
+        if (sortBy) {
+            filteredData = sortData(filteredData, sortBy);
+            currentSort = sortBy;
+        } else if (currentSort) {
+            filteredData = sortData(filteredData, currentSort);
+        }
+
         dataTableContainer.innerHTML = ''; // Clear previous table content
         cardsContainer.innerHTML = ''; // Clear previous card content
 
         const start = (page - 1) * rowsPerPage;
         const end = start + rowsPerPage;
-        const pageData = data.slice(start, end);
+        const pageData = filteredData.slice(start, end);
 
         if (window.innerWidth >= 769) {
             // Display table on large screens
@@ -211,13 +116,14 @@ document.addEventListener('DOMContentLoaded', function () {
                     <td>${row.noOfPersons}</td>
                     <td>${row.totalAmount}</td>
                 `;
+               
                 tbody.appendChild(tr);
             });
 
         } else {
             // Display cards on small screens
             dataTableContainer.style.display = 'none';
-            cardsContainer.style.display = 'block';
+            cardsContainer.style.display = 'flex';
 
             pageData.forEach(row => {
                 const card = document.createElement('div');
@@ -235,27 +141,42 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         }
 
-        pageInfo.textContent = `Page ${currentPage} of ${Math.ceil(data.length / rowsPerPage)}`;
+        pageInfo.textContent = `Page ${currentPage} of ${Math.ceil(filteredData.length / rowsPerPage)}`;
 
         prevBtn.disabled = currentPage === 1;
-        nextBtn.disabled = currentPage === Math.ceil(data.length / rowsPerPage);
+        nextBtn.disabled = currentPage === Math.ceil(filteredData.length / rowsPerPage);
     }
 
     prevBtn.addEventListener('click', () => {
         if (currentPage > 1) {
             currentPage--;
-            renderTable(currentPage);
+            renderTable(currentPage, searchInput.value, currentSort);
         }
     });
 
     nextBtn.addEventListener('click', () => {
-        renderTable(currentPage + 1);
+        fetchData().then(data => {
+            const filteredData = filterData(data, searchInput.value);
+            if (currentPage < Math.ceil(filteredData.length / rowsPerPage)) {
+                currentPage++;
+                renderTable(currentPage, searchInput.value, currentSort);
+            }
+        });
+    });
+
+    searchInput.addEventListener('input', () => {
+        currentPage = 1; // Reset to first page when searching
+        renderTable(currentPage, searchInput.value, currentSort);
+    });
+
+    sortSelect.addEventListener('change', () => {
+        const sortBy = sortSelect.value;
+        renderTable(currentPage, searchInput.value, sortBy);
+    });
+
+    window.addEventListener('resize', () => {
+        renderTable(currentPage, searchInput.value, currentSort);
     });
 
     renderTable(currentPage);
 });
-
-    </script>
-</body>
-
-</html>

@@ -130,7 +130,8 @@
             </div>
             <ul id="nav-menu">
                 <li><a href="#" onclick="loadContent('add_booking'); toggleMenu()">Add Booking</a></li>
-                <li><a href="#" onclick="loadContent('view_all'); toggleMenu()">View All Booking</a></li>
+                <li><a href="#" onclick="loadContent('../booking/viewAll/viewAllBooking'); toggleMenu()">View All
+                        Booking</a></li>
                 <li><a href="#" onclick="loadContent('delete'); toggleMenu()">Delete Booking</a></li>
 
             </ul>
@@ -148,17 +149,17 @@
 
         function loadContent(page) {
             var mainContent = document.getElementById('main-content');
-            mainContent.innerHTML = 'Loading...'; // Placeholder for loading indicator
+            mainContent.innerHTML = 'Loading...'; 
 
-            var xhr = new XMLHttpRequest();
-            xhr.open('GET', page + '.html', true);
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState == 4 && xhr.status == 200) {
-                    mainContent.innerHTML = xhr.responseText;
-                }
-            };
-            xhr.send();
+            var iframe = document.createElement('iframe');
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+            iframe.style.border = 'none';
+            iframe.src = page + '.html';
+            mainContent.innerHTML = '';
+            mainContent.appendChild(iframe);
         }
+
     </script>
 </body>
 

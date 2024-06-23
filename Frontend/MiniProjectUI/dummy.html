@@ -1,230 +1,397 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Segmented Control UI with Partitioned Tabs</title>
-    <link rel="stylesheet" href="admin_flight_style.css">
+    <title>Flight Booking</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-            margin: 0;
-            background-image: linear-gradient(120deg, #a8e0c1 0%, #28a745 100%);
-            /* Gradient background using the specified colors */
+            background-color: #f4f4f4;
+            padding: 20px;
         }
 
         .container {
-            height: 80%;
-            width: 90%;
-            max-width: 600px; /* Maximum width */
-            margin: 20px;
-            background-color: #fff;
-            border-radius: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            animation: fade-in 0.8s ease-out; /* Fade-in animation */
+            max-width: 800px;
+            margin: 0 auto;
         }
 
-        @keyframes fade-in {
-            0% {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .segmented-control {
+        .stepper {
             display: flex;
-            border-bottom: 1px solid #ccc;
+            justify-content: space-between;
+            margin-bottom: 20px;
             position: relative;
-            z-index: 1;
-            background-color: #fff; /* White background for the segmented control */
-            overflow: hidden;
         }
 
-        .segmented-control::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 1px;
-            background-color: #ccc; /* Color of the partition */
-            z-index: -1; /* Behind the tabs */
-        }
-
-        .segmented-control input[type="radio"] {
-            display: none;
-        }
-
-        .segmented-control label {
-            flex: 1;
+        .step {
             text-align: center;
-            padding: 15px 0;
-            cursor: pointer;
-            color: #333; /* Dark text color */
-            transition: background-color 0.3s, color 0.3s;
+            flex: 1;
             position: relative;
-            z-index: 1;
         }
 
-        .segmented-control label::after {
+        .step::after {
             content: '';
             position: absolute;
-            top: 0;
-            right: 0;
-            width: 1px;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.1); /* Transparent partition */
-            z-index: 1;
+            top: 25%;
+            left: calc(50% + 15px);
+            right: calc(-50% + 15px);
+            border-top: 2px dotted #ccc;
+            /* Default color */
+            z-index: -1;
+            transition: border-color 0.3s ease;
+            /* Transition for color change */
         }
 
-        .segmented-control label:last-child::after {
-            display: none; /* Remove the partition border for the last tab */
+        .step:first-child::after {
+            left: 50%;
         }
 
-        .segmented-control label:hover {
-            background-color: rgba(255, 255, 255, 0.8); /* Lighten background on hover */
-            color: #000; /* Darken text color */
+        .step:last-child::after {
+            right: 50%;
         }
 
-        .segmented-control input[type="radio"]:checked + label {
-            background-color: #28a745; /* Green for checked state */
-            color: #fff; /* White text for checked state */
+        .step-circle {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            background-color: #ccc;
+            color: white;
+            border-radius: 50%;
+            margin-bottom: 5px;
         }
 
-        .content-container {
-            height: calc(100% - 55px); /* Adjusted height for content */
-            overflow: auto;
-            border-radius: 0 0 20px 20px; /* Rounded bottom corners */
-            background-color: #fff; /* White background for content */
-            animation: slide-in 0.8s ease-out; /* Slide-in animation */
+        .step.active::after {
+            border-color: black;
+            /* Active step color */
         }
 
-        @keyframes slide-in {
-            0% {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        .step.completed::after {
+            border-color: black;
+            /* Completed step color */
         }
 
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
+        .step.active .step-circle,
+        .step.completed .step-circle {
+            background-color: #333;
         }
 
-        .user-form {
-            height: auto;
-            width: 70%;
-            max-width: 500px;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            overflow-y: auto;
-            background-color: #f9f9f9;
-        }
-
-        .form-group {
-            margin-bottom: 15px;
-        }
-
-        .form-group label {
-            display: block;
+        .step.active .step-label,
+        .step.completed .step-label {
             font-weight: bold;
         }
 
-        .form-group input {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-            box-sizing: border-box;
+        .step-content {
+            display: none;
         }
 
-        .form-group button {
-            width: 100%;
-            padding: 10px;
-            background-color: #28a745; /* Green button background */
-            color: #fff; /* White button text color */
+        .step-content.active {
+            display: block;
+        }
+
+        .flight-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .flight-card h3 {
+            margin-top: 0;
+        }
+
+        .flight-card p {
+            margin-bottom: 8px;
+        }
+
+        button {
+            background-color: #333;
+            color: white;
             border: none;
-            border-radius: 3px;
+            padding: 10px 20px;
             cursor: pointer;
+            margin-top: 10px;
         }
 
-        .form-group button:hover {
-            background-color: #218838; /* Darker green on hover */
+        button[disabled] {
+            background-color: #ccc;
+            cursor: not-allowed;
         }
 
-        /* Media Queries */
-        @media screen and (max-width: 768px) {
-            .user-form {
-                width: 70%;
+        .flight-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .flight-header h3 {
+            margin: 0;
+        }
+
+        .flight-header span {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .flight-times {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+
+        .duration-text {
+            margin: 0;
+            font-weight: bold;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            height: auto;
+            width: auto;
+
+        }
+
+        .other-info {
+            display: flex;
+
+            justify-content: space-between;
+        }
+
+        @media (max-width: 600px) {
+
+
+            .flight-times {
+                flex-direction: column;
             }
 
-            .form-heading {
-                font-size: 24px;
-            }
-        }
-
-        @media screen and (max-width: 576px) {
-            .user-form {
-                width: 70%;
+            .duration-text {
+                text-align: center;
+                margin: 0;
+                font-weight: bold;
                 padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                height: auto;
+                width: auto;
+
             }
 
-            .form-group input {
-                padding: 6px;
+            .flight-times .time {
+                margin-bottom: 10px;
             }
-
-            .form-group button {
-                padding: 8px;
-            }
-        }
-
-        /* Centering the heading */
-        .form-heading {
-            text-align: center;
         }
     </style>
 </head>
+
 <body>
-
-<div class="container">
-    <div class="segmented-control">
-        <input type="radio" id="addFlight" name="option" checked>
-        <label for="addFlight" onclick="loadContent('addFlight.html')">Add Flight</label>
-        <input type="radio" id="updateFlight" name="option">
-        <label for="updateFlight" onclick="loadContent('updateFlight.html')">Update Flight</label>
-        <input type="radio" id="deleteFlight" name="option">
-        <label for="deleteFlight" onclick="loadContent('deleteFlight.html')">Delete Flight</label>
+    <div class="container">
+        <h2>Flight Booking</h2>
+        <div class="stepper">
+            <div class="step active" data-step="1">
+                <div class="step-circle">1</div>
+                <div class="step-label">Select</div>
+            </div>
+            <div class="step" data-step="2">
+                <div class="step-circle">2</div>
+                <div class="step-label">Book</div>
+            </div>
+            <div class="step" data-step="3">
+                <div class="step-circle">3</div>
+                <div class="step-label">Pay</div>
+            </div>
+        </div>
+        <div class="step-content active" data-step="1">
+            <!-- Content for Step 1: Select -->
+            <p>Select your flight from the options below.</p>
+            <div id="flight-cards">
+                <!-- Flight cards will be inserted here dynamically -->
+            </div>
+            <button id="next-btn">Continue</button>
+        </div>
+        <div class="step-content" data-step="2">
+            <!-- Content for Step 2: Book -->
+            <p>Book your selected flight.</p>
+            <!-- Add your booking form or details here -->
+            <button id="prev-btn">Back</button>
+            <button id="next-btn-2">Next</button>
+        </div>
+        <div class="step-content" data-step="3">
+            <!-- Content for Step 3: Pay -->
+            <p>Pay for your booking.</p>
+            <!-- Add your payment form or details here -->
+            <button id="prev-btn-2">Back</button>
+            <button id="finish-btn">Finish</button>
+        </div>
     </div>
 
-    <div class="content-container" id="content-container">
-        <iframe id="content-frame" src="addflight.html" frameborder="0"></iframe>
-    </div>
-</div>
+    <script>
 
-<script>
-    function loadContent(url) {
-        const iframe = document.getElementById('content-frame');
-        iframe.src = url;
-    }
-</script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const steps = document.querySelectorAll('.step');
+            const contents = document.querySelectorAll('.step-content');
+            const nextBtn = document.getElementById('next-btn');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn2 = document.getElementById('next-btn-2');
+            const prevBtn2 = document.getElementById('prev-btn-2');
+            const finishBtn = document.getElementById('finish-btn');
 
+            function setActiveStep(step) {
+                steps.forEach((elem) => {
+                    elem.classList.remove('active');
+                    elem.classList.remove('completed');
+                    if (parseInt(elem.getAttribute('data-step')) < step) {
+                        elem.classList.add('completed');
+                    }
+                    if (parseInt(elem.getAttribute('data-step')) === step) {
+                        elem.classList.add('active');
+                    }
+                });
+
+                contents.forEach((elem) => {
+                    elem.classList.remove('active');
+                    if (parseInt(elem.getAttribute('data-step')) === step) {
+                        elem.classList.add('active');
+                    }
+                });
+            }
+
+            prevBtn.addEventListener('click', function () {
+                setActiveStep(1);
+            });
+
+            prevBtn2.addEventListener('click', function () {
+                setActiveStep(2);
+            });
+
+            nextBtn.addEventListener('click', function () {
+                setActiveStep(2);
+            });
+
+            nextBtn2.addEventListener('click', function () {
+                setActiveStep(3);
+            });
+
+            finishBtn.addEventListener('click', function () {
+                alert('Booking process completed!');
+                setActiveStep(1);
+            });
+
+            async function fetchFlights() {
+                try {
+                    const response = await fetch('https://localhost:7127/api/Flight/GetAllDirectFlights');
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok ' + response.statusText);
+                    }
+                    const flights = await response.json();
+
+                    displayFlights(flights);
+                } catch (error) {
+                    console.error('There was a problem with the fetch operation:', error);
+                }
+            }
+
+            async function fetchFlightName(flightId) {
+                try {
+                    const response = await fetch(`https://localhost:7127/api/Flight/GetFlight/${flightId}`);
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok ' + response.statusText);
+                    }
+                    const flightDetails = await response.json();
+                    return flightDetails.flightName;
+                } catch (error) {
+                    console.error('There was a problem with the fetch operation:', error);
+                    return 'Unknown';
+                }
+            }
+
+            async function displayFlights(flights) {
+                const flightCardsContainer = document.getElementById('flight-cards');
+                flightCardsContainer.innerHTML = ''; // Clear previous cards
+
+                try {
+                    const allFlights = Object.values(flights).flat(); // Flatten arrays of flights
+
+                    for (const flight of allFlights) {
+                        const flightName = await fetchFlightName(flight.FlightId);
+
+                        var flightCard = document.createElement('div');
+                        flightCard.classList.add('flight-card');
+
+                        var duration = calculateDuration(flight.ArrivalDateTime, flight.DepartureDateTime);
+
+                        flightCard.innerHTML = `
+        <div class="flight-header">
+            <h3>${flightName}</h3>
+            <span><strong>Flight ID:</strong> ${flight.FlightId}</span>
+        </div>
+        <div class="flight-details">
+            
+            <div class="flight-times">
+                <div class="time">
+                    <strong>Departure Details:</strong>
+                      <p> ${flight.DepartureLocation}</p>
+                    <p> ${new Date(flight.DepartureDateTime).toLocaleDateString()}</p>
+                    <p> ${new Date(flight.DepartureDateTime).toLocaleTimeString()}</p>
+                </div>
+                <div class="duration-container">  
+                    <p class="duration-text"><strong>Duration:</strong> ${duration}</p>
+                   
+                </div>
+                 
+                <div class="time">
+                    <strong>Arrival Details:</strong>
+                      <p> ${flight.ArrivalLocation}</p>
+                    <p>${new Date(flight.ArrivalDateTime).toLocaleDateString()}</p>
+                    <p>${new Date(flight.ArrivalDateTime).toLocaleTimeString()}</p>
+                </div>
+            </div>
+            <div class="other-info">
+            <p><strong>Seats Available:</strong> ${flight.SeatsAvailable}</p>
+            <p><strong>Price Per Person:</strong> ${flight.PricePerPerson}</p>
+            </div>
+           
+        </div>
+    `;
+
+                        flightCardsContainer.appendChild(flightCard);
+                    }
+                } catch (error) {
+                    console.error('Error displaying flights:', error);
+                }
+            }
+
+            function calculateDuration(arrivalDateTime, departureDateTime) {
+                var arrivalTime = new Date(arrivalDateTime);
+                var departureTime = new Date(departureDateTime);
+                var durationMs = arrivalTime.getTime() - departureTime.getTime();
+
+                // Calculate days, hours, and minutes
+                var durationDays = Math.floor(durationMs / (1000 * 60 * 60 * 24));
+                var durationHours = Math.floor((durationMs % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var durationMinutes = Math.floor((durationMs % (1000 * 60 * 60)) / (1000 * 60));
+
+                // Construct the duration string based on days, hours, and minutes
+                var durationString = "";
+                if (durationDays > 0) {
+                    durationString += durationDays + "d ";
+                }
+                if (durationHours > 0) {
+                    durationString += durationHours + "h ";
+                }
+                if (durationMinutes > 0) {
+                    durationString += durationMinutes + "m";
+                }
+
+                return durationString.trim();
+            }
+
+
+            fetchFlights();
+        });
+    </script>
 </body>
-</html> 
 
-
+</html>
