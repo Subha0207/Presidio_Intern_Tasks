@@ -46,7 +46,7 @@ class JRCStudent extends Student {
     }
 }
 
-// Usage example:
+
 let student1 = new Student("John Doe", 1);
 student1.setMarks(450, 475, 480);
 console.log(`${student1.name}'s marks:`);
