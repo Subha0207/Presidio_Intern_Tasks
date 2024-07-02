@@ -1,0 +1,7 @@
+aa, 2000-09-08, 9876543210, subha@gmail.com, 23
+bb, 2009-09-08, 9876543210, mridu@gmail.com, 14
+Alice Smith, 1990-01-01, 1234567890, alice@example.com, 34
+Bob Johnson, 1985-05-15, 987654321, bob@example.com, 39
+Charlie Lee, 1979-07-23, 1231231234, charlie@example.com, 44
+Diana Prince, 1995-12-30, 3213214321, diana@example.com, 28
+Evan White, 1988-09-09, 4564564567, evan@example.com, 35
