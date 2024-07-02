@@ -1,0 +1,13 @@
+Compiler-Converts high level language to Machine langauge
+Interpreter-Converts byte code to machine lanaguae
+C,C++ are compiled languages
+Python first gets compiled and gives you Byte code
+Byte code is converted to machine language by Interpreter(Python Virtual machine)
+In compiled languages ,execution takes place as a whole program(Output is not dispalyed even when single error exists in any one of the line)
+In interpreted languages,execution goes line by line(Output will be displayed for non error lines)
+In python compilation and interpretation is done by Python Virtual Machine and output is shown
+Python is an interpreted language
+
+
+String formatting:
+When concatinating different type of datatypes in a same line without type error
