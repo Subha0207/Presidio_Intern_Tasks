@@ -1,0 +1,253 @@
+Part C
+ 
+1) https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
+
+class Solution(object):
+    def lengthOfLongestSubstring(self, s):
+        
+        char_map = {}
+        max_length = 0
+        start = 0
+
+        for end in range(len(s)):
+            if s[end] in char_map:
+                # Update start to avoid repeating characters
+                start = max(char_map[s[end]] + 1, start)
+
+            # Update the most recent index of the character
+            char_map[s[end]] = end
+
+            max_length = max(max_length, end - start + 1)
+
+        return max_length
+
+
+
+2) https://leetcode.com/problems/zigzag-conversion/description/
+class Solution(object):
+    def convert(self, s, numRows):
+        if numRows == 1:
+            return s
+        
+       
+        rows = [''] * numRows
+       
+        current_row = 0
+        going_down = False
+        
+       
+        for char in s:
+            # Append the character to the current row
+            rows[current_row] += char
+            
+            # Determine if we need to change direction
+            if current_row == 0 or current_row == numRows - 1:
+                going_down = not going_down
+            
+           
+            if going_down:
+                current_row += 1
+            else:
+                current_row -= 1
+        
+       
+        result = ''.join(rows)
+        return result
+
+
+        
+3) https://leetcode.com/problems/3sum-closest/description/
+class Solution(object):
+    def threeSumClosest(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: int
+        """
+        nums.sort()  
+        n = len(nums)
+        closest_sum = float('inf')
+        min_diff = float('inf')
+
+        for i in range(n):
+            left = i + 1
+            right = n - 1
+
+            while left < right:
+                current_sum = nums[i] + nums[left] + nums[right]
+                diff = abs(current_sum - target)
+
+                if diff < min_diff:
+                    min_diff = diff
+                    closest_sum = current_sum
+
+                if current_sum < target:
+                    left += 1
+                elif current_sum > target:
+                    right -= 1
+                else:
+                    return target  # Found exact match, return early
+
+        return closest_sum
+
+    
+4) https://leetcode.com/problems/generate-parentheses/description/
+
+class Solution(object):
+    def generateParenthesis(self, n):
+        """
+        :type n: int
+        :rtype: List[str]
+        """
+        def backtrack(s, open_count, close_count):
+            if len(s) == 2 * n:
+                result.append(s)
+                return
+            if open_count < n:
+                backtrack(s + '(', open_count + 1, close_count)
+            if close_count < open_count:
+                backtrack(s + ')', open_count, close_count + 1)
+        
+        result = []
+        backtrack('', 0, 0)
+        return result
+
+        
+5) https://leetcode.com/problems/multiply-strings/description/
+class Solution(object):
+    def multiply(self, num1, num2):
+        """
+        :type num1: str
+        :type num2: str
+        :rtype: str
+        """
+        one = int(num1)
+        two = int(num2)
+        ans = one * two
+        
+        if ans == 0:
+            return "0"
+        
+        output = ""
+        while ans > 0:
+            value = ans % 10
+            output = str(value) + output
+            ans = ans // 10
+        
+        return output
+
+6) https://leetcode.com/problems/group-anagrams/description/
+class Solution:
+    def groupAnagrams(self, strs):
+        """
+        :type strs: List[str]
+        :rtype: List[List[str]]
+        """
+        anagrams = {}
+        
+        for word in strs:
+          
+            sorted_word = ''.join(sorted(word))
+            if sorted_word in anagrams:
+                anagrams[sorted_word].append(word)
+              #appending the new word to the existing list
+            else:
+                anagrams[sorted_word] = [word]
+              #creating a new list and adding the word
+        
+     
+        return list(anagrams.values())
+
+7) https://leetcode.com/problems/multiply-strings/description/
+class Solution(object):
+    def multiply(self, num1, num2):
+        """
+        :type num1: str
+        :type num2: str
+        :rtype: str
+        """
+        one = int(num1)
+        two = int(num2)
+        ans = one * two
+        
+        if ans == 0:
+            return "0"
+        
+        output = ""
+        while ans > 0:
+            value = ans % 10
+            output = str(value) + output
+            ans = ans // 10
+        
+        return output
+8) https://leetcode.com/problems/jump-game/description/
+class Solution(object):
+    def canJump(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: bool
+        """
+        max_reach = 0
+        for i, jump in enumerate(nums):
+            if i > max_reach:
+                return false
+            max_reach = max(max_reach, i + jump)
+            if max_reach >= len(nums) - 1:
+                return True
+        return False
+
+9) https://leetcode.com/problems/unique-paths/description/
+class Solution(object):
+    def uniquePaths(self, m, n):
+        """
+        :type m: int
+        :type n: int
+        :rtype: int
+        """
+       
+        dp = [[0] * n for _ in range(m)]
+        
+       
+        for i in range(m):
+            dp[i][0] = 1
+        
+        
+        for j in range(n):
+            dp[0][j] = 1
+        
+       
+        for i in range(1, m):
+            for j in range(1, n):
+                dp[i][j] = dp[i-1][j] + dp[i][j-1]
+        
+        return dp[m-1][n-1]
+
+10) https://leetcode.com/problems/text-justification/description/
+class Solution(object):
+    def fullJustify(self, words, maxWidth):
+        """
+        :type words: List[str]
+        :type maxWidth: int
+        :rtype: List[str]
+        """
+        result = []
+        current_line = []
+        current_length = 0
+        
+        for word in words:
+          
+            if current_length + len(current_line) + len(word) > maxWidth:
+               
+                for i in range(maxWidth - current_length):
+                    current_line[i % (len(current_line) - 1 or 1)] += ' '
+                result.append(''.join(current_line))
+                current_line, current_length = [], 0
+                
+            # Add the word to the current line
+            current_line.append(word)
+            current_length += len(word)
+        
+        
+        result.append(' '.join(current_line).ljust(maxWidth))
+        
+        return result

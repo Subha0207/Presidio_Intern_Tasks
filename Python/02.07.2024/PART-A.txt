@@ -1,0 +1,140 @@
+
+
+1. Merge the Tools
+
+   def merge_the_tools(string, k):
+       # Ensure k is a positive integer
+       if k <= 0:
+           raise ValueError("k must be a positive integer")
+       
+       n = len(string)
+       if n % k != 0:
+           raise ValueError("The length of the string must be a multiple of k")
+       
+       # Split the string into parts of length k
+       parts = [string[i:i+k] for i in range(0, n, k)]
+       
+       # Iterate through each part and remove duplicates
+       unique_parts = []
+       for part in parts:
+           seen = set()
+           unique_part = ""
+           for char in part:
+               if char not in seen:
+                   unique_part += char
+                   seen.add(char)
+           unique_parts.append(unique_part)
+       
+       # Print each unique part on a new line
+       for unique_part in unique_parts:
+           print(unique_part)
+
+
+2. Collections Counter
+
+   from collections import Counter
+   
+   X = int(input())
+   sizes = Counter(map(int, input().split()))
+   N = int(input())
+   earnings = 0
+   
+   for _ in range(N):
+       size, x = map(int, input().split())
+       if sizes[size] > 0:
+           sizes[size] -= 1
+           earnings += x
+           
+   print(earnings)
+
+
+3. Company Logo
+
+   from sys import stdin
+   
+   S = stdin.readline()
+   d = {}
+   for c in S:
+       if c in d:
+           d[c] += 1
+       else:
+           d[c] = 1
+           
+   data = [[d[c], c] for c in d.keys()]
+   data.sort(key=lambda e: [-e[0], e[1]])
+   
+   for x in range(3):
+       print(data[x][1], data[x][0])
+
+
+4. Python If-Else
+   n = int(input().strip())
+   
+   if n % 2 != 0:
+       print("Weird")
+   elif n % 2 == 0 and n in range(2, 6):
+       print("Not Weird")
+   elif n % 2 == 0 and n in range(6, 21):
+       print("Weird")
+   elif n % 2 == 0 and n > 20:
+       print("Not Weird")
+
+
+5. Arithmetic Operators
+
+   a = int(input())
+   b = int(input())
+   
+   print(a + b)
+   print(a - b)
+   print(a * b)
+
+
+6. Division
+
+   a = int(input())
+   b = int(input())
+   
+   print(a // b)
+   print(a / b)
+
+
+7. Loops
+
+   n = int(input())
+   for i in range(0, n):
+       print(i * i, end="\n")
+
+
+8. Write a Function (Leap Year)
+
+   def is_leap(year):
+       leap = False
+       
+       if year % 400 == 0 or (year % 4 == 0 and year % 100 != 0):
+           leap = True
+           
+       return leap
+   
+   year = int(input())
+
+
+9. Print Function
+
+   n = int(input())
+   for i in range(1, n + 1):
+       print(i, end='')
+
+
+10. List Comprehension
+
+    x = int(input())
+    y = int(input())
+    z = int(input())
+    n = int(input())
+    
+    result = [[a, b, c] for a in range(x + 1) for b in range(y + 1) for c in range(z + 1) if a + b + c != n]
+    
+    print(result)
+
+
