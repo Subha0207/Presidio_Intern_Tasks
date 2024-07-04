@@ -1,0 +1,8 @@
+
+docker build -t firstimage .
+
+docker images
+
+docker run --name firstimage_a firstimage
+
+docker ps -a
