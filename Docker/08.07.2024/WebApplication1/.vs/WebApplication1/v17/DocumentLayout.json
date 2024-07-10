@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\VC\\Desktop\\Flight_Management_System\\WebApplication1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{20EB65CD-A405-4A4D-894D-931891815B13}|WebApplication1\\WebApplication1.csproj|c:\\users\\vc\\desktop\\flight_management_system\\webapplication1\\webapplication1\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{20EB65CD-A405-4A4D-894D-931891815B13}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Flight_Management_System\\WebApplication1\\WebApplication1\\Dockerfile",
+              "RelativeDocumentMoniker": "WebApplication1\\Dockerfile",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\Flight_Management_System\\WebApplication1\\WebApplication1\\Dockerfile",
+              "RelativeToolTip": "WebApplication1\\Dockerfile",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-07-04T05:24:30.308Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
