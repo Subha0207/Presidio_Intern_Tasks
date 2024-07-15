@@ -1,0 +1,4 @@
+https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots?tabs=portal
+
+
+https://learn.microsoft.com/en-us/azure/app-service/quickstart-dotnetcore?tabs=net80&pivots=development-environment-vs
