@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spelling Bee Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Spelling Bee</h1>
+        </header>
+        <div class="bee-container">
+            <div class="hex-row">
+                <div class="hex">S</div>
+                <div class="hex">I</div>
+            </div>
+            <div class="hex-row">
+                <div class="hex">A</div>
+                <div class="hex center">T</div>
+                <div class="hex">E</div>
+            </div>
+            <div class="hex-row">
+                <div class="hex">B</div>
+                <div class="hex">P</div>
+            </div>
+        </div>
+        <div class="input-container">
+            <input type="text" id="wordInput" placeholder="Type or click">
+            <button onclick="checkWord()">Enter</button>
+        </div>
+        <div class="stats">
+            <p class="level"></p>
+            <p id="wordCount">You have found 0 words</p>
+        </div>
+        <div class="progress-bar">
+            <div class="progress-bar-inner"></div>
+        </div>
+        <div class="steps-container">
+            <div class="step">1</div>
+            <div class="step">2</div>
+            <div class="step">3</div>
+            <div class="step">4</div>
+            <div class="step">5</div>
+            <div class="step">6</div>
+            <div class="step">7</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
