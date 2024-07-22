@@ -1,0 +1,6 @@
+//sqlserver
+az deployment group validate --name azuresqlserver --resource-group rg-subha --template-file azuresqlservertemplate.json --parameters serverName=subhaSqlServer sqlDBName=pavidbdemo firewallRuleName=pavisqlfirewallrule location="East US 2" adminLogin=Subhashini76 adminPassword=76Subhashini
+az deployment group create --name azuresqlserver --resource-group rg-subha --template-file azuresqlservertemplate.json --parameters serverName=subhaSqlServer sqlDBName=pavidbdemo firewallRuleName=pavisqlfirewallrule location="East US 2" adminLogin=Subhashini76 adminPassword=76Subhashini
+
+//keyvault secret
+az deployment group create --name azureKeyVault --resource-group rg-subha --template-file azuresecretkeyvaulttemplate.json --parameters keyVaultName=subha-vault secretsPermissions="['get', 'list', 'set', 'delete', 'backup', 'restore', 'recover', 'purge']" objectId=3bab640a-ce28-46fe-93da-6b9fdaef76b4 secretName=connectionString secretValue="Server=tcp:subhaSqlServer.database.windows.net,1433;Initial Catalog=subhadb;Persist Security Info=False;User ID=Subhashini76;Password=76Subhashini;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
