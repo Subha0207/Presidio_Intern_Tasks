@@ -1,0 +1,530 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|c:\\users\\vc\\desktop\\capstoneproject\\todoappsolution\\todoapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|solutionrelative:todoapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|c:\\users\\vc\\desktop\\capstoneproject\\todoappsolution\\todoapp\\models\\updatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|solutionrelative:todoapp\\models\\updatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|c:\\users\\vc\\desktop\\capstoneproject\\todoappsolution\\todoapp\\services\\todoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|solutionrelative:todoapp\\services\\todoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|c:\\users\\vc\\desktop\\capstoneproject\\todoappsolution\\todoapp\\controllers\\todocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|solutionrelative:todoapp\\controllers\\todocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|c:\\users\\vc\\desktop\\capstoneproject\\todoappsolution\\todoapp\\exceptions\\usernotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|solutionrelative:todoapp\\exceptions\\usernotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|c:\\users\\vc\\desktop\\capstoneproject\\todoappsolution\\todoapp\\exceptions\\todonotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|solutionrelative:todoapp\\exceptions\\todonotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|c:\\users\\vc\\desktop\\capstoneproject\\todoappsolution\\todoapp\\exceptions\\passwordexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|solutionrelative:todoapp\\exceptions\\passwordexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|c:\\users\\vc\\desktop\\capstoneproject\\todoappsolution\\todoapp\\exceptions\\todoexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|solutionrelative:todoapp\\exceptions\\todoexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|c:\\users\\vc\\desktop\\capstoneproject\\todoappsolution\\todoapp\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|solutionrelative:todoapp\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|c:\\users\\vc\\desktop\\capstoneproject\\todoappsolution\\todoapp\\exceptions\\useralreadyexistsexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|solutionrelative:todoapp\\exceptions\\useralreadyexistsexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|c:\\users\\vc\\desktop\\capstoneproject\\todoappsolution\\todoapp\\models\\addtododto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|solutionrelative:todoapp\\models\\addtododto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|c:\\users\\vc\\desktop\\capstoneproject\\todoappsolution\\todoapp\\interfaces\\itodoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|solutionrelative:todoapp\\interfaces\\itodoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|c:\\users\\vc\\desktop\\capstoneproject\\todoappsolution\\todoapp\\models\\tododto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|solutionrelative:todoapp\\models\\tododto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|c:\\users\\vc\\desktop\\capstoneproject\\todoappsolution\\todoapp\\models\\todo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|solutionrelative:todoapp\\models\\todo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|c:\\users\\vc\\desktop\\capstoneproject\\todoappsolution\\todoapp\\models\\todoreturndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|solutionrelative:todoapp\\models\\todoreturndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|c:\\users\\vc\\desktop\\capstoneproject\\todoappsolution\\todoapp\\repositories\\todorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|solutionrelative:todoapp\\repositories\\todorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|c:\\users\\vc\\desktop\\capstoneproject\\todoappsolution\\todoapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|solutionrelative:todoapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|c:\\users\\vc\\desktop\\capstoneproject\\todoappsolution\\todoapp\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|solutionrelative:todoapp\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|c:\\users\\vc\\desktop\\capstoneproject\\todoappsolution\\todoapp\\models\\registerreturndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|solutionrelative:todoapp\\models\\registerreturndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|c:\\users\\vc\\desktop\\capstoneproject\\todoappsolution\\todoapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|solutionrelative:todoapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|c:\\users\\vc\\desktop\\capstoneproject\\todoappsolution\\todoapp\\exceptions\\unabletoregisterexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|solutionrelative:todoapp\\exceptions\\unabletoregisterexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|c:\\users\\vc\\desktop\\capstoneproject\\todoappsolution\\todoapp\\exceptions\\unabletologinexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|solutionrelative:todoapp\\exceptions\\unabletologinexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|c:\\users\\vc\\desktop\\capstoneproject\\todoappsolution\\todoapp\\models\\errormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|solutionrelative:todoapp\\models\\errormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|c:\\users\\vc\\desktop\\capstoneproject\\todoappsolution\\todoapp\\exceptions\\userexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|solutionrelative:todoapp\\exceptions\\userexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|c:\\users\\vc\\desktop\\capstoneproject\\todoappsolution\\todoapp\\models\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|solutionrelative:todoapp\\models\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|c:\\users\\vc\\desktop\\capstoneproject\\todoappsolution\\todoapp\\context\\todoappcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|solutionrelative:todoapp\\context\\todoappcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|c:\\users\\vc\\desktop\\capstoneproject\\todoappsolution\\todoapp\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|solutionrelative:todoapp\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|c:\\users\\vc\\desktop\\capstoneproject\\todoappsolution\\todoapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|solutionrelative:todoapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|c:\\users\\vc\\desktop\\capstoneproject\\todoappsolution\\todoapp\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|solutionrelative:todoapp\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|c:\\users\\vc\\desktop\\capstoneproject\\todoappsolution\\todoapp\\todoapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|solutionrelative:todoapp\\todoapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|c:\\users\\vc\\desktop\\capstoneproject\\todoappsolution\\todoapp\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11F51A71-4497-4D9C-A4A4-DF8D364C8203}|TodoApp\\TodoApp.csproj|solutionrelative:todoapp\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TodoService.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Services\\TodoService.cs",
+              "RelativeDocumentMoniker": "TodoApp\\Services\\TodoService.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Services\\TodoService.cs",
+              "RelativeToolTip": "TodoApp\\Services\\TodoService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAwwIQAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T08:03:56.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserNotFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Exceptions\\UserNotFoundException.cs",
+              "RelativeDocumentMoniker": "TodoApp\\Exceptions\\UserNotFoundException.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Exceptions\\UserNotFoundException.cs",
+              "RelativeToolTip": "TodoApp\\Exceptions\\UserNotFoundException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T09:19:51.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TodoController.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Controllers\\TodoController.cs",
+              "RelativeDocumentMoniker": "TodoApp\\Controllers\\TodoController.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Controllers\\TodoController.cs",
+              "RelativeToolTip": "TodoApp\\Controllers\\TodoController.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAYwDUAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T07:32:54.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "TodoApp\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Controllers\\UserController.cs",
+              "RelativeToolTip": "TodoApp\\Controllers\\UserController.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAYwEQAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T07:32:37.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UpdateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Models\\UpdateDTO.cs",
+              "RelativeDocumentMoniker": "TodoApp\\Models\\UpdateDTO.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Models\\UpdateDTO.cs",
+              "RelativeToolTip": "TodoApp\\Models\\UpdateDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T16:31:53.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TodoNotFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Exceptions\\TodoNotFoundException.cs",
+              "RelativeDocumentMoniker": "TodoApp\\Exceptions\\TodoNotFoundException.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Exceptions\\TodoNotFoundException.cs",
+              "RelativeToolTip": "TodoApp\\Exceptions\\TodoNotFoundException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T14:33:29.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PasswordException.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Exceptions\\PasswordException.cs",
+              "RelativeDocumentMoniker": "TodoApp\\Exceptions\\PasswordException.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Exceptions\\PasswordException.cs",
+              "RelativeToolTip": "TodoApp\\Exceptions\\PasswordException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T09:17:48.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TodoException.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Exceptions\\TodoException.cs",
+              "RelativeDocumentMoniker": "TodoApp\\Exceptions\\TodoException.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Exceptions\\TodoException.cs",
+              "RelativeToolTip": "TodoApp\\Exceptions\\TodoException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T14:33:15.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "TodoApp\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Services\\UserService.cs",
+              "RelativeToolTip": "TodoApp\\Services\\UserService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABwAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T08:03:42.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserAlreadyExistsException.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Exceptions\\UserAlreadyExistsException.cs",
+              "RelativeDocumentMoniker": "TodoApp\\Exceptions\\UserAlreadyExistsException.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Exceptions\\UserAlreadyExistsException.cs",
+              "RelativeToolTip": "TodoApp\\Exceptions\\UserAlreadyExistsException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T09:09:40.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AddTodoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Models\\AddTodoDTO.cs",
+              "RelativeDocumentMoniker": "TodoApp\\Models\\AddTodoDTO.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Models\\AddTodoDTO.cs",
+              "RelativeToolTip": "TodoApp\\Models\\AddTodoDTO.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAywB8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T14:36:47.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ITodoService.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Interfaces\\ITodoService.cs",
+              "RelativeDocumentMoniker": "TodoApp\\Interfaces\\ITodoService.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Interfaces\\ITodoService.cs",
+              "RelativeToolTip": "TodoApp\\Interfaces\\ITodoService.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAqwA0AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T07:12:58.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TodoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Models\\TodoDTO.cs",
+              "RelativeDocumentMoniker": "TodoApp\\Models\\TodoDTO.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Models\\TodoDTO.cs",
+              "RelativeToolTip": "TodoApp\\Models\\TodoDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T15:41:26.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Todo.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Models\\Todo.cs",
+              "RelativeDocumentMoniker": "TodoApp\\Models\\Todo.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Models\\Todo.cs",
+              "RelativeToolTip": "TodoApp\\Models\\Todo.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T06:52:12.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TodoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Repositories\\TodoRepository.cs",
+              "RelativeDocumentMoniker": "TodoApp\\Repositories\\TodoRepository.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Repositories\\TodoRepository.cs",
+              "RelativeToolTip": "TodoApp\\Repositories\\TodoRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T07:07:37.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TodoReturnDTO.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Models\\TodoReturnDTO.cs",
+              "RelativeDocumentMoniker": "TodoApp\\Models\\TodoReturnDTO.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Models\\TodoReturnDTO.cs",
+              "RelativeToolTip": "TodoApp\\Models\\TodoReturnDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T14:35:41.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Models\\User.cs",
+              "RelativeDocumentMoniker": "TodoApp\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Models\\User.cs",
+              "RelativeToolTip": "TodoApp\\Models\\User.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAA7wCQAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T06:51:23.66Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "TodoApp\\Interfaces\\IUserService.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "TodoApp\\Interfaces\\IUserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T07:13:15.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "RegisterReturnDTO.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Models\\RegisterReturnDTO.cs",
+              "RelativeDocumentMoniker": "TodoApp\\Models\\RegisterReturnDTO.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Models\\RegisterReturnDTO.cs",
+              "RelativeToolTip": "TodoApp\\Models\\RegisterReturnDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T10:14:17.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UnableToLoginException.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Exceptions\\UnableToLoginException.cs",
+              "RelativeDocumentMoniker": "TodoApp\\Exceptions\\UnableToLoginException.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Exceptions\\UnableToLoginException.cs",
+              "RelativeToolTip": "TodoApp\\Exceptions\\UnableToLoginException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T09:51:15.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Program.cs",
+              "RelativeDocumentMoniker": "TodoApp\\Program.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Program.cs",
+              "RelativeToolTip": "TodoApp\\Program.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAAwDwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T07:38:16.552Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UnableToRegisterException.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Exceptions\\UnableToRegisterException.cs",
+              "RelativeDocumentMoniker": "TodoApp\\Exceptions\\UnableToRegisterException.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Exceptions\\UnableToRegisterException.cs",
+              "RelativeToolTip": "TodoApp\\Exceptions\\UnableToRegisterException.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAYwA0AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T09:53:28.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ErrorModel.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Models\\ErrorModel.cs",
+              "RelativeDocumentMoniker": "TodoApp\\Models\\ErrorModel.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Models\\ErrorModel.cs",
+              "RelativeToolTip": "TodoApp\\Models\\ErrorModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T09:49:36.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UserException.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Exceptions\\UserException.cs",
+              "RelativeDocumentMoniker": "TodoApp\\Exceptions\\UserException.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Exceptions\\UserException.cs",
+              "RelativeToolTip": "TodoApp\\Exceptions\\UserException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T09:12:32.487Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "RegisterDTO.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Models\\RegisterDTO.cs",
+              "RelativeDocumentMoniker": "TodoApp\\Models\\RegisterDTO.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Models\\RegisterDTO.cs",
+              "RelativeToolTip": "TodoApp\\Models\\RegisterDTO.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAA0wAoAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T08:26:29.859Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "TodoAppContext.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Context\\TodoAppContext.cs",
+              "RelativeDocumentMoniker": "TodoApp\\Context\\TodoAppContext.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Context\\TodoAppContext.cs",
+              "RelativeToolTip": "TodoApp\\Context\\TodoAppContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T07:10:44.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Models\\Login.cs",
+              "RelativeDocumentMoniker": "TodoApp\\Models\\Login.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Models\\Login.cs",
+              "RelativeToolTip": "TodoApp\\Models\\Login.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAcwBoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T06:55:40.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\appsettings.json",
+              "RelativeDocumentMoniker": "TodoApp\\appsettings.json",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\appsettings.json",
+              "RelativeToolTip": "TodoApp\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-01T07:37:56.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Interfaces\\IRepository.cs",
+              "RelativeDocumentMoniker": "TodoApp\\Interfaces\\IRepository.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Interfaces\\IRepository.cs",
+              "RelativeToolTip": "TodoApp\\Interfaces\\IRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T07:11:27.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Repositories\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "TodoApp\\Repositories\\BaseRepository.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\Repositories\\BaseRepository.cs",
+              "RelativeToolTip": "TodoApp\\Repositories\\BaseRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T07:07:22.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "TodoApp.csproj",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\TodoApp.csproj",
+              "RelativeDocumentMoniker": "TodoApp\\TodoApp.csproj",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\CapstoneProject\\TodoAppSolution\\TodoApp\\TodoApp.csproj",
+              "RelativeToolTip": "TodoApp\\TodoApp.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-01T07:05:50.786Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
