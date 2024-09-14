@@ -1,0 +1,8 @@
+Develop and execute a solution to migrate the data from Excel file into azure sql server database with the help of azure data factory and azure storage account.Please migrate only the mwtioned columns with correct data type
+what does azure migrate do
+?Perform a hands on databse asssesment using azure migrate databses from a vm to sql managed instance
+
+BACKUP DATABASE [dbTodo] TO 
+URL = N'https://subhastorageacc07.blob.core.windows.net/employee/dbtodo_backup_2024_09_02_163113.trn' 
+WITH FORMAT,   NAME = N'dbTodo-Full Database Backup',  NOREWIND, NOUNLOAD,  STATS = 1
+GO

@@ -1,0 +1,10 @@
+perform migration of 3 tier application(assess to migration )with azure migrate
+create 3 vms in one region and deploy some sample application
+do assessment of migration of all 3 tier app(3 vm of servers)
+migrate all the servers to another region
+verify application is accessible from dr region
+
+pipline migration from gitlb to github
+azure site recovery and backup
+
+
